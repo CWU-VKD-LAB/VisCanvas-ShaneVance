@@ -1,0 +1,195 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Nevron.Nov.Barcode, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Retargetable=Yes: 
+	hash=None, flags=Retargetable
+Assembly Nevron.Nov.Presentation, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Class Nevron.Nov.Barcode.NMatrixBarcode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Barcode.NBarcode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Barcode.ENMatrixBarcodeSymbology, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NMatrixBarcodeSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ErrorCorrectionProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SymbologyProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel ErrorCorrection 'get set' : 
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology Symbology 'get set' : 
+  Methods:
+    get_ErrorCorrection(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorCorrection(ENErrorCorrectionLevel): PrivateScope, Public, HideBySig, SpecialName
+    get_Symbology(): PrivateScope, Public, HideBySig, SpecialName
+    set_Symbology(ENMatrixBarcodeSymbology): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Barcode.NMatrixBarcodePainter: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Barcode.NBarcodePainter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology Symbology 'get set' : 
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel ErrorCorrection 'get set' : 
+  Methods:
+    get_Symbology(): PrivateScope, Public, HideBySig, SpecialName
+    set_Symbology(ENMatrixBarcodeSymbology): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorCorrection(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorCorrection(ENErrorCorrectionLevel): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Barcode.NMatrixBarcodeSymbology: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology Type 'get ' : 
+    Int32 XScaleFactor 'get ' : 
+    Int32 YScaleFactor 'get ' : 
+  Methods:
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_XScaleFactor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_YScaleFactor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Encode(String, ENErrorCorrectionLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Nevron.Nov.Barcode.NBarcode: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NWidget
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.ПМг
+  Fields:
+    Nevron.Nov.Dom.NSchema NBarcodeSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ScaleProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SizeModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TextProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Barcode.ENBarcodeSizeMode SizeMode 'get set' : 
+    Int32 Scale 'get set' : 
+    System.String Text 'get set' : 
+  Methods:
+    get_SizeMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_SizeMode(ENBarcodeSizeMode): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scale(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    AppendContextMenuItems(NMenu, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Barcode.NLinearBarcode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Barcode.NBarcode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Barcode.ENLinearBarcodeSymbology, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NLinearBarcodeSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SymbologyProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Symbology 'get set' : 
+  Methods:
+    get_Symbology(): PrivateScope, Public, HideBySig, SpecialName
+    set_Symbology(ENLinearBarcodeSymbology): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Barcode.NBarcodeLoadAssemblyType: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Barcode.NBarcodeModule: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.NModule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Barcode.NBarcodeModule Instance 'get ' : 
+  Methods:
+    Install(): PrivateScope, Public, Virtual, HideBySig
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Nevron.Nov.Barcode.ENLinearBarcodeSymbology: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Codabar = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code11 = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code39 = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code39Extended = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code93 = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code128 = 5 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code128A = 6 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code128B = 7 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Code128C = 8 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology EAN8 = 9 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology EAN13 = 10 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology FIM = 11 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Interleaved2of5 = 12 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology ISBN = 13 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology ITF14 = 14 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology JAN13 = 15 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology MSI_2Mod10 = 16 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology MSI_Mod10 = 17 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology MSI_Mod11 = 18 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology MSI_Mod11_Mod10 = 19 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Pharmacode = 20 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology PostNet = 21 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Standard2of5 = 22 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Telepen = 23 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology UPCA = 24 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology UPCE = 25 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology UPC_Supplemental_2Digit = 26 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology UPC_Supplemental_5Digit = 27 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Barcode.ENMatrixBarcodeSymbology: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology DataMatrix = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology QrCode = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENMatrixBarcodeSymbology Pdf417 = 2 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Barcode.ENBarcodeSizeMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Barcode.ENBarcodeSizeMode Scale = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENBarcodeSizeMode Fit = 1 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Barcode.ENErrorCorrectionLevel: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel Low = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel Medium = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel Quartile = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Barcode.ENErrorCorrectionLevel High = 3 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Barcode.NLinearBarcodePainter: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Barcode.NBarcodePainter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Graphics.NFont Font 'get set' : 
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Symbology 'get set' : 
+  Methods:
+    get_Font(): PrivateScope, Public, HideBySig, SpecialName
+    set_Font(NFont): PrivateScope, Public, HideBySig, SpecialName
+    get_Symbology(): PrivateScope, Public, HideBySig, SpecialName
+    set_Symbology(ENLinearBarcodeSymbology): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Barcode.NLinearBarcodeSymbology: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Barcode.ENLinearBarcodeSymbology Type 'get ' : 
+  Methods:
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Encode(String&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PaintBarcode(NLinearBarcodePainter, NPaintVisitor, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PaintLabel(NLinearBarcodePainter, NPaintVisitor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetLabelBounds(NLinearBarcodePainter, NPaintVisitor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Barcode.NBarcodePainter: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Graphics.NFill BackgroundFill 'get set' : 
+    Nevron.Nov.Graphics.NFill TextFill 'get set' : 
+    System.String Text 'get set' : 
+  Methods:
+    get_BackgroundFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackgroundFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_TextFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    CreateRaster(Int32, Int32, Double): PrivateScope, Public, HideBySig
+    Paint(NPaintVisitor, NRectangle): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Barcode.NResources: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.NEmbeddedResourceContainer
+  Fields:
+    Nevron.Nov.NEmbeddedResource RBIN_QrCodeData_zip : Public, Static, InitOnly
+    Nevron.Nov.Barcode.NResources Instance : Public, Static, InitOnly
+Class Nevron.Nov.Barcode.NMatrixBarcode+NMatrixBarcodeDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Barcode.NBarcode+NBarcodeDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Barcode.NBarcode+NBarcodeDesigner: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, BeforeFieldInit
+  :Nevron.Nov.UI.NWidget+NWidgetDesigner
+Class Nevron.Nov.Barcode.NLinearBarcode+NLinearBarcodeDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Barcode.NBarcode+NBarcodeDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -1,0 +1,366 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Nevron.Nov.Host.WinForm, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Presentation, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Host.WinBase, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class Nevron.Nov.Office.NSplashScreenForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Image BackgroundImage 'get set' : 
+  Methods:
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Office.NWinWindowState: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Office.NWindowState
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NWinWindowStateSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartPositionProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty FormBoundsProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty WindowStateProperty : Public, Static, InitOnly
+  Properties:
+    System.Windows.Forms.FormStartPosition StartPosition 'get set' : 
+    Nevron.Nov.Graphics.NRectangle FormBounds 'get set' : 
+    System.Windows.Forms.FormWindowState WindowState 'get set' : 
+  Methods:
+    get_StartPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartPosition(FormStartPosition): PrivateScope, Public, HideBySig, SpecialName
+    get_FormBounds(): PrivateScope, Public, HideBySig, SpecialName
+    set_FormBounds(NRectangle): PrivateScope, Public, HideBySig, SpecialName
+    get_WindowState(): PrivateScope, Public, HideBySig, SpecialName
+    set_WindowState(FormWindowState): PrivateScope, Public, HideBySig, SpecialName
+    ApplyToWindow(Form): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.ььц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.МЗг
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    эьц(String): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.Вьц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.чЫб
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    шЫб(): PrivateScope, Public, Virtual, HideBySig
+    щЫб(String): PrivateScope, Public, Virtual, HideBySig
+    ыЫб(String): PrivateScope, Public, Virtual, HideBySig
+    эЫб(String, Byte[]): PrivateScope, Public, Virtual, HideBySig
+    БЫб(String): PrivateScope, Public, Virtual, HideBySig
+    ГЫб(): PrivateScope, Public, Virtual, HideBySig
+    ДЫб(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Мьц`1[Ньц]: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Type parameter: Ньц, Nevron.Nov.UI.NViewportBase, Nevron.Nov.UI.INDocumentView
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.ЙЭв
+Class Nevron.Nov.Internal.бэц: AutoLayout, AnsiClass, Class, Sealed
+  :Nevron.Nov.Internal.жвх
+  Fields:
+    Nevron.Nov.Internal.бэц дэц : Public, Static
+    Nevron.Nov.Dom.NSchema бэцSchema : Public, Static, InitOnly
+  Methods:
+    ыТж(NChildWindow): PrivateScope, Public, Virtual, HideBySig
+    эТж(NTopLevelWindow): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.еэц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.Нзф
+  Fields:
+    Nevron.Nov.Internal.еэц йэц : Assembly, Static, InitOnly
+  Methods:
+    СФе(Delegate, Object[]): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.кэц: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Nevron.Nov.Internal.Эзф
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.кэц чэц : Assembly, Static, InitOnly
+Class Nevron.Nov.Internal.шэц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.Эьд
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.шэц ыэц : Public, Static, InitOnly
+Class Nevron.Nov.Internal.Еэц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.ПРе
+  Fields:
+    Nevron.Nov.Internal.Еэц Жэц : Assembly, Static, InitOnly
+Class Nevron.Nov.Internal.люц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.Рзк
+    Void .ctor(Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 оюц : Assembly
+  Methods:
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.пюц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.PointF сюц : Assembly
+    System.Drawing.SizeF тюц : Assembly
+    Int32 уюц : Assembly
+    Int32 фюц : Assembly
+    Int32 хюц : Assembly
+    Int32 цюц : Assembly
+    Boolean чюц : Assembly
+  Properties:
+    Boolean рюц 'get ' : 
+  Methods:
+    get_рюц(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.шюц`1[щюц]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: щюц, Nevron.Nov.UI.NWindow
+  :System.Windows.Forms.Control
+    Void .ctor(Nevron.Nov.Internal.нАц`1[щюц]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.нАц`1[щюц] вАц : Assembly
+    Int32 мАц = 1034 : Assembly, Static, Literal, HasDefault
+  Events:
+    System.EventHandler`1[Nevron.Nov.Internal.пюц] Тюц: 
+    System.EventHandler`1[Nevron.Nov.Internal.пюц] Сюц: 
+    System.EventHandler`1[Nevron.Nov.Internal.пюц] аАц: 
+  Methods:
+    add_Тюц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Тюц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_Сюц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Сюц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_аАц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_аАц(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    ыюц(): PrivateScope, Public, HideBySig
+    Еюц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    Июц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    Люц(): PrivateScope, Assembly, HideBySig
+    Мюц(): PrivateScope, Assembly, HideBySig
+    Нюц(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.ХБц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.нАц`1[Nevron.Nov.UI.NChildWindow]
+    Void .ctor(Nevron.Nov.UI.NChildWindow): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.чУз
+    Nevron.Nov.Dom.INEventHandler
+  Fields:
+    Nevron.Nov.Windows.Forms.NNovChildWindowHost дВц : Assembly
+  Methods:
+    жУз(): PrivateScope, Public, Virtual, HideBySig
+    вУз(): PrivateScope, Public, Virtual, HideBySig
+    шУз(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ъУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Internal.еВц: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.нАц`1[Nevron.Nov.UI.NTopLevelWindow]
+    Void .ctor(Nevron.Nov.UI.NTopLevelWindow): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.мУз
+  Methods:
+    уУз(NRectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    жУз(): PrivateScope, Public, Virtual, HideBySig
+    вУз(): PrivateScope, Public, Virtual, HideBySig
+    нУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    оУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    пУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    сУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    рУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    тУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    иВц(String): PrivateScope, Public, HideBySig
+    хУз(NRegion): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Internal.нАц`1[оАц]: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Type parameter: оАц, Nevron.Nov.UI.NWindow
+    Void .ctor(оАц): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.СЧз
+  Fields:
+    Nevron.Nov.Internal.шюц`1[оАц] УБц : Assembly
+    оАц ШБц : Assembly
+    Double ЮБц : Assembly
+    Boolean ЩБц : Assembly
+    Boolean ЭБц : Assembly
+    System.Windows.Forms.DragEventArgs ЬБц : Assembly
+    System.Drawing.Point ЫБц : Assembly
+  Methods:
+    рАц(): PrivateScope, Public, HideBySig
+    аУз(NRectangle&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    жУз(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    иУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    зУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    вУз(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    еУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    гУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    дУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    лУз(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    йУз(NCursor): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    уАц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    цАц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    щАц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    ьАц(Object, MouseEventArgs): PrivateScope, Assembly, HideBySig
+    ААц(Object, MouseEventArgs): PrivateScope, Assembly, HideBySig
+    ГАц(Object, MouseEventArgs): PrivateScope, Assembly, HideBySig
+    ЖАц(Object, MouseEventArgs): PrivateScope, Assembly, HideBySig
+    ЙАц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    МАц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    ПАц(Object, KeyEventArgs): PrivateScope, Assembly, HideBySig
+    ЦАц(Object, KeyPressEventArgs): PrivateScope, Assembly, HideBySig
+    ШАц(Object, KeyEventArgs): PrivateScope, Assembly, HideBySig
+    ЭАц(Object, пюц): PrivateScope, Assembly, HideBySig
+    ЪАц(Object, пюц): PrivateScope, Assembly, HideBySig
+    САц(Object, пюц): PrivateScope, Assembly, HideBySig
+    вБц(Object, DragEventArgs): PrivateScope, Assembly, HideBySig
+    еБц(Object, DragEventArgs): PrivateScope, Assembly, HideBySig
+    иБц(Object, DragEventArgs): PrivateScope, Assembly, HideBySig
+    лБц(Object, EventArgs): PrivateScope, Assembly, HideBySig
+    оБц(NGraphics2D, Double, мЛе): PrivateScope, Assembly, HideBySig
+    тБц(Double): PrivateScope, Assembly, HideBySig
+    фБц(PointF): PrivateScope, Assembly, HideBySig
+    цБц(SizeF): PrivateScope, Assembly, HideBySig
+    шБц(NMargins): PrivateScope, Assembly, HideBySig
+    ъБц(Rectangle): PrivateScope, Assembly, HideBySig
+    ьБц(RectangleF): PrivateScope, Assembly, HideBySig
+    юБц(Double): PrivateScope, Assembly, HideBySig
+    ББц(NPoint): PrivateScope, Assembly, HideBySig
+    ГБц(NSize): PrivateScope, Assembly, HideBySig
+    ЕБц(NMargins): PrivateScope, Assembly, HideBySig
+    ЗБц(NRectangle): PrivateScope, Assembly, HideBySig
+    ЙБц(MouseEventArgs, ENMouseButtonState): PrivateScope, Assembly, HideBySig
+    МБц(KeyEventArgs, Boolean): PrivateScope, Assembly, HideBySig
+    ПБц(DragEventArgs): PrivateScope, Assembly, HideBySig
+    ФБц(пюц, ENTouchDeviceState): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.ыВц: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ьВц(Keys): PrivateScope, Assembly, Static, HideBySig
+    юВц(MouseButtons): PrivateScope, Assembly, Static, HideBySig
+    БВц(DragDropEffects): PrivateScope, Assembly, Static, HideBySig
+    ГВц(ENDragDropEffects): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Windows.Forms.NHostWinFormLoadAssemblyType: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+Class Nevron.Nov.Windows.Forms.NNovControlHostDesigner: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Design.ControlDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String NevronEventsCategory = Nevron : Public, Static, Literal, HasDefault
+  Properties:
+    System.ComponentModel.Design.DesignerVerbCollection Verbs 'get ' : 
+  Methods:
+    get_Verbs(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Windows.Forms.NNovWidgetEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Drawing.Design.UITypeEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetEditStyle(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig
+    EditValue(ITypeDescriptorContext, IServiceProvider, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Windows.Forms.NNovControlHost`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T, Nevron.Nov.UI.NWidget,  DefaultConstructor
+  :Nevron.Nov.Windows.Forms.NNovWidgetHost`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Windows.Forms.NNovWidgetHost`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T, Nevron.Nov.UI.NWidget,  DefaultConstructor
+  :Nevron.Nov.Windows.Forms.NNovChildWindowHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T, System.Windows.Forms.DockStyle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    T Widget   'get set' : 
+    System.String DesignTimeState 'get set' : 
+  Methods:
+    get_Widget(): PrivateScope, Public, HideBySig, SpecialName
+    set_Widget(T): PrivateScope, Public, HideBySig, SpecialName
+    get_DesignTimeState(): PrivateScope, Public, HideBySig, SpecialName
+    set_DesignTimeState(String): PrivateScope, Public, HideBySig, SpecialName
+    UpdateDesignTimeCache(): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Windows.Forms.NNovChildWindowHost: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.DockStyle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AutoSize 'get set' : 
+    System.Windows.Forms.DockStyle Dock 'get set' : 
+    System.Windows.Forms.AnchorStyles Anchor 'get set' : 
+    System.Windows.Forms.Padding Padding 'get ' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Image BackgroundImage 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+    Boolean CausesValidation 'get set' : 
+    System.Windows.Forms.ContextMenu ContextMenu 'get set' : 
+    System.Windows.Forms.ContextMenuStrip ContextMenuStrip 'get set' : 
+    System.Windows.Forms.Cursor Cursor 'get set' : 
+    Boolean Enabled 'get set' : 
+    Boolean Focused 'get ' : 
+    System.Drawing.Font Font 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+    System.Windows.Forms.ImeMode ImeMode 'get set' : 
+    System.Windows.Forms.Padding Margin 'get set' : 
+    System.Windows.Forms.RightToLeft RightToLeft 'get set' : 
+    System.String Text 'get set' : 
+    Boolean UseWaitCursor 'get set' : 
+    Boolean Visible 'get set' : 
+    Nevron.Nov.UI.NChildWindow бюц 'get ' : 
+    Nevron.Nov.Internal.нАц`1[Nevron.Nov.UI.NChildWindow] вюц 'get ' : 
+  Methods:
+    get_AutoSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AutoSize(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Dock(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Dock(DockStyle): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Anchor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Anchor(AnchorStyles): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Padding(): PrivateScope, Public, HideBySig, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CausesValidation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CausesValidation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ContextMenu(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContextMenu(ContextMenu): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ContextMenuStrip(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContextMenuStrip(ContextMenuStrip): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Cursor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Cursor(Cursor): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Enabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Focused(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Font(Font): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImeMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImeMode(ImeMode): PrivateScope, Public, HideBySig, SpecialName
+    get_Margin(): PrivateScope, Public, HideBySig, SpecialName
+    set_Margin(Padding): PrivateScope, Public, HideBySig, SpecialName
+    get_RightToLeft(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_RightToLeft(RightToLeft): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UseWaitCursor(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseWaitCursor(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    GetPreferredSize(Size): PrivateScope, Public, Virtual, HideBySig
+    get_бюц(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_вюц(): PrivateScope, Assembly, HideBySig, SpecialName
+    Ээц(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Windows.Forms.NNovApplicationInstaller: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Install(NModule[]): PrivateScope, Public, Static, HideBySig
+    InstallServer(NModule[]): PrivateScope, Public, Static, HideBySig
+    хВц(ENProductGroup, NModule[]): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Internal.шэц+ьэц: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :Nevron.Nov.Internal.Эьд+гэд
+    Void .ctor(Nevron.Nov.Internal.шэц, Boolean, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    нэд(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    оэд(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Internal.еВц+нВц: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  :Nevron.Nov.Internal.ущц
+    Void .ctor(Nevron.Nov.Internal.еВц): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    пВц(шюц`1): PrivateScope, Public, HideBySig

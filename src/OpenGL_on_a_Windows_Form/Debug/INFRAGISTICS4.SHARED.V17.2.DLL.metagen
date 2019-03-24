@@ -1,0 +1,2089 @@
+  Infragistics.Shared.AboutDialog.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Win.DropDownListBox.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.strings.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UltraObjectPropertiesPage.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UltraPropertyPageDialog.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UltraPropPagePropertyGrid.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UltraCalc.strings.CalcEngine.resources - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Boolean.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Byte.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Char.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.DateTime.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.DBNull.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Decimal.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Double.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Int16.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Int32.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Int64.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.SByte.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.Single.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.String.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UInt16.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UInt32.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.UInt64.bmp - Embedded, ContainedInManifestFile, 
+  Infragistics.Shared.DateTimeIncrement.bmp - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Infragistics4.Shared.v17.2, Version=17.2.20172.2006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Interface Infragistics.Shared.ISparseArrayItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetOwnerData(SparseArray): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetOwnerData(Object, SparseArray): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Infragistics.Shared.ISparseArrayMultiItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Shared.ISparseArrayItem
+  Properties:
+    Int32 ScrollCount 'get ' : 
+  Methods:
+    get_ScrollCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemAtScrollIndex(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Infragistics.Shared.ICreateItemCallback: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CreateItem(SparseArray, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Infragistics.Shared.SparseArray: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Single, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IList
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    System.Object Item [Int32] 'get set' : 
+    Boolean IsSynchronized 'get ' : 
+    System.Object SyncRoot 'get ' : 
+    System.Collections.IEnumerable NonNullItems 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(ICreateItemCallback): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SyncRoot(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NonNullItems(): PrivateScope, Public, HideBySig, SpecialName
+    Expand(Int32): PrivateScope, Public, HideBySig
+    Add(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    AddRange(ICollection): PrivateScope, Public, HideBySig
+    InsertRange(Int32, ICollection): PrivateScope, Public, HideBySig
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RemoveRange(Int32, Int32): PrivateScope, Public, HideBySig
+    Remove(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(Array, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(Array, Int32, ICreateItemCallback): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    ToArray(Type): PrivateScope, Public, HideBySig
+    GetItem(Int32): PrivateScope, Public, HideBySig
+    GetItem(Int32, ICreateItemCallback): PrivateScope, Public, HideBySig
+    Reverse(): PrivateScope, Public, HideBySig
+    Reverse(Int32, Int32): PrivateScope, Public, HideBySig
+    Sort(): PrivateScope, Public, HideBySig
+    Sort(IComparer): PrivateScope, Public, HideBySig
+    OnDeserializationComplete(): PrivateScope, Public, HideBySig
+Class Infragistics.Win.CalcEngine.MathUtilities: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.Globalization.CultureInfo CurrentCulture 'get ' : 
+  Methods:
+    get_CurrentCulture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    DecimalToStringNonScientific(Decimal, CultureInfo): PrivateScope, Public, Static, HideBySig
+    DoubleToStringNonScientific(Double, CultureInfo): PrivateScope, Public, Static, HideBySig
+    DecimalTryParse(String, IFormatProvider, Decimal&(Out)): PrivateScope, Public, Static, HideBySig
+    DoubleTryParse(String, IFormatProvider, Double&(Out)): PrivateScope, Public, Static, HideBySig
+    FloorOfLog10(Double): PrivateScope, Public, Static, HideBySig
+    MidpointRoundingAwayFromZero(Single): PrivateScope, Public, Static, HideBySig
+    MidpointRoundingAwayFromZero(Double): PrivateScope, Public, Static, HideBySig
+    MidpointRoundingAwayFromZero(Double, Int32): PrivateScope, Public, Static, HideBySig
+    RoundToExcelDisplayValue(Double): PrivateScope, Public, Static, HideBySig
+    Truncate(Double): PrivateScope, Public, Static, HideBySig
+Class Infragistics.Shared.strings_CalcEngine: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String Error_AnchoredReference 'get ' : 
+    System.String Error_ExplicitThis 'get ' : 
+    System.String Error_ExternalRange 'get ' : 
+    System.String Error_FormulaNotSupported 'get ' : 
+    System.String Error_InvalidOperand 'get ' : 
+    System.String Error_InvalidReference 'get ' : 
+    System.String Error_MethodNotSupported 'get ' : 
+    System.String Error_NoCurrentRangeElement 'get ' : 
+    System.String Error_NullOperand 'get ' : 
+    System.String Error_RangeFromLast 'get ' : 
+    System.String Error_RangeFromNull 'get ' : 
+    System.String Error_RangeFromRefBase 'get ' : 
+    System.String Error_RangeLast 'get ' : 
+    System.String Error_RangeNormalizeScope 'get ' : 
+    System.String Error_RangeToNull 'get ' : 
+    System.String Error_RangeToRefBase 'get ' : 
+    System.String Error_RangeTuple 'get ' : 
+    System.String Error_RangeValidateCount 'get ' : 
+    System.String Error_ReadOnlyReference 'get ' : 
+    System.String Error_ReferenceNotEumerable 'get ' : 
+    System.String Error_RefMalformed 'get ' : 
+    System.String Error_RP_ContainsBase 'get ' : 
+    System.String Error_RP_ContainsTarget 'get ' : 
+    System.String Error_RP_EmptyElement 'get ' : 
+    System.String Error_RP_EmptyReference 'get ' : 
+    System.String Error_RP_MalformedExtra 'get ' : 
+    System.String Error_RP_MalformedUnexpected 'get ' : 
+    System.String Error_RP_MergeRelativeBase 'get ' : 
+    System.String Error_RP_MissingCloseParenthesis 'get ' : 
+    System.String Error_RP_MissingEndQuotes 'get ' : 
+    System.String Error_RT_Expected 'get ' : 
+    System.String Error_RT_InvalidScope 'get ' : 
+    System.String Error_RT_InvalidScope_CharactersAfterClosingQuotes 'get ' : 
+    System.String Error_RT_InvalidTuple_CharactersAfterScopeEnd 'get ' : 
+    System.String Error_RT_InvalidTuple_MissingCloseParenthesis 'get ' : 
+    System.String Error_RT_InvalidTuple_MissingEndQuotes 'get ' : 
+    System.String Error_RT_InvalidTuple_NamePortionEmpty 'get ' : 
+    System.String Error_RT_InvalidTuple_ScopeIndexLarge 'get ' : 
+    System.String Error_RT_InvalidTuple_UnescapedCharacter 'get ' : 
+    System.String Error_RT_NullRefName 'get ' : 
+    System.String Error_RT_Unexpected 'get ' : 
+    System.String Error_ScopeAllNotLast 'get ' : 
+    System.String Error_UCErrorCode_Div 'get ' : 
+    System.String Error_UCErrorCode_Fail 'get ' : 
+    System.String Error_UCErrorCode_NA 'get ' : 
+    System.String Error_UCErrorCode_Null 'get ' : 
+    System.String Error_UCErrorCode_Num 'get ' : 
+    System.String Error_UCErrorCode_Ok 'get ' : 
+    System.String Error_UCErrorCode_Reference 'get ' : 
+    System.String Error_UCErrorCode_Unknown 'get ' : 
+    System.String Error_UCErrorCode_Value 'get ' : 
+    System.String Error_UnexpectedScope 'get ' : 
+    System.String Error_UnknownRange 'get ' : 
+    System.String Error_UnknownRefType 'get ' : 
+    System.String Error_UnknownScope 'get ' : 
+    System.String Value_UCErrorCode_Div 'get ' : 
+    System.String Value_UCErrorCode_Fail 'get ' : 
+    System.String Value_UCErrorCode_NA 'get ' : 
+    System.String Value_UCErrorCode_Null 'get ' : 
+    System.String Value_UCErrorCode_Num 'get ' : 
+    System.String Value_UCErrorCode_Ok 'get ' : 
+    System.String Value_UCErrorCode_Reference 'get ' : 
+    System.String Value_UCErrorCode_Unknown 'get ' : 
+    System.String Value_UCErrorCode_Value 'get ' : 
+  Methods:
+    get_ResourceManager(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_AnchoredReference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_ExplicitThis(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_ExternalRange(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_FormulaNotSupported(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_InvalidOperand(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_InvalidReference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_MethodNotSupported(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_NoCurrentRangeElement(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_NullOperand(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeFromLast(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeFromNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeFromRefBase(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeLast(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeNormalizeScope(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeToNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeToRefBase(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeTuple(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RangeValidateCount(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_ReadOnlyReference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_ReferenceNotEumerable(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RefMalformed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_ContainsBase(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_ContainsTarget(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_EmptyElement(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_EmptyReference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_MalformedExtra(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_MalformedUnexpected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_MergeRelativeBase(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_MissingCloseParenthesis(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RP_MissingEndQuotes(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_Expected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidScope(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidScope_CharactersAfterClosingQuotes(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_CharactersAfterScopeEnd(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_MissingCloseParenthesis(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_MissingEndQuotes(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_NamePortionEmpty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_ScopeIndexLarge(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_InvalidTuple_UnescapedCharacter(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_NullRefName(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_RT_Unexpected(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_ScopeAllNotLast(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Div(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Fail(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_NA(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Null(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Num(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Ok(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Reference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Unknown(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UCErrorCode_Value(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UnexpectedScope(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UnknownRange(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UnknownRefType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Error_UnknownScope(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Div(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Fail(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_NA(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Null(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Num(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Ok(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Reference(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Unknown(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Value_UCErrorCode_Value(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.UltraCalcException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, Int32, Int32, System.Object[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Object LocationPlaceholder : Public, Static, InitOnly
+  Properties:
+    Int32 Column 'get ' : 
+    System.String ErrorLocationRaw 'get ' : 
+    Boolean HasDynamicMessage 'get ' : 
+    Int32 Line 'get ' : 
+    System.Object[] MessageParams 'get ' : 
+    System.String MessageRaw 'get ' : 
+  Methods:
+    get_Column(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ErrorLocationRaw(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_HasDynamicMessage(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Line(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_MessageParams(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_MessageRaw(): PrivateScope, Assembly, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.UltraCalcValueException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.UltraCalcException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Infragistics.Win.CalcEngine.UltraCalcNumberException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.UltraCalcException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct Infragistics.Win.CalcEngine.ChildReferenceType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.ChildReferenceType ReferencesWithFormulas = 1 : Public, Static, Literal, HasDefault
+Struct Infragistics.Win.CalcEngine.ResolveReferenceType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.ResolveReferenceType LeftHandSide = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ResolveReferenceType RightHandSide = 1 : Public, Static, Literal, HasDefault
+Struct Infragistics.Win.CalcEngine.UltraCalcFormulaStates: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    Boolean RecalcVisible 'get set' : 
+    Boolean RecalcDeferred 'get set' : 
+  Methods:
+    get_RecalcVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_RecalcVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RecalcDeferred(): PrivateScope, Public, HideBySig, SpecialName
+    set_RecalcDeferred(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    Reset(): PrivateScope, Public, HideBySig
+Interface Infragistics.Win.CalcEngine.IUltraCalcReference: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean RecalcVisible 'get set' : 
+    Boolean RecalcDeferred 'get set' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Boolean HasAbsoluteIndex 'get ' : 
+    Boolean HasScopeAll 'get ' : 
+    Boolean IsDataReference 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference Parent 'get ' : 
+    Boolean IsDisposedReference 'get ' : 
+    System.String AbsoluteName 'get ' : 
+    System.String ElementName 'get ' : 
+    Infragistics.Win.CalcEngine.UltraCalcValue Value 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcFormula Formula 'get ' : 
+    System.Object Context 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+    Boolean IsEnumerable 'get ' : 
+    System.String NormalizedAbsoluteName 'get ' : 
+  Methods:
+    get_RecalcVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RecalcVisible(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecalcDeferred(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RecalcDeferred(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HasAbsoluteIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HasScopeAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateRange(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ResolveReference(IUltraCalcReference, ResolveReferenceType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MarkRelativeIndices(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsDataReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Parent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    IsSiblingReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsDisposedReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetChildReferences(ChildReferenceType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AbsoluteName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ElementName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(UltraCalcValue): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Formula(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Context(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateReference(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_References(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ContainsReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsSubsetReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsEnumerable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NormalizedAbsoluteName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Infragistics.Win.CalcEngine.UltraCalcReferenceError: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcReference
+  Properties:
+    System.String Message 'get ' : 
+  Methods:
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.UltraCalcReferenceEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Infragistics.Win.CalcEngine.IUltraCalcReference): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Win.CalcEngine.IUltraCalcReference Reference 'get ' : 
+  Methods:
+    get_Reference(): PrivateScope, Public, HideBySig, SpecialName
+Interface Infragistics.Win.CalcEngine.IUltraCalcFormulaToken: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Infragistics.Win.CalcEngine.UltraCalcFormulaTokenType Type 'get ' : 
+  Methods:
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Infragistics.Win.CalcEngine.IUltraCalcValueToken: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcFormulaToken
+  Properties:
+    Infragistics.Win.CalcEngine.UltraCalcValue Value 'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Infragistics.Win.CalcEngine.IUltraCalcFunctionToken: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcFormulaToken
+  Properties:
+    Int32 ArgumentCount 'get ' : 
+    System.String FunctionName 'get ' : 
+    System.Nullable`1[Infragistics.Win.CalcEngine.UltraCalcOperatorFunction] FunctionOperator 'get ' : 
+  Methods:
+    get_ArgumentCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FunctionName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FunctionOperator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Struct Infragistics.Win.CalcEngine.UltraCalcAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.UltraCalcAction Recalc = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcAction AddReferenceToRecalcChain = 1 : Public, Static, Literal, HasDefault
+Class Infragistics.Win.CalcEngine.UltraCalcReferenceEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UltraCalcReferenceEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, UltraCalcReferenceEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Win.CalcEngine.UltraCalcValue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable
+    System.IConvertible
+  Fields:
+    Infragistics.Win.CalcEngine.UltraCalcValue Empty : Assembly, Static, InitOnly
+    Boolean UseExcelValueCompatibility : Public, Static
+    Boolean UseExcelFunctionCompatibility : Public, Static
+  Properties:
+    Boolean IsReference 'get ' : 
+    Boolean IsError 'get ' : 
+    Boolean IsNull 'get ' : 
+    Boolean IsDBNull 'get ' : 
+    Boolean IsString 'get ' : 
+    Boolean IsBoolean 'get ' : 
+    Boolean IsDateTime 'get ' : 
+    System.Object Value 'get ' : 
+    Boolean UseExcelFormulaCompatibility 'get set' : 
+    System.Globalization.CultureInfo Culture 'get ' : 
+  Methods:
+    Initialize(Object): PrivateScope, Assembly, HideBySig
+    ToInt(): PrivateScope, Public, HideBySig
+    ToInt(IFormatProvider): PrivateScope, Public, HideBySig
+    ToReference(): PrivateScope, Public, HideBySig
+    ToErrorValue(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    get_IsReference(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsError(): PrivateScope, Public, HideBySig, SpecialName
+    IsErrorHelper(Object): PrivateScope, Assembly, Static, HideBySig
+    get_IsNull(): PrivateScope, Public, HideBySig, SpecialName
+    IsNullHelper(Object): PrivateScope, Assembly, Static, HideBySig
+    get_IsDBNull(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsString(): PrivateScope, Public, HideBySig, SpecialName
+    IsStringHelper(Object): PrivateScope, Assembly, Static, HideBySig
+    get_IsBoolean(): PrivateScope, Public, HideBySig, SpecialName
+    IsBooleanHelper(Object): PrivateScope, Assembly, Static, HideBySig
+    get_IsDateTime(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    AreValuesEqual(UltraCalcValue, UltraCalcValue): PrivateScope, Public, Static, HideBySig
+    CompareTo(UltraCalcValue): PrivateScope, Public, HideBySig
+    CompareTo(UltraCalcValue, UltraCalcValue): PrivateScope, Public, Static, HideBySig
+    CompareToHelper(UltraCalcValue, Object, UltraCalcValue, Object): PrivateScope, Assembly, Static, HideBySig
+    IsSameValue(UltraCalcValue): PrivateScope, Public, HideBySig
+    GetResolvedValue(): PrivateScope, Public, HideBySig
+    ToDouble(): PrivateScope, Public, HideBySig
+    ToDouble(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Double&(Out)): PrivateScope, Public, HideBySig
+    ToDoubleHelper(Object, Double&(Out), IFormatProvider, Exception&(Out)): PrivateScope, Assembly, HideBySig
+    ToDateTime(): PrivateScope, Public, HideBySig
+    ToDateTime(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDateTimeHelper(IFormatProvider, DateTime&(Out), Boolean(Optional, HasDefault)): PrivateScope, Assembly, HideBySig
+    ToSingle(): PrivateScope, Public, HideBySig
+    ToSingle(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToBoolean(): PrivateScope, Public, HideBySig
+    ToBoolean(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt32(): PrivateScope, Public, HideBySig
+    ToInt32(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt16(): PrivateScope, Public, HideBySig
+    ToInt16(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToStringHelper(Object, IFormatProvider): PrivateScope, Assembly, HideBySig
+    ToByte(): PrivateScope, Public, HideBySig
+    ToByte(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToChar(): PrivateScope, Public, HideBySig
+    ToChar(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt64(): PrivateScope, Public, HideBySig
+    ToInt64(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDecimal(): PrivateScope, Public, HideBySig
+    ToDecimal(Decimal&(Out)): PrivateScope, Public, HideBySig
+    ToDecimal(IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DateTimeToExcelDate(DateTime): PrivateScope, Public, Static, HideBySig
+    DateTimeToExcelDate(DateTime, Boolean): PrivateScope, Public, Static, HideBySig
+    ExcelDateToDateTime(Double): PrivateScope, Public, Static, HideBySig
+    ExcelDateToDateTime(Double, Boolean): PrivateScope, Public, Static, HideBySig
+    ExcelDateToDateTime(Double, Boolean, Boolean): PrivateScope, Assembly, Static, HideBySig
+    ExcelDateToTimeOfDay(Double, Boolean(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    TimeOfDayToExcelDate(TimeSpan, Boolean(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    GetResolvedValue(Boolean): PrivateScope, Assembly, HideBySig
+    GetResolvedValue(Boolean, Boolean): PrivateScope, Assembly, HideBySig
+    get_UseExcelFormulaCompatibility(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_UseExcelFormulaCompatibility(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Assembly, HideBySig, SpecialName
+    GetTypeCode(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToType(Type, IFormatProvider): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface Infragistics.Win.CalcEngine.IUltraCalcFormula: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean HasSyntaxError 'get ' : 
+    System.String SyntaxError 'get ' : 
+    System.String FormulaString 'get ' : 
+    Boolean HasAlwaysDirty 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference BaseReference 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+  Methods:
+    get_HasSyntaxError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SyntaxError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetTokens(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_FormulaString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HasAlwaysDirty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BaseReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Evaluate(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_References(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Infragistics.Win.CalcEngine.Utilities: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Text.RegularExpressions.RegexOptions RegexOptionsCompiled = 8 : Public, Static, Literal, HasDefault
+  Properties:
+    System.Globalization.CultureInfo CurrentCulture 'get ' : 
+  Methods:
+    get_CurrentCulture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    DateTimeFromOADate(Double): PrivateScope, Public, Static, HideBySig
+    DebugFail(String): PrivateScope, Public, Static, HideBySig
+    GetBits(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    IsNullResolved(Object): PrivateScope, Public, Static, HideBySig
+    StringCompare(String, String, CultureInfo, CompareOptions): PrivateScope, Public, Static, HideBySig
+Struct Infragistics.Win.CalcEngine.UltraCalcErrorCode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Reference = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Value = 1 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Div = 2 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode NA = 3 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Num = 4 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Circularity = 5 : Public, Static, Literal, HasDefault
+Class Infragistics.Win.CalcEngine.UltraCalcErrorException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.UltraCalcException
+    Void .ctor(Infragistics.Win.CalcEngine.UltraCalcErrorValue): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Win.CalcEngine.UltraCalcErrorValue Value 'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Win.CalcEngine.UltraCalcErrorValue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Infragistics.Win.CalcEngine.UltraCalcErrorCode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.UltraCalcErrorCode, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.UltraCalcErrorCode, System.String, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Win.CalcEngine.UltraCalcErrorCode Code 'get ' : 
+    System.String Message 'get ' : 
+    System.Object ErrorValue 'get ' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorValue(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    RaiseException(): PrivateScope, Public, HideBySig
+Interface Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.Collections.IEnumerable
+Struct Infragistics.Win.CalcEngine.UltraCalcFormulaTokenType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.UltraCalcFormulaTokenType Value = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcFormulaTokenType Function = 1 : Public, Static, Literal, HasDefault
+Struct Infragistics.Win.CalcEngine.UltraCalcOperatorFunction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Add = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Subtract = 1 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Multiply = 2 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Divide = 3 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Equal = 4 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction NotEqual = 5 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction GreaterThanOrEqual = 6 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction GreaterThan = 7 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction LessThanOrEqual = 8 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction LessThan = 9 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Concatenate = 10 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Exponent = 11 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction Percent = 12 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction UnaryMinus = 13 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.UltraCalcOperatorFunction UnaryPlus = 14 : Public, Static, Literal, HasDefault
+Interface Infragistics.Win.CalcEngine.IUltraCalcManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    Infragistics.Win.CalcEngine.UltraCalcReferenceEventHandler CalcEngineDirtyValue: 
+    Infragistics.Win.CalcEngine.UltraCalcReferenceEventHandler CalcEngineRecalcValue: 
+  Methods:
+    EnsureCalculated(IUltraCalcReference, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CompileFormula(IUltraCalcReference, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CompileFormula(IUltraCalcReference, String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddFormula(IUltraCalcFormula): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveFormula(IUltraCalcFormula): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    NotifyValueChanged(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveRowReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddRowReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RowsCollectionReferenceSorted(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RowsCollectionReferenceResynched(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RowsCollectionVisibilityChanged(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetReference(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddParticipant(IUltraCalcParticipant): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveParticipant(IUltraCalcParticipant): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RaiseFormulaError(IUltraCalcReference, Object, UltraCalcErrorValue, Icon): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_CalcEngineDirtyValue(UltraCalcReferenceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_CalcEngineDirtyValue(UltraCalcReferenceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_CalcEngineRecalcValue(UltraCalcReferenceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_CalcEngineRecalcValue(UltraCalcReferenceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    PerformAction(UltraCalcAction, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ProcessEventQueue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Infragistics.Win.CalcEngine.FormulaErrorEventArgsBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Object Context 'get ' : 
+    System.String ErrorDisplayText 'get set' : 
+  Methods:
+    get_Context(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorDisplayText(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorDisplayText(String): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.FormulaCalculationErrorEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.FormulaErrorEventArgsBase
+    Void .ctor(System.Object, System.String, System.Object, Infragistics.Win.CalcEngine.UltraCalcErrorValue, System.Drawing.Icon): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object ErrorValue 'get set' : 
+    Infragistics.Win.CalcEngine.UltraCalcErrorValue ErrorInfo 'get ' : 
+    System.Drawing.Icon ErrorDisplayIcon 'get set' : 
+  Methods:
+    get_ErrorValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorValue(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorDisplayIcon(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorDisplayIcon(Icon): PrivateScope, Public, HideBySig, SpecialName
+Interface Infragistics.Win.CalcEngine.IUltraCalcParticipant: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Infragistics.Win.CalcEngine.IUltraCalcManager CalcManager 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference RootReference 'get ' : 
+    Boolean SuppressCalcSettings 'get ' : 
+  Methods:
+    get_CalcManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CalcManager(IUltraCalcManager): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RootReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetDesignerReferences(IFormulaProvider): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_SuppressCalcSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    RecreateReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct Infragistics.Win.CalcEngine.ReferenceNodeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Win.CalcEngine.ReferenceNodeType Control = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType NamedReferencesGroup = 1 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType NamedReference = 2 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType ControlsGroup = 3 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType NamedReferencesAllGroup = 4 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType NamedReferencesUnassignedGroup = 5 : Public, Static, Literal, HasDefault
+    Infragistics.Win.CalcEngine.ReferenceNodeType NamedReferencesOtherGroup = 6 : Public, Static, Literal, HasDefault
+Class Infragistics.Win.CalcEngine.ReferenceNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.IUltraCalcReference, Infragistics.Win.CalcEngine.ReferenceNode[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.IUltraCalcReference, Infragistics.Win.CalcEngine.ReferenceNode[], Boolean, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.IUltraCalcReference, Infragistics.Win.CalcEngine.ReferenceNode[], Boolean, System.String, Infragistics.Win.CalcEngine.ReferenceNodeType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Win.CalcEngine.IUltraCalcReference Reference 'get set' : 
+    Infragistics.Win.CalcEngine.ReferenceNode[] ChildReferences 'get set' : 
+    Boolean IsDataReference 'get set' : 
+    System.String DisplayName 'get set' : 
+    System.String DisplayNameResolved 'get ' : 
+    Infragistics.Win.CalcEngine.ReferenceNodeType ReferenceNodeType 'get set' : 
+  Methods:
+    get_Reference(): PrivateScope, Public, HideBySig, SpecialName
+    set_Reference(IUltraCalcReference): PrivateScope, Public, HideBySig, SpecialName
+    get_ChildReferences(): PrivateScope, Public, HideBySig, SpecialName
+    set_ChildReferences(ReferenceNode[]): PrivateScope, Public, HideBySig, SpecialName
+    get_IsDataReference(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsDataReference(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayNameResolved(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReferenceNodeType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReferenceNodeType(ReferenceNodeType): PrivateScope, Public, HideBySig, SpecialName
+Interface Infragistics.Win.CalcEngine.IFormulaProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String Formula 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference Reference 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcParticipant Participant 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcManager CalcManager 'get ' : 
+  Methods:
+    get_Formula(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Formula(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Reference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Participant(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CalcManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Infragistics.Win.CalcEngine.IFormulaValueConverter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    ConvertFromUltraCalcValue(UltraCalcValue, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ConvertToUltraCalcValue(Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Infragistics.Win.CalcEngine.IFormulaProviderEx: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Win.CalcEngine.IFormulaProvider
+  Properties:
+    Infragistics.Win.CalcEngine.ReferenceNode FormulaDialogReferenceNode 'get ' : 
+  Methods:
+    GetReferenceFromContext(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_FormulaDialogReferenceNode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Infragistics.Win.CalcEngine.RefBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcReference
+  Properties:
+    System.Object Context 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase BaseParent 'get ' : 
+    Boolean IsAnchored 'get ' : 
+    Boolean IsRange 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase WrappedReference 'get ' : 
+    Infragistics.Win.CalcEngine.RefParser ParsedReference 'get set' : 
+    Infragistics.Win.CalcEngine.RefParser RelativeReference 'get set' : 
+    System.String AbsoluteName 'get ' : 
+    System.String NormalizedAbsoluteName 'get ' : 
+    System.String ElementName 'get ' : 
+    Infragistics.Win.CalcEngine.UltraCalcValue Value 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcFormula Formula 'get ' : 
+    Boolean RecalcDeferred 'get set' : 
+    Boolean RecalcVisible 'get set' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Boolean HasAbsoluteIndex 'get ' : 
+    Boolean HasScopeAll 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+    Boolean IsEnumerable 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference Parent 'get ' : 
+    Boolean IsDataReference 'get ' : 
+    Boolean IsDisposedReference 'get ' : 
+  Methods:
+    get_Context(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaseParent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsAnchored(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsRange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WrappedReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ParsedReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ParsedReference(RefParser): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RelativeReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RelativeReference(RefParser): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    FindItem(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindAll(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindSummaryItem(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindItem(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindItem(String, Int32, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindParent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ScopedReferences(RefParser): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_AbsoluteName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NormalizedAbsoluteName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ElementName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(UltraCalcValue): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Formula(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecalcDeferred(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RecalcDeferred(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecalcVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RecalcVisible(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasAbsoluteIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasScopeAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    MarkRelativeIndices(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateReference(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateRange(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResolveReference(IUltraCalcReference, ResolveReferenceType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_References(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ContainsReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsSubsetReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_IsEnumerable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Parent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsDataReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsSiblingReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_IsDisposedReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetChildReferences(ChildReferenceType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Win.CalcEngine.RefRange: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.RefBase
+    Void .ctor(Infragistics.Win.CalcEngine.RefBase, Infragistics.Win.CalcEngine.RefBase): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection
+    System.Collections.IEnumerable
+  Properties:
+    Infragistics.Win.CalcEngine.RefBase FromBase 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase NormalizedFromBase 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference FromRef 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference NormalizedFromRef 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase ToBase 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase NormalizedToBase 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference ToRef 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference NormalizedToRef 'get ' : 
+    Boolean IsRange 'get ' : 
+    System.String ElementName 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase BaseParent 'get ' : 
+    Boolean IsDataReference 'get ' : 
+    System.String AbsoluteName 'get ' : 
+    System.String NormalizedAbsoluteName 'get ' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+    Boolean IsEnumerable 'get ' : 
+  Methods:
+    get_FromBase(): PrivateScope, Public, HideBySig, SpecialName
+    get_NormalizedFromBase(): PrivateScope, Public, HideBySig, SpecialName
+    get_FromRef(): PrivateScope, Public, HideBySig, SpecialName
+    get_NormalizedFromRef(): PrivateScope, Public, HideBySig, SpecialName
+    get_ToBase(): PrivateScope, Public, HideBySig, SpecialName
+    get_NormalizedToBase(): PrivateScope, Public, HideBySig, SpecialName
+    get_ToRef(): PrivateScope, Public, HideBySig, SpecialName
+    get_NormalizedToRef(): PrivateScope, Public, HideBySig, SpecialName
+    Contains(RefParser): PrivateScope, Public, HideBySig
+    get_IsRange(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ElementName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BaseParent(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsDataReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FindItem(String): PrivateScope, Public, Virtual, HideBySig
+    FindAll(String): PrivateScope, Public, Virtual, HideBySig
+    FindSummaryItem(String): PrivateScope, Public, Virtual, HideBySig
+    FindItem(String, String): PrivateScope, Public, Virtual, HideBySig
+    FindItem(String, Int32, Boolean): PrivateScope, Public, Virtual, HideBySig
+    ScopedReferences(RefParser): PrivateScope, Public, Virtual, HideBySig
+    get_AbsoluteName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_NormalizedAbsoluteName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    MarkRelativeIndices(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig
+    ResolveReference(IUltraCalcReference, ResolveReferenceType): PrivateScope, Public, Virtual, HideBySig
+    get_References(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ContainsReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig
+    get_IsEnumerable(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Win.CalcEngine.RefTuple: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Infragistics.Win.CalcEngine.RefTuple): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    RefType Type 'get ' : 
+    RefScope Scope 'get set' : 
+    System.String Name 'get ' : 
+    Boolean Marked 'get set' : 
+    Boolean Last 'get set' : 
+    Boolean NextToLast 'get set' : 
+    System.String ScopeID 'get ' : 
+    Int32 ScopeIndex 'get set' : 
+    Boolean IsAbsolute 'get ' : 
+  Methods:
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scope(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scope(RefScope): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Marked(): PrivateScope, Public, HideBySig, SpecialName
+    set_Marked(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Last(): PrivateScope, Public, HideBySig, SpecialName
+    set_Last(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NextToLast(): PrivateScope, Public, HideBySig, SpecialName
+    set_NextToLast(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ScopeID(): PrivateScope, Public, HideBySig, SpecialName
+    get_ScopeIndex(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScopeIndex(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsAbsolute(): PrivateScope, Public, HideBySig, SpecialName
+    IsSameTuple(RefTuple): PrivateScope, Public, HideBySig
+    IsSameIdentifier(RefTuple): PrivateScope, Public, HideBySig
+    Contains(RefTuple): PrivateScope, Public, HideBySig
+    IsSubset(RefTuple): PrivateScope, Public, HideBySig
+    IsNumericScopeLTE(RefTuple): PrivateScope, Public, HideBySig
+    IsNumericScopeGTE(RefTuple): PrivateScope, Public, HideBySig
+    IncrementScope(): PrivateScope, Public, HideBySig
+    ToString(StringBuilder): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct Infragistics.Win.CalcEngine.RefTuple+RefType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RefType Parent = 0 : Public, Static, Literal, HasDefault
+    RefType ExplicitThis = 1 : Public, Static, Literal, HasDefault
+    RefType Identifier = 2 : Public, Static, Literal, HasDefault
+    RefType Unknown = 3 : Public, Static, Literal, HasDefault
+Struct Infragistics.Win.CalcEngine.RefTuple+RefScope: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RefScope Any = 0 : Public, Static, Literal, HasDefault
+    RefScope Index = 1 : Public, Static, Literal, HasDefault
+    RefScope RelativeIndex = 2 : Public, Static, Literal, HasDefault
+    RefScope Identifier = 3 : Public, Static, Literal, HasDefault
+    RefScope SummaryValue = 4 : Public, Static, Literal, HasDefault
+    RefScope All = 5 : Public, Static, Literal, HasDefault
+    RefScope Unknown = 6 : Public, Static, Literal, HasDefault
+Class Infragistics.Win.CalcEngine.RefParser: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.RefParser): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Fields:
+    System.String RefFullyQualifiedString = // : Public, Static, Literal, HasDefault
+    Char RefSeperator = / : Public, Static, Literal, HasDefault
+    System.String RefSeperatorString = / : Public, Static, Literal, HasDefault
+    Char RefBeginScope = ( : Public, Static, Literal, HasDefault
+    Char RefEndScope = ) : Public, Static, Literal, HasDefault
+    System.String RangeSeparator = : : Public, Static, Literal, HasDefault
+    System.String RangeSeparatorWithSpaces =  :  : Public, Static, Literal, HasDefault
+    Char EscapeCharacter = \ : Public, Static, Literal, HasDefault
+    Char QuotesCharacter = " : Public, Static, Literal, HasDefault
+    Char NameValuePairSeparatorCharacter = , : Public, Static, Literal, HasDefault
+    Char NameValueSeparatorCharacter = = : Public, Static, Literal, HasDefault
+  Properties:
+    Int32 TupleCount 'get ' : 
+    Infragistics.Win.CalcEngine.RefTuple Item [Int32] 'get ' : 
+    Infragistics.Win.CalcEngine.RefTuple LastTuple 'get ' : 
+    Infragistics.Win.CalcEngine.RefTuple NextToLastTuple 'get ' : 
+    System.String RootName 'get ' : 
+    Boolean IsFullyQualified 'get ' : 
+    Boolean IsRoot 'get ' : 
+    Boolean IsRelative 'get ' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Boolean HasScopeAll 'get ' : 
+    Boolean HasAbsoluteIndex 'get ' : 
+    Boolean HasSummaryScope 'get ' : 
+  Methods:
+    get_TupleCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LastTuple(): PrivateScope, Public, HideBySig, SpecialName
+    get_NextToLastTuple(): PrivateScope, Public, HideBySig, SpecialName
+    get_RootName(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsFullyQualified(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsRoot(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsRelative(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasScopeAll(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasAbsoluteIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasSummaryScope(): PrivateScope, Public, HideBySig, SpecialName
+    MarkRelativeIndices(RefParser, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Merge(RefParser, RefParser, Boolean): PrivateScope, Public, HideBySig
+    BuildReference(RefParser, RefParser): PrivateScope, Public, HideBySig
+    DoesCharNeedEscaping(Char, Boolean): PrivateScope, Assembly, Static, HideBySig
+    DoesCharNeedEscaping(Char): PrivateScope, Assembly, Static, HideBySig
+    DoesCharNeedEscapingWithinQuotes(Char): PrivateScope, Assembly, Static, HideBySig
+    AreStringsEqual(String, String, Boolean): PrivateScope, Assembly, Static, HideBySig
+    CompareStrings(String, String, Boolean): PrivateScope, Assembly, Static, HideBySig
+    EscapeString(String, Boolean): PrivateScope, Public, Static, HideBySig
+    UnEscapeString(String): PrivateScope, Public, Static, HideBySig
+    NormalizeEscapement(String, Boolean): PrivateScope, Public, HideBySig
+    Parse(String): PrivateScope, Assembly, Static, HideBySig
+    ParseNameValuePairs(String, String&(Out)): PrivateScope, Public, Static, HideBySig
+    TrimTrailingSpaces(StringBuilder, Int32): PrivateScope, Assembly, Static, HideBySig
+    ParseScopeHelper(String, NameValuePair[]&(Out), String&(Out)): PrivateScope, Assembly, Static, HideBySig
+    Contains(RefParser): PrivateScope, Public, HideBySig
+    IsSubset(RefParser): PrivateScope, Public, HideBySig
+    ToString(StringBuilder): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Win.CalcEngine.RefParser+NameValuePair: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    System.String Value 'get ' : 
+    System.Object Tag 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    get_Tag(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tag(Object): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.RefUnAnchored: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Win.CalcEngine.RefBase
+    Void .ctor(Infragistics.Win.CalcEngine.RefBase): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsUnQualifiedReference 'get ' : 
+    System.String ElementName 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase BaseParent 'get ' : 
+    Boolean IsRange 'get ' : 
+    Boolean IsAnchored 'get ' : 
+    Boolean IsDataReference 'get ' : 
+    Infragistics.Win.CalcEngine.RefBase WrappedReference 'get ' : 
+    Infragistics.Win.CalcEngine.RefParser ParsedReference 'get set' : 
+    System.String AbsoluteName 'get ' : 
+    Infragistics.Win.CalcEngine.RefParser RelativeReference 'get set' : 
+    System.Object Context 'get ' : 
+    Infragistics.Win.CalcEngine.UltraCalcValue Value 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcFormula Formula 'get ' : 
+    Boolean RecalcVisible 'get set' : 
+    Boolean RecalcDeferred 'get set' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Boolean HasScopeAll 'get ' : 
+    Boolean HasAbsoluteIndex 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+    Boolean IsEnumerable 'get ' : 
+    Boolean IsDisposedReference 'get ' : 
+  Methods:
+    get_IsUnQualifiedReference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ElementName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BaseParent(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsRange(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsAnchored(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsDataReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_WrappedReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ParsedReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ParsedReference(RefParser): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_AbsoluteName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RelativeReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_RelativeReference(RefParser): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FindItem(String): PrivateScope, Public, Virtual, HideBySig
+    FindAll(String): PrivateScope, Public, Virtual, HideBySig
+    FindSummaryItem(String): PrivateScope, Public, Virtual, HideBySig
+    FindItem(String, String): PrivateScope, Public, Virtual, HideBySig
+    FindItem(String, Int32, Boolean): PrivateScope, Public, Virtual, HideBySig
+    FindParent(): PrivateScope, Public, Virtual, HideBySig
+    ScopedReferences(RefParser): PrivateScope, Public, Virtual, HideBySig
+    get_Context(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Value(UltraCalcValue): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Formula(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RecalcVisible(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_RecalcVisible(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RecalcDeferred(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_RecalcDeferred(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasScopeAll(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasAbsoluteIndex(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_References(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ResolveReference(IUltraCalcReference, ResolveReferenceType): PrivateScope, Public, Virtual, HideBySig
+    ContainsReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig
+    IsSubsetReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig
+    IsSiblingReference(IUltraCalcReference): PrivateScope, Public, Virtual, HideBySig
+    get_IsEnumerable(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    get_IsDisposedReference(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Infragistics.Win.CalcEngine.UCReference: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Win.CalcEngine.IUltraCalcReference): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Infragistics.Win.CalcEngine.IUltraCalcReference
+  Properties:
+    System.Object Context 'get ' : 
+    System.String AbsoluteName 'get ' : 
+    System.String NormalizedAbsoluteName 'get ' : 
+    System.String ElementName 'get ' : 
+    Infragistics.Win.CalcEngine.UltraCalcValue Value 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcFormula Formula 'get ' : 
+    Boolean HasRelativeIndex 'get ' : 
+    Boolean HasAbsoluteIndex 'get ' : 
+    Boolean HasScopeAll 'get ' : 
+    Boolean RecalcDeferred 'get set' : 
+    Boolean RecalcVisible 'get set' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReferenceCollection References 'get ' : 
+    Boolean IsEnumerable 'get ' : 
+    Boolean IsDataReference 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference Parent 'get ' : 
+    Boolean IsDisposedReference 'get ' : 
+    Infragistics.Win.CalcEngine.IUltraCalcReference Reference 'get ' : 
+    System.String RootName 'get ' : 
+    Boolean IsConnected 'get ' : 
+  Methods:
+    get_Context(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreateReference(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CreateRange(String, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ResolveReference(IUltraCalcReference, ResolveReferenceType): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AbsoluteName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NormalizedAbsoluteName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ElementName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(UltraCalcValue): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Formula(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasRelativeIndex(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasAbsoluteIndex(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HasScopeAll(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    MarkRelativeIndices(IUltraCalcReference): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_RecalcDeferred(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RecalcDeferred(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecalcVisible(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RecalcVisible(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_References(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsEnumerable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsDataReference(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Parent(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ContainsReference(IUltraCalcReference): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IsSubsetReference(IUltraCalcReference): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IsSiblingReference(IUltraCalcReference): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsDisposedReference(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Reference(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RootName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsConnected(): PrivateScope, Public, HideBySig, SpecialName
+    Connect(IUltraCalcReference): PrivateScope, Public, HideBySig
+    Disconnect(): PrivateScope, Public, HideBySig
+    Reconnect(IUltraCalcReference): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Documents.Core.StringUtilities: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.StringComparison StringComparisonInvariantCultureIgnoreCase 'get ' : 
+    System.StringComparer StringComparerInvariantCultureIgnoreCase 'get ' : 
+    System.StringComparison StringComparisonInvariantCulture 'get ' : 
+    System.StringComparer StringComparerInvariantCulture 'get ' : 
+  Methods:
+    get_StringComparisonInvariantCultureIgnoreCase(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_StringComparerInvariantCultureIgnoreCase(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_StringComparisonInvariantCulture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_StringComparerInvariantCulture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    StringCompare(String, String, CultureInfo, CompareOptions): PrivateScope, Public, Static, HideBySig
+Class Infragistics.InfragisticsFeatureAttribute: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Exclude 'get set' : 
+    System.String FeatureName 'get set' : 
+    System.String SubFeatureName 'get set' : 
+    System.String Version 'get set' : 
+  Methods:
+    get_Exclude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Exclude(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_FeatureName(): PrivateScope, Public, HideBySig, SpecialName
+    set_FeatureName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SubFeatureName(): PrivateScope, Public, HideBySig, SpecialName
+    set_SubFeatureName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Version(): PrivateScope, Public, HideBySig, SpecialName
+    set_Version(String): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.FeatureInfo: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Version_9_2 = 9.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ColumnMovingIndicators = ColumnMovingIndicators : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ControlContainerEditor = ControlContainerEditor : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_RowSelectorStateSpecificImages = RowSelectorStateSpecificImages : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraTilePanel = UltraTilePanel : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraTimeLineView = UltraTimeLineView : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_CellActiveAppearance = CellActiveAppearance : Assembly, Static, Literal, HasDefault
+    System.String Version_10_1 = 10.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_AutoSuggestFilterMode = AutoSuggestFilterMode : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraGanttView = UltraGanttView : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraSplitter = UltraSplitter : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ActivityIndicator = ActivityIndicator : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraMessageBox = UltraMessageBox : Assembly, Static, Literal, HasDefault
+    System.String SubFeatureName_UltraGanttView_TaskSettings = TaskSettings : Assembly, Static, Literal, HasDefault
+    System.String Version_10_2 = 10.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraGanttView_TaskWorkingHourMode = UltraGanttView_TaskWorkingHourMode : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraFormManager = UltraGridWordWriter : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_RuntimeDialogRestyling = RuntimeDialogRestyling : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_TimeSpanEditor = TimeSpanEditor : Assembly, Static, Literal, HasDefault
+    System.String Version_10_3 = 10.3 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Office2010BackStage = Office2010BackStage : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Editors_WindowsMessages = Editors_WindowsMessages : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Office2010Ribbon = Office2010Ribbon : Assembly, Static, Literal, HasDefault
+    System.String Version_11_1 = 11.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_IGWord = IGWord : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridWordWriter = WinGridWordWriter : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_RibbonCustomizaton = RibbonCustomization : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_FormattedTextWordWriter = FormattedTextWordWriter : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_IGWordDOM = IGWordDOM : Assembly, Static, Literal, HasDefault
+    System.String Version_11_2 = 11.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridAsynchronousExporting = WinGrid Asynchronous Exporting : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelAdditions = ExcelAdditions : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GanttViewCustomColumns = GanttView Custom Columns : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelShapesSupport = ExcelShapesSupport : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_IGGrammar = IGGrammar : Assembly, Static, Literal, HasDefault
+    System.String SubFeatureName_GanttViewCustomColumns_Sorting = GanttView Custom Columns Sorting : Assembly, Static, Literal, HasDefault
+    System.String Version_12_1 = 12.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GanttViewPrinting = UltraGanttView Printing : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridExternalSummaryCalculations = WinGrid External Summary Calculations : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelTables = ExcelTables : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelCellFormats = ExcelCellFormats : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelGetCellByName = ExcelGetCellByName : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridEmptyMessage = WinGrid Empty Message : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridExternalFiltering = WinGrid External Filtering : Assembly, Static, Literal, HasDefault
+    System.String Version_12_2 = 12.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_SetScrollBarHeightAndWidthImplementation = Set ScrollBar Height and Width Implementation : Assembly, Static, Literal, HasDefault
+    System.String Version_13_1 = 13.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_TouchSupport = Touch Support : Assembly, Static, Literal, HasDefault
+    System.String SubFeatureName_TouchSupport_WindowsTouchFriendlyMetrics = Touch Friendly Metrics : Assembly, Static, Literal, HasDefault
+    System.String SubFeatureName_TouchSupport_Panning = Panning : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridGroupByRowHotTracking = WinGrid GroupByRow HotTracking : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGridEmptyRowAlternateAppearance = WinGrid EmptyRow Alternate Appearance : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GanttView_TimelineTaskPositioning = GanttView_TimelineTaskPositioning : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_DayView_ScrollableAllDayEventArea = DayView_ScrollableAllDayEventArea : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_DesktopAlertOpenWindows = DesktopAlert Open Windows : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGrid_DataErrorInfo = WinGrid_DataErrorInfo : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ValueList_AutoSuggestHighlightAppearance = ValueList_AutoSuggestHighlightAppearance : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Label_AutoEllipsis = Label AutoEllipsis : Assembly, Static, Literal, HasDefault
+    System.String Version_13_2 = 13.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraRadialMenu = UltraRadialMenu : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraLiveTileView = UltraLiveTileView : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Office2013Ribbon = Office 2013 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinScrollBar_ScrollTips = WinScrollBar_ScrollTips : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraTreePrinting = Tree Printing : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_TouchRibbon = Touch Ribbon : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGrid_PageBreaksWhenPrinting = Page Breaks When Printing : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelHyperlinks = ExcelHyperlinks : Assembly, Static, Literal, HasDefault
+    System.String Version_14_1 = 14.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Editors_SpinButtonAcceleration = Editors_SpinButtonAcceleration : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_RightToLeft = RightToLeft : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraPivotGrid = UltraPivotGrid : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_RibbonTabItemDisplayStyle = Ribbon_Tab_Item_DisplayStyle : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraToolbarsManager_ToolSortingPrecedence = UltraToolbarsManager_Tool_Sorting_Precedence : Assembly, Static, Literal, HasDefault
+    System.String Version_14_2 = 14.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraCarousel = UltraCarousel : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_FlatDataSource = FlatDataSource : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_ExcelProtection = ExcelProtection : Assembly, Static, Literal, HasDefault
+    System.String Version_15_1 = 15.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_AnimatedGIFSupport = FeatureName_AnimatedGIFSupport : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WordBulletLists = WordBulletLists : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraDockManagerCloseButtonLocation = Dock_CloseButtonLocation : Assembly, Static, Literal, HasDefault
+    System.String Version_15_2 = 15.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_DataValidation = DataValidation : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_Office2013Theming = Office2013_Theming : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraSpreadsheet = UltraSpreadsheet : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_WinGrid_SummaryRowHeight = WinGrid_SummaryRowHeight : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraMessageBox_WindowsLocation = Windows_Location : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_OLAP_DataAdapter = OLAP_DataAdapter : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraToolbarsManager_Notifications = Notifications : Assembly, Static, Literal, HasDefault
+    System.String Version_16_1 = 16.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GridExpandCollapseChildBands = GridExpandCollapseChildBands : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GridCollapsibleColumnGroups = GridCollapsibleColumnGroups : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_AutoEditMode = AutoEditMode : Assembly, Static, Literal, HasDefault
+    System.String Version_16_2 = 16.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraOfficeNavBar = UltraOfficeNavBar : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_NewUltraColorPicker = NewUltraColorPicker : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraZoomPanel = UltraZoomPanel : Assembly, Static, Literal, HasDefault
+    System.String Version_17_1 = 17.1 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraRadioButton = UltraRadioButton : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_SpinningAcrossMaskSections = SpinningAcrossMaskSections : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_EraSupportForMasks = EraSupportForMasks : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraPeekPopup = UltraPeekPopup : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_GridEditableHeaders = GridEditableHeaders : Assembly, Static, Literal, HasDefault
+    System.String Version_17_2 = 17.2 : Assembly, Static, Literal, HasDefault
+    System.String FeatureName_UltraGridHeaderEditors = UltraGridHeaderEditors : Assembly, Static, Literal, HasDefault
+Class Infragistics.Shared.SR: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Methods:
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(CultureInfo, String): PrivateScope, Public, Static, HideBySig
+    GetString(CultureInfo, String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetUncustomizedString(String): PrivateScope, Public, Static, HideBySig
+    GetUncustomizedString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetUncustomizedString(CultureInfo, String): PrivateScope, Public, Static, HideBySig
+    GetUncustomizedString(CultureInfo, String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetObject(String): PrivateScope, Public, Static, HideBySig
+    GetObject(CultureInfo, String): PrivateScope, Public, Static, HideBySig
+Class Infragistics.Shared.LocalizedCategoryAttribute: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.CategoryAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Infragistics.Shared.LocalizedDescriptionAttribute: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.DescriptionAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Description 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Infragistics.Shared.UltraPropertyPageAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type UltraPropertyControlType 'get ' : 
+    System.String TabCaption 'get ' : 
+    System.String PropertyPageTypeName 'get ' : 
+  Methods:
+    get_UltraPropertyControlType(): PrivateScope, Public, HideBySig, SpecialName
+    get_TabCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PropertyPageTypeName(): PrivateScope, Assembly, HideBySig, SpecialName
+Class Infragistics.Shared.LocalizedUltraPropertyPageAttribute: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Infragistics.Shared.UltraPropertyPageAttribute
+    Void .ctor(System.String, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String TabCaption 'get ' : 
+  Methods:
+    get_TabCaption(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Infragistics.Shared.AboutDialog: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Infragistics.Shared.IUltraLicensedComponent): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Infragistics.Shared.AboutDialogEditor: AutoLayout, AnsiClass, Class, Public, Sealed, HasSecurity, BeforeFieldInit
+  :System.Drawing.Design.UITypeEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetEditStyle(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig
+    EditValue(ITypeDescriptorContext, IServiceProvider, Object): PrivateScope, Public, Virtual, HideBySig
+Class AssemblyRef: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String BaseResourceName = Infragistics.Shared.strings;Infragistics.Shared.UltraCalc.strings.CalcEngine : Public, Static, Literal, HasDefault
+    System.String AssemblyPrefix = Infragistics4 : Assembly, Static, Literal, HasDefault
+    System.String BinderAssemblyName = Infragistics4.Shared.v17.2 : Assembly, Static, Literal, HasDefault
+    System.String WinDesign = Infragistics4.Win.v17.2.Design, Version=17.2.20172.2006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb : Public, Static, Literal, HasDefault
+    System.String AssemblyName = Infragistics4.Shared.v17.2 : Assembly, Static, Literal, HasDefault
+    System.String AssemblyProduct = Infragistics4.Shared : Assembly, Static, Literal, HasDefault
+    System.String AssemblyDescriptionBase = Infragistics shared class library : Assembly, Static, Literal, HasDefault
+    System.String Configuration = Trial : Assembly, Static, Literal, HasDefault
+    System.String ProductTitleSuffix =  [Trial] : Assembly, Static, Literal, HasDefault
+Class Infragistics.Shared.AssemblyVersion: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Fields:
+    System.String MajorMinor = 17.2 : Public, Static, Literal, HasDefault
+    System.String Build = 20172 : Public, Static, Literal, HasDefault
+    System.String Revision = 2006 : Public, Static, Literal, HasDefault
+    System.String Version = 17.2.20172.2006 : Public, Static, Literal, HasDefault
+    System.String FileVersion = 17.2.0.2006 : Public, Static, Literal, HasDefault
+    System.String ToolBoxBitmapFolder = ToolboxBitmaps.CLR2. : Public, Static, Literal, HasDefault
+    System.String CompanyName = Infragistics Inc. : Public, Static, Literal, HasDefault
+    System.String EndCopyrightYear = 2017 : Public, Static, Literal, HasDefault
+    System.String SatelliteContractVersion = 17.2.0.0 : Public, Static, Literal, HasDefault
+    System.String Configuration = Trial : Public, Static, Literal, HasDefault
+    System.String PublicKeyToken = 7dd5c3163f2cd0cb : Assembly, Static, Literal, HasDefault
+    System.String UnitTestPublicKey = 00240000048000009400000006020000002400005253413100040000010001009d36715990915d884d630c397a6cd086373bc6d2790a6908be054327bad89268a3d5786ab19a7bd6035483894b28ec93e6d70ee3c56dfc9255310bc19efc9fc303e31b5944d2574ec350178d32ce46180f63e1d42cfa11b2e43c0b2d86b765544c8f47e1e94e4c56d3255e9c0440c5c21099226b36c9b9a0839a804d314277c2 : Public, Static, Literal, HasDefault
+    System.String ProductTitleSuffix =  [Trial] : Public, Static, Literal, HasDefault
+Class Infragistics.Shared.Serialization.Binder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Runtime.Serialization.SerializationBinder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    BindToType(String, String): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    BindToTypeImpl(String, String): PrivateScope, Assembly, Static, HideBySig
+Class Infragistics.Shared.ColorsCollectionBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Collections.CollectionBase
+  Properties:
+    System.Drawing.Color Item [Int32] 'get ' : 
+  Methods:
+    Contains(Color): PrivateScope, Public, HideBySig
+    CopyTo(Color[], Int32): PrivateScope, Public, HideBySig
+    IndexOf(Color): PrivateScope, Public, HideBySig
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.InfragisticsSerializable: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Serializable 'get ' : 
+  Methods:
+    get_Serializable(): PrivateScope, Public, HideBySig, SpecialName
+Interface Infragistics.Shared.IUltraPropertyPageDialogComponent: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    BeforeCancelTransaction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AfterCancelTransaction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct Infragistics.Shared.Serialization.TypeWrapper: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.IObjectReference
+  Properties:
+    System.String AssemblyQualifiedName 'get ' : 
+    System.String FullName 'get ' : 
+  Methods:
+    get_AssemblyQualifiedName(): PrivateScope, Public, HideBySig, SpecialName
+    get_FullName(): PrivateScope, Public, HideBySig, SpecialName
+    GetResolvedType(): PrivateScope, Assembly, HideBySig
+Struct Infragistics.Shared.Serialization.CursorWrapper: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.Windows.Forms.Cursor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.IObjectReference
+  Fields:
+    System.Object objectValue : Public
+  Properties:
+    System.Windows.Forms.Cursor Cursor 'get ' : 
+  Methods:
+    get_Cursor(): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.CustomTypeDescriptorAdapter: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.ComponentModel.ICustomTypeDescriptor
+  Properties:
+    System.Object Component 'get ' : 
+  Methods:
+    get_Component(): PrivateScope, Assembly, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetConverter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEvents(Attribute[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEvents(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetComponentName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPropertyOwner(PropertyDescriptor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetAttributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetProperties(Attribute[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetProperties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEditor(Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDefaultProperty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDefaultEvent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClassName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.DateTimeIncrement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Years 'get set' : 
+    Int32 Months 'get set' : 
+    Int32 Days 'get set' : 
+    Int32 Hours 'get set' : 
+    Int32 Minutes 'get set' : 
+    Int32 Seconds 'get set' : 
+    Int32 Milliseconds 'get set' : 
+    Boolean IsZero 'get ' : 
+  Methods:
+    get_Years(): PrivateScope, Public, HideBySig, SpecialName
+    set_Years(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Months(): PrivateScope, Public, HideBySig, SpecialName
+    set_Months(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Days(): PrivateScope, Public, HideBySig, SpecialName
+    set_Days(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Hours(): PrivateScope, Public, HideBySig, SpecialName
+    set_Hours(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minutes(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minutes(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Seconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_Seconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Milliseconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_Milliseconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsZero(): PrivateScope, Public, HideBySig, SpecialName
+    Parse(String): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    AdjustDateTime(Boolean, DateTime): PrivateScope, Public, HideBySig
+    ShouldSerialize(): PrivateScope, Public, HideBySig
+    Reset(): PrivateScope, Public, HideBySig
+Class Infragistics.Shared.DateTimeIncrementTypeConverter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.ExpandableObjectConverter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetPropertiesSupported(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig
+    GetProperties(ITypeDescriptorContext, Object, Attribute[]): PrivateScope, Public, Virtual, HideBySig
+    CanConvertTo(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type): PrivateScope, Public, Virtual, HideBySig
+    CanConvertFrom(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    ConvertFrom(ITypeDescriptorContext, CultureInfo, Object): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.DisposableObject: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.MarshalByRefObject
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean Disposed 'get ' : 
+  Methods:
+    HasSamePublicKey(Assembly): PrivateScope, Public, Static, HideBySig
+    HasSamePublicKey(Type): PrivateScope, Public, Static, HideBySig
+    HasSamePublicKey(AssemblyName): PrivateScope, Public, Static, HideBySig
+    GetPublicKeyToken(Type): PrivateScope, Public, Static, HideBySig
+    GetPublicKeyToken(Assembly): PrivateScope, Public, Static, HideBySig
+    GetPublicKeyToken(String): PrivateScope, Public, Static, HideBySig
+    CloneSerializableObject(ISerializable, SerializationBinder): PrivateScope, Public, Static, HideBySig
+    get_Disposed(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    VerifyNotDisposed(): PrivateScope, Public, HideBySig
+    ConvertValue(Object, Type): PrivateScope, Public, Static, HideBySig
+Class Infragistics.Shared.SubObjectBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Infragistics.Shared.DisposableObject
+  Properties:
+    System.Object Tag 'get set' : 
+    System.String ForceApplyResources 'get set' : 
+  Events:
+    Infragistics.Shared.SubObjectPropChangeEventHandler SubObjectPropChanged: 
+    Infragistics.Shared.SubObjectDisposedEventHandler SubObjectDisposed: 
+  Methods:
+    add_SubObjectPropChanged(SubObjectPropChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubObjectPropChanged(SubObjectPropChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SubObjectDisposed(SubObjectDisposedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubObjectDisposed(SubObjectDisposedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    NotifyPropChange(Enum): PrivateScope, Public, HideBySig
+    NotifyPropChange(Enum, PropChangeInfo): PrivateScope, Public, HideBySig
+    NotifyPropChange(PropChangeInfo): PrivateScope, Public, HideBySig
+    get_Tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Tag(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ShouldSerializeTag(): PrivateScope, Public, HideBySig
+    get_ForceApplyResources(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForceApplyResources(String): PrivateScope, Public, HideBySig, SpecialName
+Struct Infragistics.Shared.SubObjectBase+NotifyId: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    NotifyId Tag = 16777216 : Public, Static, Literal, HasDefault
+    NotifyId Key = 33554432 : Public, Static, Literal, HasDefault
+Class Infragistics.Shared.DisposableObjectCollectionBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Infragistics.Shared.SubObjectBase
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Properties:
+    System.Object SyncRoot 'get ' : 
+    Boolean IsSynchronized 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    GetItem(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_SyncRoot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CopyTo(Array, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Contains(Object): PrivateScope, Public, HideBySig
+    IndexOf(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.DisposableObjectEnumeratorBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Infragistics.Shared.DisposableObjectCollectionBase): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Methods:
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Win.DropDownListBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ListBox
+    Void .ctor(System.Object[], System.Object, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object[], System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean WasItemClicked 'get ' : 
+  Methods:
+    get_WasItemClicked(): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.EventHandlerDictionary: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Infragistics.Shared.DisposableObject
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Delegate Item [System.Object] 'get set' : 
+  Methods:
+    AddHandler(Object, Delegate): PrivateScope, Public, HideBySig
+    AddHandlers(EventHandlerDictionary): PrivateScope, Public, HideBySig
+    RemoveHandler(Object, Delegate): PrivateScope, Public, HideBySig
+    get_Item(Object): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Object, Delegate): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.EventManagerBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    Boolean AllEventsEnabled 'get set' : 
+  Methods:
+    get_AllEventsEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllEventsEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.ExpandableCollectionConverter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.TypeConverter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetPropertiesSupported(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig
+    GetProperties(ITypeDescriptorContext, Object, Attribute[]): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.CollectionItemPropertyDescriptor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.PropertyDescriptor
+    Void .ctor(System.Object, System.String, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Category 'get ' : 
+    System.Type ComponentType 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    System.Type PropertyType 'get ' : 
+    Int32 Index 'get ' : 
+  Methods:
+    get_Category(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ComponentType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_PropertyType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    CanResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    ResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig
+    ShouldSerializeValue(Object): PrivateScope, Public, Virtual, HideBySig
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.FlagsEnumUITypeEditor: AutoLayout, AnsiClass, Class, Public, HasSecurity, BeforeFieldInit
+  :System.Drawing.Design.UITypeEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetEditStyle(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    EditValue(ITypeDescriptorContext, IServiceProvider, Object): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+Interface Infragistics.Shared.ISelectableItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean IsSelected 'get ' : 
+    Boolean IsSelectable 'get ' : 
+    Boolean IsDraggable 'get ' : 
+    Boolean IsTabStop 'get ' : 
+  Methods:
+    get_IsSelected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsSelectable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsDraggable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsTabStop(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Infragistics.Shared.IUltraLicensedComponent: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Infragistics.Shared.UltraLicense License 'get ' : 
+  Methods:
+    get_License(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Infragistics.Shared.IKeyedSubObject: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String Key 'get set' : 
+  Methods:
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Key(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OnRemovedFromCollection(KeyedSubObjectsCollectionBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnAddedToCollection(KeyedSubObjectsCollectionBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Infragistics.Shared.IKeyedSubObjectEx: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Shared.IKeyedSubObject
+  Properties:
+    System.String KeyLowercaseInterned 'get ' : 
+  Methods:
+    get_KeyLowercaseInterned(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Infragistics.Shared.KeyedSubObjectBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Infragistics.Shared.SubObjectBase
+  Interfaces:
+    Infragistics.Shared.IKeyedSubObjectEx
+    Infragistics.Shared.IKeyedSubObject
+  Properties:
+    System.String Key 'get set' : 
+  Methods:
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Key(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ShouldSerializeKey(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResetKey(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.SubObjectsCollectionBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Infragistics.Shared.DisposableObjectCollectionBase
+  Properties:
+    System.Object[] All 'get set' : 
+  Methods:
+    get_All(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_All(Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Infragistics.Shared.KeyedSubObjectsCollectionBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Infragistics.Shared.SubObjectsCollectionBase
+  Properties:
+    Boolean AllowDuplicateKeys 'get ' : 
+    Boolean AllowEmptyKeys 'get ' : 
+    System.Object[] All 'get set' : 
+  Methods:
+    get_AllowDuplicateKeys(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowEmptyKeys(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IndexOf(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Exists(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_All(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_All(Object[]): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    CopyTo(IKeyedSubObject[], Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Contains(IKeyedSubObject): PrivateScope, Public, HideBySig
+    IndexOf(IKeyedSubObject): PrivateScope, Public, HideBySig
+Class Infragistics.Shared.NativeWindowMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, HasSecurity, BeforeFieldInit
+  Fields:
+    Int32 BITSPIXEL = 12 : Assembly, Static, Literal, HasDefault
+  Methods:
+    GetDeviceCapsApi(IntPtr, Int32): PrivateScope, Assembly, Static, HideBySig
+Class Infragistics.Shared.Serialization.ObjectStreamer: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Collections.IDictionary Dictionary 'get ' : 
+    System.String AssemblyName 'get ' : 
+  Methods:
+    get_Dictionary(): PrivateScope, Public, HideBySig, SpecialName
+    get_AssemblyName(): PrivateScope, Public, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, HideBySig
+Struct Infragistics.Shared.Serialization.ObjectWrapper: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.IObjectReference
+  Fields:
+    System.Object objectValue : Public
+  Properties:
+    System.Object Value 'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.PrimitiveTypeUITypeEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Drawing.Design.UITypeEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    EditValue(ITypeDescriptorContext, IServiceProvider, Object): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    GetEditStyle(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    GetPaintValueSupported(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    PaintValue(PaintValueEventArgs): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    GetDefaultValueForType(Type): PrivateScope, Assembly, Static, HideBySig
+Class Infragistics.Shared.PrimitiveTypeConverter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.TypeConverter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CanConvertFrom(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    CanConvertTo(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    ConvertFrom(ITypeDescriptorContext, CultureInfo, Object): PrivateScope, Public, Virtual, HideBySig
+    ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.ResourceCustomizer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 CustomizedStringsVersion 'get ' : 
+  Methods:
+    get_CustomizedStringsVersion(): PrivateScope, Public, HideBySig, SpecialName
+    GetCustomizedString(String): PrivateScope, Public, HideBySig
+    ResetAllCustomizedStrings(): PrivateScope, Public, HideBySig
+    ResetCustomizedString(String): PrivateScope, Public, HideBySig
+    SetCustomizedString(String, String): PrivateScope, Public, HideBySig
+Class ResourceCustomizerLocator: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Infragistics.Shared.ResourceCustomizer Customizer : Assembly, Static, InitOnly
+Class Infragistics.Shared.Resources: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    Infragistics.Shared.ResourceCustomizer Customizer 'get ' : 
+  Methods:
+    get_Customizer(): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetObject(String): PrivateScope, Public, Static, HideBySig
+Class Infragistics.Shared.SparseCollectionBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Properties:
+    System.Object SyncRoot 'get ' : 
+    Boolean IsSynchronized 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Int32 Count 'get ' : 
+    System.Object[] All 'get set' : 
+  Methods:
+    GetItem(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_SyncRoot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_All(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_All(Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CopyTo(Array, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Contains(Object): PrivateScope, Public, HideBySig
+    IndexOf(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetOwnerData(Object): PrivateScope, Assembly, HideBySig
+    SetOwnerData(Object, Object): PrivateScope, Assembly, HideBySig
+Class Infragistics.Shared.PropChangeInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Object, System.Enum, Infragistics.Shared.PropChangeInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Shared.PropChangeInfo Trigger 'get ' : 
+    System.Object Source 'get ' : 
+    System.Enum PropId 'get ' : 
+  Methods:
+    get_Trigger(): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, HideBySig, SpecialName
+    get_PropId(): PrivateScope, Public, HideBySig, SpecialName
+    FindPropId(Enum): PrivateScope, Public, HideBySig
+    FindSource(Type): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    FindTrigger(Object): PrivateScope, Public, HideBySig
+Class Infragistics.Shared.SubObjectPropChangeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(PropChangeInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(PropChangeInfo, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.SubObjectDisposedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SubObjectBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(SubObjectBase, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.SystemColorsCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Shared.ColorsCollectionBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Shared.SystemColorsCollection Default 'get ' : 
+  Methods:
+    get_Default(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Infragistics.Shared.UITypeEditorListBase: AutoLayout, AnsiClass, Class, Public, Abstract, HasSecurity, BeforeFieldInit
+  :System.Drawing.Design.UITypeEditor
+  Methods:
+    EditValue(ITypeDescriptorContext, IServiceProvider, Object): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+    GetEditStyle(ITypeDescriptorContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+Interface Infragistics.Shared.Serialization.ICodeDomSerializable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    AfterDeserialize(IDesignerSerializationManager): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeforeSerialize(CodeDomSerializationInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AfterSerialize(CodeDomSerializationInfo): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Infragistics.Shared.Serialization.ICodeDomSerializableEX: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Infragistics.Shared.Serialization.ICodeDomSerializable
+  Methods:
+    AfterDeserializationCompleted(IDesignerSerializationManager): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AfterSerializationCompleted(IDesignerSerializationManager): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Infragistics.Shared.Serialization.CodeDomSerializationInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.ComponentModel.Design.Serialization.IDesignerSerializationManager, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.Design.Serialization.IDesignerSerializationManager SerializationManager 'get ' : 
+    System.Object Serializer 'get ' : 
+    Boolean Handled 'get set' : 
+    System.Object CodeObject 'get set' : 
+  Methods:
+    get_SerializationManager(): PrivateScope, Public, HideBySig, SpecialName
+    get_Serializer(): PrivateScope, Public, HideBySig, SpecialName
+    get_Handled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CodeObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_CodeObject(Object): PrivateScope, Public, HideBySig, SpecialName
+Interface Infragistics.Shared.IUltraComponent: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean DesignerChangeNotificationsEnabled 'get set' : 
+  Methods:
+    get_DesignerChangeNotificationsEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DesignerChangeNotificationsEnabled(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Infragistics.Shared.UltraLicense: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.License
+    Void .ctor(System.String, Infragistics.Shared.UltraProductInfoBase, Infragistics.Shared.LicenseOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Infragistics.Shared.UltraProductInfoBase, System.String, Infragistics.Shared.LicenseOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Infragistics.Shared.UltraLicenseInfo): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Shared.UltraProductInfoBase ProductInfo 'get ' : 
+    System.String ComponentName 'get ' : 
+    System.String LicenseKey 'get ' : 
+    System.String LicenseKeyForDisplay 'get ' : 
+    Infragistics.Shared.LicenseOptions LicenseOptions 'get ' : 
+    Infragistics.Shared.UltraLicenseInfo LicenseInfo 'get ' : 
+  Methods:
+    get_ProductInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_ComponentName(): PrivateScope, Public, HideBySig, SpecialName
+    get_LicenseKey(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_LicenseKeyForDisplay(): PrivateScope, Public, HideBySig, SpecialName
+    get_LicenseOptions(): PrivateScope, Public, HideBySig, SpecialName
+    get_LicenseInfo(): PrivateScope, Assembly, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Virtual, HideBySig
+    AddLicenseOptionsTokensToKey(String&, LicenseOptions): PrivateScope, Assembly, Static, HideBySig
+    ParseLicenseOptionsTokensFromKey(String&): PrivateScope, Assembly, Static, HideBySig
+Struct Infragistics.Shared.LicenseOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Shared.LicenseOptions None = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseOptions Office2007UI = 1 : Public, Static, Literal, HasDefault (Obsolete)
+    Infragistics.Shared.LicenseOptions All = 2147483647 : Public, Static, Literal, HasDefault
+Struct Infragistics.Shared.UltraLicenseInfo: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.String, Infragistics.Shared.UltraProductInfoBase, Infragistics.Shared.LicenseOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Infragistics.Shared.UltraProductInfoBase, System.String, Infragistics.Shared.LicenseOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Infragistics.Shared.UltraProductInfoBase ProductInfo : Public
+    System.String Key : Public
+    System.String ComponentName : Public
+    Infragistics.Shared.LicenseOptions LicenseOptions : Public
+Class Infragistics.Shared.UltraLicenseBaseAttribute: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Attribute
+  Properties:
+    System.String ComponentName 'get ' : 
+    Infragistics.Shared.UltraProductInfoBase[] AllProducts 'get ' : 
+  Methods:
+    get_ComponentName(): PrivateScope, Public, HideBySig, SpecialName
+    GetLicensedWithProducts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AllProducts(): PrivateScope, Assembly, HideBySig, SpecialName
+Class Infragistics.Shared.UltraLicenseProvider: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.LicenseProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetLicense(LicenseContext, Type, Object, Boolean): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.UltraPropertyPageBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+  Properties:
+    Boolean IsDirty 'get ' : 
+  Events:
+    System.EventHandler DirtyStateChanged: 
+    System.EventHandler StateDirtied: 
+  Methods:
+    InitializeControl(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ApplyChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsDirty(): PrivateScope, Public, HideBySig, SpecialName
+    add_DirtyStateChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DirtyStateChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_StateDirtied(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_StateDirtied(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    CancelChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Infragistics.Shared.UltraObjectPropertiesPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Shared.UltraPropertyPageBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IncludeBaseObject 'get set' : 
+    Boolean PropertyGridToolbarVisible 'get set' : 
+    Boolean PropertyGridHelpVisible 'get set' : 
+  Methods:
+    get_IncludeBaseObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_IncludeBaseObject(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    ApplyChanges(): PrivateScope, Public, Virtual, HideBySig
+    InitializeControl(Object): PrivateScope, Public, Virtual, HideBySig
+    RefreshProperties(): PrivateScope, Public, HideBySig
+    get_PropertyGridToolbarVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_PropertyGridToolbarVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PropertyGridHelpVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_PropertyGridHelpVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.SurrogatePropertySerializerAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String PropertyName 'get ' : 
+  Methods:
+    get_PropertyName(): PrivateScope, Public, HideBySig, SpecialName
+Struct Infragistics.Shared.LicenseStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Shared.LicenseStatus Unchecked = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus UnableToLocateLicenseAssembly = 1 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus InsufficientSecurityPermissions = 2 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus RegKeyNotFound = 3 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus CDKeyInvalid = 4 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus BetaExpired = 5 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus BetaValid = 6 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus TrialExpired = 7 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus ActivationGracePeriodExpired = 8 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus CDKeyValid = 9 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus TrialValid = 10 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus ActivationGracePeriodValid = 11 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.LicenseStatus Licensed = 12 : Public, Static, Literal, HasDefault
+Struct Infragistics.Shared.ProductType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Infragistics.Shared.ProductType WinFormsComponent = 0 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.ProductType WebFormsComponent = 1 : Public, Static, Literal, HasDefault
+    Infragistics.Shared.ProductType WpfComponent = 2 : Public, Static, Literal, HasDefault
+Class Infragistics.Shared.UltraProductInfoBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Infragistics.Shared.ProductType): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Expiration 'get ' : 
+    Boolean RequiresActivation 'get ' : 
+    System.String ProductName 'get ' : 
+    Boolean Expired 'get ' : 
+    Infragistics.Shared.LicenseStatus Status 'get ' : 
+    System.String Key 'get ' : 
+    System.String CompanyName 'get ' : 
+    System.String UserName 'get ' : 
+    Infragistics.Shared.ProductType Type 'get ' : 
+  Methods:
+    get_Expiration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RequiresActivation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ProductName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Expired(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CompanyName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UserName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    GetStatusText(): PrivateScope, Public, HideBySig
+    GetKeyText(): PrivateScope, Public, HideBySig
+Class Infragistics.Shared.BetaProductInfo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Infragistics.Shared.UltraProductInfoBase
+    Void .ctor(System.String, System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.DateTime, Infragistics.Shared.ProductType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Char[] BETAKEY : Assembly, Static, InitOnly
+  Properties:
+    System.String Expiration 'get ' : 
+    Boolean RequiresActivation 'get ' : 
+    Infragistics.Shared.LicenseStatus Status 'get ' : 
+    System.String Key 'get ' : 
+    System.String CompanyName 'get ' : 
+    System.String UserName 'get ' : 
+    Boolean Expired 'get ' : 
+  Methods:
+    get_Expiration(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresActivation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CompanyName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Expired(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Infragistics.Shared.UltraProductInfo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Infragistics.Shared.UltraProductInfoBase
+    Void .ctor(System.String, System.String, System.String, System.Guid, Boolean, Byte, Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, System.Guid, Boolean, Infragistics.Shared.ProductType, Byte, Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String trialKeyText = {Trial} : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.String Expiration 'get ' : 
+    Boolean RequiresActivation 'get ' : 
+    Infragistics.Shared.LicenseStatus Status 'get ' : 
+    System.String Key 'get ' : 
+    System.String CompanyName 'get ' : 
+    System.String UserName 'get ' : 
+    System.String RegKeyProductName 'get ' : 
+    Infragistics.Shared.UltraProductInfo[] AllNewerProducts 'get ' : 
+    Boolean Expired 'get ' : 
+  Methods:
+    get_Expiration(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresActivation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CompanyName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RegKeyProductName(): PrivateScope, Public, HideBySig, SpecialName
+    ReduceValue(Int64&, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    get_AllNewerProducts(): PrivateScope, Assembly, HideBySig, SpecialName
+    DisplayPrompt(): PrivateScope, Assembly, HideBySig
+    get_Expired(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class Infragistics.Shared.UnlicensedProductInfo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Infragistics.Shared.UltraProductInfoBase
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Infragistics.Shared.ProductType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Expiration 'get ' : 
+    Boolean RequiresActivation 'get ' : 
+    Infragistics.Shared.LicenseStatus Status 'get ' : 
+    System.String Key 'get ' : 
+    System.String CompanyName 'get ' : 
+    System.String UserName 'get ' : 
+    Boolean Expired 'get ' : 
+  Methods:
+    get_Expiration(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequiresActivation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CompanyName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Expired(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Infragistics.Shared.UltraPropertyPageDialog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    InitializeDialog(Object): PrivateScope, Public, HideBySig
+Class Infragistics.Shared.UltraPropPagePropertyGrid: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.PropertyGrid
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.IComponent): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IServiceProvider
+  Methods:
+    Initialize(IComponent): PrivateScope, Public, HideBySig
+    ResetSelectedPropertyWithEvents(): PrivateScope, Assembly, HideBySig
+Class Infragistics.Shared.UltraPropPagePropertyGridWithEventsTab: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Shared.UltraPropPagePropertyGrid
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.Component): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean ShowEventsTab 'get set' : 
+  Methods:
+    get_ShowEventsTab(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowEventsTab(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Infragistics.Shared.Serialization.Utils: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    ConvertToString(Object, Boolean): PrivateScope, Public, Static, HideBySig
+    ConvertToString(Object, String, Boolean): PrivateScope, Public, Static, HideBySig
+    ConvertToString(Object, IFormatProvider): PrivateScope, Public, Static, HideBySig
+    ConvertToString(Object, String, IFormatProvider): PrivateScope, Public, Static, HideBySig
+    ConvertValue(Object, Type): PrivateScope, Public, Static, HideBySig
+    ConvertValue(Object, Type, Boolean): PrivateScope, Public, Static, HideBySig
+    ConvertValue(Object, Type, CultureInfo): PrivateScope, Public, Static, HideBySig
+    ConvertEnum(Object, Enum): PrivateScope, Public, Static, HideBySig
+    IsSimpleType(Object): PrivateScope, Public, Static, HideBySig
+    IsSimpleType(Type): PrivateScope, Public, Static, HideBySig
+    IsSafelySerializable(Object): PrivateScope, Public, Static, HideBySig
+    IsSafelySerializable(Type): PrivateScope, Public, Static, HideBySig
+    IsSafelyInfragisticsSerializable(Type): PrivateScope, Public, Static, HideBySig
+    SerializeObjectProperty(SerializationInfo, String, Object): PrivateScope, Public, Static, HideBySig
+    DeserializeObjectProperty(SerializationInfo, String): PrivateScope, Public, Static, HideBySig
+    DeserializeObjectProperty(SerializationEntry): PrivateScope, Public, Static, HideBySig
+    DeserializeObjectHelper(Object): PrivateScope, Assembly, Static, HideBySig
+    SerializeProperty(SerializationInfo, String, Object): PrivateScope, Public, Static, HideBySig
+    DeserializeProperty(SerializationEntry, Type, Object): PrivateScope, Public, Static, HideBySig
+    DeserializeProperty(SerializationEntry, Type, Object, Boolean&(Out)): PrivateScope, Public, Static, HideBySig
+    DeserializeProperty(SerializationEntry, T&): PrivateScope, Public, Static, HideBySig
+    DeserializeProperty(SerializationEntry, T): PrivateScope, Public, Static, HideBySig
+    DeserializeProperty(SerializationEntry, T, Boolean&(Out)): PrivateScope, Public, Static, HideBySig
+Class Infragistics.Shared.WebColorsCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Infragistics.Shared.ColorsCollectionBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Infragistics.Shared.WebColorsCollection Default 'get ' : 
+  Methods:
+    get_Default(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Infragistics.Shared.XPItemColor: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean HighColor 'get ' : 
+    System.Drawing.Color ToolBar 'get ' : 
+    System.Drawing.Color MenuBar 'get ' : 
+    System.Drawing.Color HighlightBorder 'get ' : 
+    System.Drawing.Color HighlightMouseOver 'get ' : 
+    System.Drawing.Color HighlightMouseDown 'get ' : 
+    System.Drawing.Color MenuDroppedBorder 'get ' : 
+    System.Drawing.Color MenuIconArea 'get ' : 
+    System.Drawing.Color MenuIconAreaExpanded 'get ' : 
+    System.Drawing.Color MenuDroppedBackColor 'get ' : 
+    System.Drawing.Color FloaterBorder 'get ' : 
+    System.Drawing.Color FloaterCaption 'get ' : 
+    System.Drawing.Color DisabledToolShadow 'get ' : 
+    System.Drawing.Color ToolSeparator 'get ' : 
+    System.Drawing.Color HighlightStateToolPressed 'get ' : 
+    System.Drawing.Color RaisedPictureShadow 'get ' : 
+  Methods:
+    get_HighColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ToolBar(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuBar(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HighlightBorder(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HighlightMouseOver(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HighlightMouseDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuDroppedBorder(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuIconArea(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuIconAreaExpanded(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuDroppedBackColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FloaterBorder(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FloaterCaption(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DisabledToolShadow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ToolSeparator(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HighlightStateToolPressed(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RaisedPictureShadow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    ColorFromHLS(Single, Single, Single): PrivateScope, Public, Static, HideBySig
+Class <PrivateImplementationDetails>{0E7D5CA5-F808-49D9-B60D-C7933C6B35C7}: NotPublic
+  Fields:
+    __StaticArrayInitTypeSize=128 $$method0x60005c3-1 : Assembly, Static, HasFieldRVA
+    __StaticArrayInitTypeSize=18 $$method0x6000267-1 : Assembly, Static, HasFieldRVA
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] $$method0x60003a1-1 : Assembly, Static
+    Int64 $$method0x60005ca-1 : Assembly, Static, HasFieldRVA

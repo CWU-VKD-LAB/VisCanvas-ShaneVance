@@ -1,0 +1,139 @@
+  VisCanvas.AdditionalSettings.resources - Embedded, ContainedInManifestFile, 
+  VisCanvas.Settings.resources - Embedded, ContainedInManifestFile, 
+  VisCanvas.VisCanvas.resources - Embedded, ContainedInManifestFile, 
+  VisCanvas.VisCanvasHelp.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly VisCanvas, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Barcode, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Chart, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Diagram, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Grid, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Host.WinForm, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Presentation, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Schedule, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Text, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.WinFormControls, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Runtime.Serialization.Formatters.Soap, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly UIAutomationProvider, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly Interop.AcroPDFLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly AxInterop.AcroPDFLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Class OpenGLForm.COpenGL: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.NativeWindow
+    Void .ctor(System.Windows.Forms.Form, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    DataInterface* file : Public
+  Methods:
+    SetFilePath(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    incrementSelectedSet(): PrivateScope, Public, HideBySig
+    decrementSelectedSet(): PrivateScope, Public, HideBySig
+    ascendingSort(): PrivateScope, Public, HideBySig
+    descendingSort(): PrivateScope, Public, HideBySig
+    originalSort(): PrivateScope, Public, HideBySig
+    mean(): PrivateScope, Public, HideBySig
+    median(): PrivateScope, Public, HideBySig
+    originalData(): PrivateScope, Public, HideBySig
+    toggleClusters(): PrivateScope, Public, HideBySig
+    hypercube(): PrivateScope, Public, HideBySig
+    setManualSortToggle(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    setManualInvertToggle(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    getManualInvertToggle(): PrivateScope, Public, HideBySig
+    getManualSortToggle(): PrivateScope, Public, HideBySig
+    setManualShiftToggle(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    getManualShiftToggle(): PrivateScope, Public, HideBySig
+    save(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    addClass(): PrivateScope, Public, HideBySig
+    removeClass(Int32): PrivateScope, Public, HideBySig
+    setClassName(Int32, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    setClassColor(Int32, vector<double\,std::allocator<double> >*): PrivateScope, Public, HideBySig
+    getClassColor(Int32): PrivateScope, Public, HideBySig
+    setSetName(Int32, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    setSetClass(Int32, Int32): PrivateScope, Public, HideBySig
+    getClassOfSet(Int32): PrivateScope, Public, HideBySig
+    setClusterColor(Int32, vector<double\,std::allocator<double> >*): PrivateScope, Public, HideBySig
+    getClusterAmount(): PrivateScope, Public, HideBySig
+    deleteCluster(Int32): PrivateScope, Public, HideBySig
+    setData(Int32, Int32, Double): PrivateScope, Public, HideBySig
+    getDimensionAmount(): PrivateScope, Public, HideBySig
+    setDimensionName(Int32, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    getDimensionName(Int32): PrivateScope, Public, HideBySig
+    setCalibrationBounds(Int32, Double, Double): PrivateScope, Public, HideBySig
+    getArtificialMaximum(Int32): PrivateScope, Public, HideBySig
+    getArtificialMinimum(Int32): PrivateScope, Public, HideBySig
+    isArtificiallyCalibrated(Int32): PrivateScope, Public, HideBySig
+    clearArtificialCalibration(Int32): PrivateScope, Public, HideBySig
+    getOriginalData(Int32, Int32): PrivateScope, Public, HideBySig
+    getSetAmount(): PrivateScope, Public, HideBySig
+    getSetName(Int32): PrivateScope, Public, HideBySig
+    getClassAmount(): PrivateScope, Public, HideBySig
+    getClassName(Int32): PrivateScope, Public, HideBySig
+    uploadedFile(): PrivateScope, Public, HideBySig
+    setAppliedClassChanges(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    appliedClassChanges(): PrivateScope, Public, HideBySig
+    getSetOfClass(Int32, Int32): PrivateScope, Public, HideBySig
+    Background(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    SetRGB(Double, Double, Double): PrivateScope, Public, HideBySig
+    textOnEnabled(): PrivateScope, Public, HideBySig
+    textOnTop(): PrivateScope, Public, HideBySig
+    textOnBottom(): PrivateScope, Public, HideBySig
+    setTextOnEnabled(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    setTextOnTop(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    setTextOnBottom(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    zoomSet(Int32): PrivateScope, Public, HideBySig
+    isVisible(Int32): PrivateScope, Public, HideBySig
+    resetZoomPan(): PrivateScope, Public, HideBySig
+    Resize(Int32, Int32, Int32, Int32, UInt32): PrivateScope, Public, HideBySig
+    Render(): PrivateScope, Public, HideBySig
+    SwapOpenGLBuffers(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class VisCanvas.AdditionalSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(OpenGLForm.COpenGL): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class VisCanvas.Settings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(OpenGLForm.COpenGL): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class VisCanvas.VisCanvasHelp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class VisCanvas.VisCanvas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 previousClassAmount : Public
+    Boolean sortToggleState : Public
+    Boolean shifToggleState : Public

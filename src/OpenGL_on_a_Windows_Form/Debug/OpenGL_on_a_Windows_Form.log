@@ -1,0 +1,87 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  ColorCustom.cpp
+  DataClass.cpp
+DataClass.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+DataClass.cpp(105): warning C4018: '<' : signed/unsigned mismatch
+  DataInterface.cpp
+DataInterface.cpp(469): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(477): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(485): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(493): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(501): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(517): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(524): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(577): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(586): warning C4018: '<=' : signed/unsigned mismatch
+DataInterface.cpp(635): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(645): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(709): warning C4172: returning address of local variable or temporary
+DataInterface.cpp(822): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(828): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(845): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(851): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(865): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(871): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(892): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(908): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(927): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(944): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(951): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1400): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1419): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1423): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1435): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1450): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1536): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1563): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1592): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1606): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1616): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1654): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1665): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1677): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1686): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1723): warning C4018: '>=' : signed/unsigned mismatch
+DataInterface.cpp(1747): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+DataInterface.cpp(1754): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+DataInterface.cpp(1860): warning C4018: '<' : signed/unsigned mismatch
+DataInterface.cpp(1862): warning C4018: '<' : signed/unsigned mismatch
+  DataNode.cpp
+  DataSet.cpp
+  Dimension.cpp
+  GraphNote.cpp
+  AdditionalSettings.cpp
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\OpenGL.h(1162): warning C4018: '<' : signed/unsigned mismatch
+  SetCluster.cpp
+SetCluster.cpp(40): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(59): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(104): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(122): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(153): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(169): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(182): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(198): warning C4018: '>=' : signed/unsigned mismatch
+SetCluster.cpp(209): warning C4018: '>=' : signed/unsigned mismatch
+SetCluster.cpp(217): warning C4018: '>=' : signed/unsigned mismatch
+SetCluster.cpp(229): warning C4018: '>=' : signed/unsigned mismatch
+SetCluster.cpp(256): warning C4018: '<' : signed/unsigned mismatch
+SetCluster.cpp(274): warning C4018: '>=' : signed/unsigned mismatch
+SetCluster.cpp(288): warning C4018: '>=' : signed/unsigned mismatch
+  Settings.cpp
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\OpenGL.h(1162): warning C4018: '<' : signed/unsigned mismatch
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\Settings.h(1622): warning C4018: '<' : signed/unsigned mismatch
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\Settings.h(1689): warning C4018: '<' : signed/unsigned mismatch
+  VisCanvas.cpp
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\OpenGL.h(1162): warning C4018: '<' : signed/unsigned mismatch
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\Settings.h(1622): warning C4018: '<' : signed/unsigned mismatch
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\Settings.h(1689): warning C4018: '<' : signed/unsigned mismatch
+  VisCanvasHelp.cpp
+  Generating Code...
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\opengl.h(122): warning C4715: 'OpenGLForm::COpenGL::SetFilePath' : not all control paths return a value
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\opengl.h(122): warning C4715: 'OpenGLForm::COpenGL::SetFilePath' : not all control paths return a value
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\opengl.h(122): warning C4715: 'OpenGLForm::COpenGL::SetFilePath' : not all control paths return a value
+c:\users\shane vance\desktop\viscanvas\opengl_on_a_windows_form\datainterface.cpp(309): warning C4715: 'DataInterface::saveToFile' : not all control paths return a value
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  OpenGL_on_a_Windows_Form.vcxproj -> C:\Users\Shane Vance\Desktop\VisCanvas\Debug\VisCanvas.exe

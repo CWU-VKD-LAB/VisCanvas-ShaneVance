@@ -1,0 +1,3056 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Nevron.Nov.Schedule, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Retargetable=Yes: 
+	hash=None, flags=Retargetable
+Assembly Nevron.Nov.Presentation, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Assembly Nevron.Nov.Barcode, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad: 
+	hash=None, flags=None
+Class Nevron.Nov.Schedule.NSchedulePrintLayout: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NPrintLayout
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NSchedulePrintLayoutSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointment: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NAppointmentBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.DateTime, System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild OccurrencesChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty RecurrenceRuleProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NAppointmentCollection Occurrences 'get set' : 
+    Nevron.Nov.Schedule.NRecurrenceRule RecurrenceRule 'get set' : 
+    Boolean Шэр 'get ' : 
+  Methods:
+    get_Occurrences(): PrivateScope, Public, HideBySig, SpecialName
+    set_Occurrences(NAppointmentCollection): PrivateScope, Assembly, HideBySig, SpecialName
+    get_RecurrenceRule(): PrivateScope, Public, HideBySig, SpecialName
+    set_RecurrenceRule(NRecurrenceRule): PrivateScope, Public, HideBySig, SpecialName
+    get_Шэр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    AddTime(TimeSpan): PrivateScope, Public, Virtual, HideBySig
+    лэр(NList`1): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    нэр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    оэр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    оюр(DateTime, DateTime): PrivateScope, Assembly, HideBySig
+    сюр(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NOccurrence: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NAppointmentBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NOccurrenceSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GeneratedForStartDateProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GeneratedForEndDateProperty : Public, Static, InitOnly
+    System.DateTime Ююр : Assembly, Static, InitOnly
+    System.DateTime Щюр : Assembly, Static, InitOnly
+  Properties:
+    System.DateTime GeneratedForStartDate 'get set' : 
+    System.DateTime GeneratedForEndDate 'get set' : 
+  Methods:
+    get_GeneratedForStartDate(): PrivateScope, Public, HideBySig, SpecialName
+    set_GeneratedForStartDate(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_GeneratedForEndDate(): PrivateScope, Public, HideBySig, SpecialName
+    set_GeneratedForEndDate(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    ShouldSerialize(): PrivateScope, Public, Virtual, HideBySig
+    йэр(NRectangle): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.NRecurrenceDailyRule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NRecurrenceRule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRecurrenceDailyRuleSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NRecurrenceHourlyRule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NRecurrenceRule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRecurrenceHourlyRuleSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NRecurrenceMonthlyRule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NRecurrenceWeeklyRule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.ENDayOrdinal, Nevron.Nov.Schedule.ENDayOfWeek): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRecurrenceMonthlyRuleSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty PatternTypeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DayOrdinalProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DayInMonthProperty : Public, Static, InitOnly
+    Int32 ЩАр = 1 : Assembly, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal ЭАр = 1 : Assembly, Static, Literal, HasDefault
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+    Nevron.Nov.Schedule.ENRecurrencePatternType PatternType 'get set' : 
+    Int32 DayInMonth 'get set' : 
+    Nevron.Nov.Schedule.ENDayOrdinal DayOrdinal 'get set' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_PatternType(): PrivateScope, Public, HideBySig, SpecialName
+    set_PatternType(ENRecurrencePatternType): PrivateScope, Public, HideBySig, SpecialName
+    get_DayInMonth(): PrivateScope, Public, HideBySig, SpecialName
+    set_DayInMonth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_DayOrdinal(): PrivateScope, Public, HideBySig, SpecialName
+    set_DayOrdinal(ENDayOrdinal): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NRecurrenceRule: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Dom.NNode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRecurrenceRuleSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty IntervalProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartDateProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty EndModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty EndDateProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MaxOccurrencesProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ExcludedDatesProperty : Public, Static, InitOnly
+    System.String НАр : Assembly, Static, InitOnly
+    System.String ОАр : Assembly, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+    UInt32 Interval 'get set' : 
+    System.DateTime StartDate 'get set' : 
+    Nevron.Nov.Schedule.ENRecurrenceEndMode EndMode 'get set' : 
+    System.DateTime EndDate 'get set' : 
+    Int32 MaxOccurrences 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.DateTime] ExcludedDates 'get set' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Interval(): PrivateScope, Public, HideBySig, SpecialName
+    set_Interval(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_StartDate(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartDate(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_EndMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndMode(ENRecurrenceEndMode): PrivateScope, Public, HideBySig, SpecialName
+    get_EndDate(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndDate(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxOccurrences(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxOccurrences(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExcludedDates(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExcludedDates(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+    GenerateTimes(DateTime, DateTime): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExcludeDate(DateTime): PrivateScope, Public, HideBySig
+    IncludeDate(DateTime): PrivateScope, Public, HideBySig
+    ЕАр(ENRecurrenceFrequency): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.NScheduleClipping: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.NScheduleClipping): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Dom.NDocument, Nevron.Nov.Schedule.NAppointmentBase[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.INDeeplyCloneable
+  Fields:
+    Nevron.Nov.UI.NDataFormat Format : Public, Static, InitOnly
+  Methods:
+    DeepClone(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Initialize(NDocument, NAppointmentBase[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDataFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateDataObject(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Nevron.Nov.Schedule.NAppointmentPreviewGroup: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NAppointmentPreview
+    Void .ctor(Nevron.Nov.DataStructures.NList`1[Nevron.Nov.Schedule.NAppointmentBase]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentPreviewGroupSchema : Public, Static, InitOnly
+  Methods:
+    еБр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    жБр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    зБр(NRectangle&(Out)): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    йБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    лБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    нБр(Boolean): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    тБр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    уБр(NPoint, ДНр): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    цБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    шБр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.NAppointmentPreviewCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NVisualCollection`1[Nevron.Nov.Schedule.NAppointmentPreview]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentPreviewCollectionSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NRecurrenceWeeklyRule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NRecurrenceRule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.ENDayOfWeek): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Schedule.ENDayOfWeek[] УАр : Assembly
+    Nevron.Nov.Dom.NSchema NRecurrenceWeeklyRuleSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DaysOfWeekProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+    Nevron.Nov.Schedule.ENDayOfWeek DaysOfWeek 'get set' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DaysOfWeek(): PrivateScope, Public, HideBySig, SpecialName
+    set_DaysOfWeek(ENDayOfWeek): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NRecurrenceYearlyRule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NRecurrenceMonthlyRule
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Nevron.Nov.Schedule.ENMonth): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.ENDayOrdinal, Nevron.Nov.Schedule.ENDayOfWeek, Nevron.Nov.Schedule.ENMonth): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] нВр : Assembly
+    Nevron.Nov.Dom.NSchema NRecurrenceYearlyRuleSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MonthsInYearProperty : Public, Static, InitOnly
+    Nevron.Nov.Schedule.ENMonth оВр = 1 : Assembly, Static, Literal, HasDefault
+  Properties:
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Frequency 'get ' : 
+    Nevron.Nov.Schedule.ENMonth MonthsInYear 'get set' : 
+  Methods:
+    get_Frequency(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_MonthsInYear(): PrivateScope, Public, HideBySig, SpecialName
+    set_MonthsInYear(ENMonth): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleGridCell: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.ПМг
+  Fields:
+    Int32 RowIndex : Public
+    Int32 ColumnIndex : Public
+    System.DateTime StartTime : Public
+    System.DateTime EndTime : Public
+    Nevron.Nov.Schedule.NAppointmentGroupCollection Groups : Public
+    Nevron.Nov.Dom.NSchema NScheduleGridCellSchema : Public, Static, InitOnly
+  Methods:
+    AppendContextMenuItems(NMenu, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    пВр(NScheduleGridCell): PrivateScope, Assembly, HideBySig
+    сВр(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NScheduleCommandBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NCommandBarUIBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ToolbarAppointmentsName : Public, Static, InitOnly
+    System.String ToolbarInteractivityName : Public, Static, InitOnly
+    System.String ToolbarStandardName : Public, Static, InitOnly
+    System.String ToolbarToolsName : Public, Static, InitOnly
+    System.String ToolbarViewName : Public, Static, InitOnly
+    System.String MenuFileName : Public, Static, InitOnly
+    System.String MenuEditName : Public, Static, InitOnly
+    System.String MenuToolsName : Public, Static, InitOnly
+    System.String MenuViewName : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NScheduleImageExportDialog: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NImageExportDialog`2[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleImageExportDialogSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NScheduleRasterImageExporter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRasterImageExporter`2[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule]
+    Void .ctor(Nevron.Nov.Schedule.NScheduleDocument): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDocumentContentBounds(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleVectorImageExporter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NVectorImageExporter`2[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule]
+    Void .ctor(Nevron.Nov.Schedule.NScheduleDocument): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDocumentContentBounds(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentEditDialog: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NTopLevelWindow
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentEditDialogSchema : Public, Static, InitOnly
+  Methods:
+    Create(NAppointmentBase): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Schedule.NNotificationDialog: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NTopLevelWindow
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NNotificationDialogSchema : Public, Static, InitOnly
+  Properties:
+    Int32 AppointmentCount 'get ' : 
+  Methods:
+    get_AppointmentCount(): PrivateScope, Public, HideBySig, SpecialName
+    AddAppointment(NAppointmentBase): PrivateScope, Public, HideBySig
+    рИр(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NSchedulePdfExporter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NPdfExporter`3[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule,Nevron.Nov.Schedule.NSchedulePrintLayout]
+    Void .ctor(Nevron.Nov.Schedule.NScheduleDocument): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NSchedulePrintExporter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NPrintExporter`3[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule,Nevron.Nov.Schedule.NSchedulePrintLayout]
+    Void .ctor(Nevron.Nov.Schedule.NScheduleDocument): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleRibbonBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonUIBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String TabPageAppointmentName : Public, Static, InitOnly
+    System.String TabPageHomeName : Public, Static, InitOnly
+    System.String TabPageSettingsName : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointmentPreview: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NVisual
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.NAppointmentBase): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.ДНр РБр : Assembly
+    System.DateTime ФБр : Assembly
+    Nevron.Nov.Graphics.NPoint ЦБр : Assembly
+    Nevron.Nov.Graphics.NPoint ЧБр : Assembly
+    Nevron.Nov.Schedule.NSchedule УБр : Assembly
+    Nevron.Nov.Schedule.NAppointmentBase ШБр : Assembly
+    Nevron.Nov.Dom.NSchema NAppointmentPreviewSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty BackgroundFillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty BorderStrokeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty FontProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TextFillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TimeFormatProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty AppointmentMarksSizeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty AppointmentMarksFillProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NFill BackgroundFill 'get set' : 
+    Nevron.Nov.Graphics.NStroke BorderStroke 'get set' : 
+    Nevron.Nov.Graphics.NFont Font 'get set' : 
+    Nevron.Nov.Graphics.NFill TextFill 'get set' : 
+    Nevron.Nov.Graphics.NSize AppointmentMarksSize 'get set' : 
+    Nevron.Nov.Graphics.NFill AppointmentMarksFill 'get set' : 
+    System.String TimeFormat 'get set' : 
+    Nevron.Nov.Schedule.NAppointmentBase НБр 'get set' : 
+    Nevron.Nov.Graphics.NPoint ОБр 'get set' : 
+  Methods:
+    get_BackgroundFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackgroundFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderStroke(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderStroke(NStroke): PrivateScope, Public, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, HideBySig, SpecialName
+    set_Font(NFont): PrivateScope, Public, HideBySig, SpecialName
+    get_TextFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_AppointmentMarksSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_AppointmentMarksSize(NSize): PrivateScope, Public, HideBySig, SpecialName
+    get_AppointmentMarksFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_AppointmentMarksFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_НБр(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_НБр(NAppointmentBase): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ОБр(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_ОБр(NPoint): PrivateScope, Assembly, HideBySig, SpecialName
+    еБр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    жБр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    зБр(NRectangle&(Out)): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    йБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    лБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    нБр(Boolean): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    пБр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    рБр(NEventArgs): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    тБр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    уБр(NPoint, ДНр): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    цБр(NPoint): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    шБр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.NScheduleContextMenu: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NContextMenu
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleContextMenuSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NScheduleView OwnerScheduleView 'get ' : 
+  Methods:
+    get_OwnerScheduleView(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleViewWithRibbon: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NDocumentViewWithRibbon`1[Nevron.Nov.Schedule.NScheduleView]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleViewWithRibbonSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NScheduleViewWithCommandBars: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NDocumentViewWithCommandBars`1[Nevron.Nov.Schedule.NScheduleView]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleViewWithCommandBarsSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointmentEditTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleClickTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentEditToolSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointmentHighlightTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentHighlightToolSchema : Public, Static, InitOnly
+  Methods:
+    OnMouseEnter(NMouseOverChangeEventArgs): PrivateScope, Public, Virtual, HideBySig
+    OnMouseLeave(NMouseOverChangeEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentResizeTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleDragTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Nullable`1[Nevron.Nov.Graphics.NPoint] ЬЙр : Assembly
+    System.Nullable`1[Nevron.Nov.Graphics.NPoint] ЫЙр : Assembly
+    Boolean ЪЙр : Assembly
+    Nevron.Nov.Dom.NSchema NAppointmentResizeToolSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SideDistanceProperty : Public, Static, InitOnly
+  Properties:
+    Double SideDistance 'get set' : 
+  Methods:
+    get_SideDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_SideDistance(Double): PrivateScope, Public, HideBySig, SpecialName
+    OnMouseMove(NMouseEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NContextMenuTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NContextMenuToolSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MouseButtonEventProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.UI.ENMouseButtonEvent MouseButtonEvent 'get set' : 
+  Methods:
+    get_MouseButtonEvent(): PrivateScope, Public, HideBySig, SpecialName
+    set_MouseButtonEvent(ENMouseButtonEvent): PrivateScope, Public, HideBySig, SpecialName
+    OnMouseDown(NMouseButtonEventArgs): PrivateScope, Public, Virtual, HideBySig
+    OnMouseUp(NMouseButtonEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleClickTool: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Schedule.NScheduleTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleClickToolSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MouseButtonEventProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.UI.ENMouseButtonEvent MouseButtonEvent 'get set' : 
+  Methods:
+    get_MouseButtonEvent(): PrivateScope, Public, HideBySig, SpecialName
+    set_MouseButtonEvent(ENMouseButtonEvent): PrivateScope, Public, HideBySig, SpecialName
+    OnMouseDown(NMouseButtonEventArgs): PrivateScope, Public, Virtual, HideBySig
+    OnMouseUp(NMouseButtonEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleDragTool: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NDragTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleDragToolSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NScheduleView OwnerScheduleView 'get ' : 
+    Nevron.Nov.Schedule.NSchedule Schedule 'get ' : 
+    Nevron.Nov.Graphics.NPoint StartPosition 'get ' : 
+  Methods:
+    get_OwnerScheduleView(): PrivateScope, Public, HideBySig, SpecialName
+    get_Schedule(): PrivateScope, Public, HideBySig, SpecialName
+    get_StartPosition(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NAppointmentMoveTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleDragTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Schedule.NAppointmentPreview вКр : Assembly
+    System.Nullable`1[Nevron.Nov.Graphics.NPoint] гКр : Assembly
+    System.Nullable`1[Nevron.Nov.Graphics.NPoint] дКр : Assembly
+    Boolean еКр : Assembly
+    Nevron.Nov.Dom.NSchema NAppointmentMoveToolSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartMoveDistanceProperty : Public, Static, InitOnly
+  Properties:
+    Double StartMoveDistance 'get set' : 
+  Methods:
+    get_StartMoveDistance(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartMoveDistance(Double): PrivateScope, Public, HideBySig, SpecialName
+    OnMouseMove(NMouseEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScrollAndZoomTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NScrollAndZoomToolBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScrollAndZoomToolSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NTagComboBox: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NComboBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTagComboBoxSchema : Public, Static, InitOnly
+  Methods:
+    FillFromCollection(INCollection`1): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NTagItemHeader: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NWidget
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTagItemHeaderSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NTagSplitButton: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NMenuSplitButton
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTagSplitButtonSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty InitialActionButtonTextProperty : Public, Static, InitOnly
+  Properties:
+    System.String InitialActionButtonText 'get set' : 
+  Methods:
+    get_InitialActionButtonText(): PrivateScope, Public, HideBySig, SpecialName
+    set_InitialActionButtonText(String): PrivateScope, Public, HideBySig, SpecialName
+    FillFromCollection(INCollection`1): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NTagSplitButtonCommandSource: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NMenuSplitButtonCommandSource
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.UI.NCommand): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTagSplitButtonCommandSourceSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointmentBase: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.DateTime, System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.ПМг
+    System.IComparable`1[Nevron.Nov.Schedule.NAppointmentBase]
+    System.IComparable
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentBaseSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild УэрChild : Assembly, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SubjectProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DescriptionProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty CategoryProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TimeMarkerProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty EndProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NotificationProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartTimeZoneProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty EndTimeZoneProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GroupsProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DismissedProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЭэрProperty : Assembly, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЬэрProperty : Assembly, Static, InitOnly
+  Properties:
+    System.String Subject 'get set' : 
+    System.String Description 'get set' : 
+    System.String Category 'get set' : 
+    System.String TimeMarker 'get set' : 
+    System.DateTime Start 'get set' : 
+    System.DateTime End 'get set' : 
+    System.TimeSpan Duration 'get ' : 
+    System.TimeSpan Notification 'get set' : 
+    Boolean Dismissed 'get set' : 
+    Nevron.Nov.NTimeZone StartTimeZone 'get set' : 
+    Nevron.Nov.NTimeZone EndTimeZone 'get set' : 
+    Nevron.Nov.Schedule.NAppointmentGroupCollection Groups 'get set' : 
+    Boolean IsHighlighted 'get ' : 
+    Boolean IsSelected 'get ' : 
+    System.DateTime StartInUtc 'get ' : 
+    System.DateTime EndInUtc 'get ' : 
+    Boolean IsAllDay 'get ' : 
+    Nevron.Nov.Schedule.NAppointmentCollection Фэр 'get ' : 
+    Nevron.Nov.Schedule.NSchedule Цэр 'get ' : 
+    Int32 Чэр  'get ' : 
+    Nevron.Nov.Schedule.NAppointmentWidgetCollection Уэр 'get set' : 
+    Boolean Шэр 'get ' : 
+    Boolean Юэр 'get ' : 
+    Boolean Щэр 'get ' : 
+  Methods:
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    set_Subject(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    set_Description(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Category(): PrivateScope, Public, HideBySig, SpecialName
+    set_Category(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeMarker(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeMarker(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Start(): PrivateScope, Public, HideBySig, SpecialName
+    set_Start(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_End(): PrivateScope, Public, HideBySig, SpecialName
+    set_End(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_Duration(): PrivateScope, Public, HideBySig, SpecialName
+    get_Notification(): PrivateScope, Public, HideBySig, SpecialName
+    set_Notification(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_Dismissed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Dismissed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_StartTimeZone(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartTimeZone(NTimeZone): PrivateScope, Public, HideBySig, SpecialName
+    get_EndTimeZone(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndTimeZone(NTimeZone): PrivateScope, Public, HideBySig, SpecialName
+    get_Groups(): PrivateScope, Public, HideBySig, SpecialName
+    set_Groups(NAppointmentGroupCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_IsHighlighted(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSelected(): PrivateScope, Public, HideBySig, SpecialName
+    get_StartInUtc(): PrivateScope, Public, HideBySig, SpecialName
+    get_EndInUtc(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsAllDay(): PrivateScope, Public, HideBySig, SpecialName
+    get_Фэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Цэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Чэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Уэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Уэр(NAppointmentWidgetCollection): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Шэр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, SpecialName
+    get_Юэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Щэр(): PrivateScope, Assembly, HideBySig, SpecialName
+    CompareTo(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(NAppointmentBase): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    AppendContextMenuItems(NMenu, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ShouldSerialize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddTime(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetStartInSchedule(): PrivateScope, Public, HideBySig
+    GetEndInSchedule(): PrivateScope, Public, HideBySig
+    IntersectsWith(NAppointmentBase): PrivateScope, Public, HideBySig
+    IntersectsWith(DateTime, DateTime): PrivateScope, Public, HideBySig
+    йэр(NRectangle): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    лэр(NList`1): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    нэр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    оэр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    пэр(DateTime, Double&(Out), Double&(Out)): PrivateScope, Assembly, HideBySig
+    уэр(DateTime, DateTime, Double&(Out), Double&(Out)): PrivateScope, Assembly, HideBySig
+    шэр(NRectangle): PrivateScope, Assembly, HideBySig
+    ъэр(): PrivateScope, Assembly, HideBySig
+    Дэр(DateTime, DateTime, DateTime, Double&(Out), Double&(Out)): PrivateScope, Assembly, Static, HideBySig
+    Кэр(DateTime, DateTime, DateTime, DateTime, Double&(Out), Double&(Out)): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentWidget: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NHeaderedContentElement`1[Nevron.Nov.Schedule.NAppointmentWidgetHeader]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Internal.ПМг
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentWidgetSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NAppointmentBase Appointment 'get ' : 
+    Nevron.Nov.UI.NSymbolBox уКр 'get ' : 
+  Methods:
+    get_Appointment(): PrivateScope, Public, HideBySig, SpecialName
+    get_уКр(): PrivateScope, Assembly, HideBySig, SpecialName
+    AppendContextMenuItems(NMenu, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    мКр(String, String): PrivateScope, Assembly, HideBySig
+    пКр(String, String): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentWidgetCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NAppointmentWidget]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentWidgetCollectionSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NAppointmentGroup: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentGroupSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GroupNameProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ItemNameProperty : Public, Static, InitOnly
+  Properties:
+    System.String GroupName 'get ' : 
+    System.String ItemName 'get set' : 
+  Methods:
+    get_GroupName(): PrivateScope, Public, HideBySig, SpecialName
+    get_ItemName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ItemName(String): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NAppointmentGroupCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NAttributeCollection`1[Nevron.Nov.Schedule.NAppointmentGroup]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentGroupCollectionSchema : Public, Static, InitOnly
+  Methods:
+    FindByGroupName(String): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NAppointmentBase]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentCollectionSchema : Public, Static, InitOnly
+  Methods:
+    GetAppointmentsInRange(DateTime, DateTime): PrivateScope, Public, HideBySig
+    GetRecurringAppointments(): PrivateScope, Public, HideBySig
+    ьКр(DateTime): PrivateScope, Assembly, HideBySig
+    юКр(): PrivateScope, Assembly, HideBySig
+    АКр(): PrivateScope, Assembly, HideBySig
+    БКр(): PrivateScope, Assembly, HideBySig
+    ВКр(NAppointment, NValueChangeData): PrivateScope, Assembly, HideBySig
+    ЕКр(NAppointmentBase, NValueChangeData): PrivateScope, Assembly, HideBySig
+    ИКр(NAppointmentBase, NValueChangeData): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentWidgetHeader: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NContentHolder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentWidgetHeaderSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NCategory: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NAppointmentTag
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NColor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCategorySchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Dom.NProperty AssociatedAppointmentProperty 'get ' : 
+  Methods:
+    get_AssociatedAppointmentProperty(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NCategoryCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NCategory]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCategoryCollectionSchema : Public, Static, InitOnly
+  Methods:
+    FindByGroupName(String): PrivateScope, Public, HideBySig
+    IndexOf(String): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentTag: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NColor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentTagSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NameProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty FillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty HighlightFillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SelectedFillProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Dom.NProperty AssociatedAppointmentProperty 'get ' : 
+    System.String Name 'get set' : 
+    Nevron.Nov.Graphics.NFill Fill 'get set' : 
+    Nevron.Nov.Graphics.NFill HighlightFill 'get set' : 
+    Nevron.Nov.Graphics.NFill SelectedFill 'get set' : 
+  Methods:
+    get_AssociatedAppointmentProperty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Fill(): PrivateScope, Public, HideBySig, SpecialName
+    set_Fill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_HighlightFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighlightFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    ШКр(NAppointmentTag): PrivateScope, Assembly, Static, HideBySig
+    ЩКр(INCollection`1, NTagItemHeader[]&(Out), String[]&(Out)): PrivateScope, Assembly, Static, HideBySig
+    ХКр(NDocument): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.NScheduleGroup: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Dom.NDomArray`1[System.String]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleGroupSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NameProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ItemsProperty : Public, Static, InitOnly
+  Properties:
+    System.String Name 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] Items 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    set_Items(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NGroupGrouping: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NGrouping
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGroupGroupingSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GroupNameProperty : Public, Static, InitOnly
+  Properties:
+    System.String GroupName 'get set' : 
+  Methods:
+    get_GroupName(): PrivateScope, Public, HideBySig, SpecialName
+    set_GroupName(String): PrivateScope, Public, HideBySig, SpecialName
+    Filter(NAppointmentBase, Object): PrivateScope, Public, Virtual, HideBySig
+    GetValues(NSchedule): PrivateScope, Public, Virtual, HideBySig
+    GetValueAt(NSchedule, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValueCount(NSchedule): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NDateRangeGrouping: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Schedule.NGrouping
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDateRangeGroupingSchema : Public, Static, InitOnly
+  Methods:
+    Filter(NAppointmentBase, Object): PrivateScope, Public, Virtual, HideBySig
+    GetDateRange(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Nevron.Nov.Schedule.NDayGrouping: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NDateRangeGrouping
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDayGroupingSchema : Public, Static, InitOnly
+  Methods:
+    GetValues(NSchedule): PrivateScope, Public, Virtual, HideBySig
+    GetValueAt(NSchedule, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValueCount(NSchedule): PrivateScope, Public, Virtual, HideBySig
+    GetDateRange(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NGroupingCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NGrouping]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGroupingCollectionSchema : Public, Static, InitOnly
+  Methods:
+    пЛр(): PrivateScope, Assembly, HideBySig
+    рЛр(String): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NWeekGrouping: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NDateRangeGrouping
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NWeekGroupingSchema : Public, Static, InitOnly
+  Methods:
+    GetValues(NSchedule): PrivateScope, Public, Virtual, HideBySig
+    GetValueAt(NSchedule, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValueCount(NSchedule): PrivateScope, Public, Virtual, HideBySig
+    GetDateRange(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleGrid: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleGridRulersBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double юМр : Assembly
+    Double АМр : Assembly
+    Double БМр : Assembly
+    Double ВМр : Assembly
+    Nevron.Nov.Dom.NSchema NScheduleGridSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty HighlightedCellFillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SelectedCellFillProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NFill HighlightedCellFill 'get set' : 
+    Nevron.Nov.Graphics.NFill SelectedCellFill 'get set' : 
+    Nevron.Nov.DataStructures.NList`1[Nevron.Nov.Schedule.NScheduleGridCell] SelectedCells 'get ' : 
+  Methods:
+    get_HighlightedCellFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighlightedCellFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedCellFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedCellFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedCells(): PrivateScope, Public, HideBySig, SpecialName
+    GetDateTimeForPosition(NPoint): PrivateScope, Public, HideBySig
+    GetCellForPosition(NPoint): PrivateScope, Public, HideBySig
+    SelectCell(NScheduleGridCell): PrivateScope, Public, HideBySig
+    SingleSelectCell(NScheduleGridCell): PrivateScope, Public, HideBySig
+    DeselectAllCells(): PrivateScope, Public, HideBySig
+    нюа(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    КЛр(): PrivateScope, Assembly, HideBySig
+    ЛЛр(NScheduleGridCell): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NGrouping: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGroupingSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NSchedule мЛр 'get ' : 
+  Methods:
+    get_мЛр(): PrivateScope, Assembly, HideBySig, SpecialName
+    Filter(NAppointmentBase, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetValues(NSchedule): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetValueAt(NSchedule, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetValueCount(NSchedule): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Nevron.Nov.Schedule.NScheduleSelection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NSelection`1[Nevron.Nov.Schedule.NAppointmentBase]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleSelectionSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NSchedule OwnerSchedule 'get ' : 
+  Methods:
+    get_OwnerSchedule(): PrivateScope, Public, HideBySig, SpecialName
+    ClickSelect(NAppointmentBase): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NTimeMarker: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NAppointmentTag
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NColor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill, Nevron.Nov.Graphics.NFill): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTimeMarkerSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Dom.NProperty AssociatedAppointmentProperty 'get ' : 
+  Methods:
+    get_AssociatedAppointmentProperty(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NTimeMarkerCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NTimeMarker]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTimeMarkerCollectionSchema : Public, Static, InitOnly
+  Methods:
+    FindByGroupName(String): PrivateScope, Public, HideBySig
+    IndexOf(String): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NDayBasedViewMode: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Schedule.NViewMode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDayBasedViewModeSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Layout.ENHVOrientation DatesOrientation 'get ' : 
+  Methods:
+    get_DatesOrientation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NDayViewMode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NDayBasedViewMode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDayViewModeSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get ' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NMonthViewMode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NViewMode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NMonthViewModeSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get ' : 
+    Nevron.Nov.Layout.ENHVOrientation DatesOrientation 'get ' : 
+    Boolean гНр 'get ' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DatesOrientation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_гНр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+    GetRulerStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NTimelineViewMode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NViewMode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTimelineViewModeSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DurationProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get ' : 
+    Nevron.Nov.Layout.ENHVOrientation DatesOrientation 'get ' : 
+    Int32 Duration 'get ' : 
+    Boolean дНр 'get ' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DatesOrientation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Duration(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_дНр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+    GetRulerStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+    SetDuration(Int32): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NViewMode: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double еНр : Assembly
+    Double жНр : Assembly
+    Nevron.Nov.Dom.NSchema NViewModeSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild GroupingsChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty OrientationProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty LogicalLengthProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty WidthProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty HeightProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get ' : 
+    Nevron.Nov.Layout.ENHVOrientation DatesOrientation 'get ' : 
+    Int32 Duration 'get ' : 
+    Nevron.Nov.Schedule.NGroupingCollection Groupings 'get set' : 
+    Nevron.Nov.Layout.ENHVOrientation Orientation 'get set' : 
+    Nevron.Nov.NDateTimeSpan LogicalLength 'get set' : 
+    Double Width 'get set' : 
+    Double Height 'get set' : 
+    Nevron.Nov.Schedule.NSchedule вНр 'get ' : 
+    Boolean гНр 'get ' : 
+    Boolean дНр 'get ' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DatesOrientation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Duration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Groupings(): PrivateScope, Public, HideBySig, SpecialName
+    set_Groupings(NGroupingCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Orientation(): PrivateScope, Public, HideBySig, SpecialName
+    set_Orientation(ENHVOrientation): PrivateScope, Public, HideBySig, SpecialName
+    get_LogicalLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_LogicalLength(NDateTimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_вНр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_гНр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, SpecialName
+    get_дНр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, SpecialName
+    GetStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRulerStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEndDate(DateTime): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ЖМр(NSchedule): PrivateScope, Assembly, HideBySig
+    ИМр(DateTime): PrivateScope, Assembly, HideBySig
+    КМр(NList`1, DateTime): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NWeekViewMode: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NDayBasedViewMode
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NWeekViewModeSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get ' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetStartDate(DateTime): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleTheme: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.Dom.NTheme
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Graphics.NColor): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NThemingState IsSelectedState : Public, InitOnly
+    Nevron.Nov.Dom.NThemingState IsHighlightedState : Public, InitOnly
+    Nevron.Nov.Dom.NThemingContext InAppointmentContext : Public, InitOnly
+    Nevron.Nov.Dom.NThemingContext InAppointmentWidgetContext : Public, InitOnly
+    System.String ThemeType = Schedule : Public, Static, Literal, HasDefault
+    System.String щНр = Schedule : Assembly, Static, Literal, HasDefault
+    Double ъНр = 5 : Assembly, Static, Literal, HasDefault
+    Single ыНр = 0.2 : Assembly, Static, Literal, HasDefault
+  Methods:
+    GetThemeType(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleGridRulersBase: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NWidget
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleGridRulersBaseSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MinorLinesCountProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MajorLinesStrokeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MinorLinesStrokeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StepModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty FixedStepProperty : Public, Static, InitOnly
+    System.String ЙЛр : Assembly, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NStroke MajorLinesStroke 'get set' : 
+    Nevron.Nov.Graphics.NStroke MinorLinesStroke 'get set' : 
+    Int32 MinorLinesCount 'get set' : 
+    Nevron.Nov.UI.ENStepMode StepMode 'get set' : 
+    Double FixedStep 'get set' : 
+    Nevron.Nov.Schedule.NSchedule АЛр 'get ' : 
+    Nevron.Nov.Layout.ENHVOrientation БЛр 'get ' : 
+  Methods:
+    get_MajorLinesStroke(): PrivateScope, Public, HideBySig, SpecialName
+    set_MajorLinesStroke(NStroke): PrivateScope, Public, HideBySig, SpecialName
+    get_MinorLinesStroke(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinorLinesStroke(NStroke): PrivateScope, Public, HideBySig, SpecialName
+    get_MinorLinesCount(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinorLinesCount(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_StepMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_StepMode(ENStepMode): PrivateScope, Public, HideBySig, SpecialName
+    get_FixedStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_FixedStep(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_АЛр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_БЛр(): PrivateScope, Assembly, HideBySig, SpecialName
+    уЛр(NDateTimeSpan): PrivateScope, Assembly, HideBySig
+    ьЛр(Double, Double): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.NScheduleGroupCollection: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Schedule.NScheduleGroup]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleGroupCollectionSchema : Public, Static, InitOnly
+  Methods:
+    FindByName(String): PrivateScope, Public, HideBySig
+Struct Nevron.Nov.Schedule.ENScheduleViewMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENScheduleViewMode Day = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleViewMode Timeline = 5 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleViewMode Week = 7 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleViewMode Month = 42 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENScheduleInteractivity: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENScheduleInteractivity None = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleInteractivity Move = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleInteractivity Resize = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleInteractivity Edit = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleInteractivity Snap = 8 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENScheduleInteractivity All = 15 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENRecurrenceFrequency: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Hourly = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Daily = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Weekly = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Monthly = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceFrequency Yearly = 4 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENDayOfWeek: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENDayOfWeek None = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Monday = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Tuesday = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Wednesday = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Thursday = 8 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Friday = 16 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Saturday = 32 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Sunday = 64 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Weekdays = 31 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek Weekend = 96 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOfWeek WholeWeek = 127 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENMonth: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENMonth January = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth February = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth March = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth April = 8 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth May = 16 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth June = 32 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth July = 64 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth August = 128 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth September = 256 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth October = 512 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth November = 1024 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENMonth December = 2048 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENDayOrdinal: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENDayOrdinal First = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal Second = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal Third = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal Fourth = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal Last = 5 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENDayOrdinal Every = 6 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENRecurrencePatternType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENRecurrencePatternType Absolute = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrencePatternType Relative = 1 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Schedule.ENRecurrenceEndMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Schedule.ENRecurrenceEndMode Never = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceEndMode ByDate = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Schedule.ENRecurrenceEndMode AfterOccurrences = 2 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Schedule.NSchedule: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NInputElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Nevron.Nov.Dom.INDocumentContentElement
+    Nevron.Nov.Dom.INMeasureElement
+    Nevron.Nov.Dom.INMeasureElementParent
+    Nevron.Nov.Dom.INArrangeElement
+    Nevron.Nov.Dom.INArrangeElementParent
+    Nevron.Nov.UI.INPagedElement
+    Nevron.Nov.UI.INPrintLayoutElement`1[Nevron.Nov.Schedule.NSchedulePrintLayout]
+  Fields:
+    Boolean КПр : Assembly, Static
+    Nevron.Nov.Dom.NSchema NScheduleSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild AppointmentsChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild HeaderChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild TimeRulerChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild GridChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild GroupsChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild CategoriesChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild TimeMarkersChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild PrintLayoutChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild PreviewsChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild DayViewModeChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild WeekViewModeChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild MonthViewModeChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild TimelineViewModeChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty InformationProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DisplayLengthProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TimeZoneProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ViewModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty XProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty YProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ViewportOriginXProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ViewportOriginYProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty WindowOriginXProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty WindowOriginYProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ZoomModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ZoomFactorProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MinZoomFactorProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MaxZoomFactorProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ZoomStepProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty BackgroundFillProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty BorderProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty BorderThicknessProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty PaddingProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty MarginsProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty AppointmentHorizontalSpacingProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty AppointmentVerticalSpacingProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty GroupSpacingProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty HScrollModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty VScrollModeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NoScrollHAlignProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NoScrollVAlignProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SmallHScrollChangeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SmallVScrollChangeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty CurrentDateProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty SelectionProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty InteractivityProperty : Public, Static, InitOnly
+    Nevron.Nov.UI.ENNoScrollHAlign ЬПр = 2 : Assembly, Static, Literal, HasDefault
+    Nevron.Nov.UI.ENNoScrollVAlign ЫПр = 2 : Assembly, Static, Literal, HasDefault
+  Properties:
+    Nevron.Nov.Schedule.NAppointmentCollection Appointments 'get set' : 
+    Nevron.Nov.Schedule.NScheduleGrid Grid 'get set' : 
+    Nevron.Nov.Schedule.NScheduleHeader Header 'get set' : 
+    Nevron.Nov.Schedule.NScheduleTimeRuler TimeRuler 'get set' : 
+    Nevron.Nov.Schedule.NScheduleGroupCollection Groups 'get set' : 
+    Nevron.Nov.Schedule.NCategoryCollection Categories 'get set' : 
+    Nevron.Nov.Schedule.NTimeMarkerCollection TimeMarkers 'get set' : 
+    Nevron.Nov.Schedule.NSchedulePrintLayout PrintLayout 'get set' : 
+    Nevron.Nov.Schedule.NAppointmentPreviewCollection Previews 'get set' : 
+    Nevron.Nov.Schedule.NDayViewMode DayViewMode 'get set' : 
+    Nevron.Nov.Schedule.NWeekViewMode WeekViewMode 'get set' : 
+    Nevron.Nov.Schedule.NMonthViewMode MonthViewMode 'get set' : 
+    Nevron.Nov.Schedule.NTimelineViewMode TimelineViewMode 'get set' : 
+    Nevron.Nov.NTimeZone TimeZone 'get set' : 
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get set' : 
+    Double X   'get set' : 
+    Double Y   'get set' : 
+    Double Width 'get ' : 
+    Double Height 'get ' : 
+    Nevron.Nov.Graphics.NRectangle Bounds 'get ' : 
+    Double ViewportOriginX 'get set' : 
+    Double ViewportOriginY 'get set' : 
+    Nevron.Nov.Graphics.NPoint ViewportOrigin 'get set' : 
+    Double WindowOriginX 'get set' : 
+    Double WindowOriginY 'get set' : 
+    Nevron.Nov.Graphics.NPoint WindowOrigin 'get set' : 
+    Nevron.Nov.UI.ENZoomMode ZoomMode 'get set' : 
+    Double ZoomFactor 'get set' : 
+    Double MinZoomFactor 'get set' : 
+    Double MaxZoomFactor 'get set' : 
+    Double ZoomStep 'get set' : 
+    Nevron.Nov.Graphics.NFill BackgroundFill 'get set' : 
+    Nevron.Nov.UI.NBorder Border 'get set' : 
+    Nevron.Nov.Graphics.NMargins Margins 'get set' : 
+    Nevron.Nov.Graphics.NMargins Padding 'get set' : 
+    Nevron.Nov.Graphics.NMargins BorderThickness 'get set' : 
+    Double AppointmentHorizontalSpacing 'get set' : 
+    Double AppointmentVerticalSpacing 'get set' : 
+    Double GroupSpacing 'get set' : 
+    Nevron.Nov.UI.ENScrollMode HScrollMode 'get set' : 
+    Nevron.Nov.UI.ENScrollMode VScrollMode 'get set' : 
+    Nevron.Nov.UI.ENNoScrollHAlign NoScrollHAlign 'get set' : 
+    Nevron.Nov.UI.ENNoScrollVAlign NoScrollVAlign 'get set' : 
+    Double SmallHScrollChange 'get set' : 
+    Double SmallVScrollChange 'get set' : 
+    System.DateTime CurrentDate 'get set' : 
+    Nevron.Nov.Schedule.NScheduleSelection Selection 'get set' : 
+    Nevron.Nov.Schedule.ENScheduleInteractivity Interactivity 'get set' : 
+    Nevron.Nov.Schedule.NViewMode ActiveViewMode 'get ' : 
+    Nevron.Nov.Schedule.NScheduleView ДПр 'get ' : 
+    Nevron.Nov.NLength ЕПр 'get ' : 
+    Nevron.Nov.NDateTimeSpan ЖПр 'get ' : 
+    Nevron.Nov.NDateTimeSpan ЗПр 'get ' : 
+    Nevron.Nov.Dom.NDocumentInformation Information 'get set' : 
+    Boolean IsPooledForMeasure 'get ' : 
+    Boolean IsMeasureValid 'get ' : 
+    Boolean IsPooledForArrange 'get ' : 
+    Boolean IsArrangeValid 'get ' : 
+  Events:
+    Nevron.Nov.Function`1[Nevron.Nov.Dom.NValueChangeEventArgs] ViewModeChanged: 
+  Methods:
+    set_NoScrollVAlign(ENNoScrollVAlign): PrivateScope, Public, HideBySig, SpecialName
+    get_SmallHScrollChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmallHScrollChange(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_SmallVScrollChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmallVScrollChange(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentDate(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentDate(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_Selection(): PrivateScope, Public, HideBySig, SpecialName
+    set_Selection(NScheduleSelection): PrivateScope, Public, HideBySig, SpecialName
+    get_Interactivity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Interactivity(ENScheduleInteractivity): PrivateScope, Public, HideBySig, SpecialName
+    get_ActiveViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    get_ДПр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ЕПр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ЖПр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ЗПр(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Information(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Information(NDocumentInformation): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsPooledForMeasure(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsMeasureValid(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    InvalidateMeasure(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ValidateMeasure(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InvalidateMeasureFromChild(NElement, ENLayoutParentInvalidationReason, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsPooledForArrange(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsArrangeValid(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    InvalidateArrange(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ValidateArrange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InvalidateArrangeFromChild(NElement, ENLayoutParentInvalidationReason, Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    AccumulateDisplayChildren(NDisplayVisitor, NList`1): PrivateScope, Public, Virtual, HideBySig
+    VisitChildDisplaySubtree(NDisplayVisitor, NVisual): PrivateScope, Public, Virtual, HideBySig
+    CanTransform(): PrivateScope, Public, Virtual, HideBySig
+    LocalToParent(NPoint): PrivateScope, Public, Virtual, HideBySig
+    ParentToLocal(NPoint): PrivateScope, Public, Virtual, HideBySig
+    GetTransform(): PrivateScope, Public, Virtual, HideBySig
+    DoPrePaint(NPaintVisitor): PrivateScope, Public, Virtual, HideBySig
+    DoPostPaint(NPaintVisitor): PrivateScope, Public, Virtual, HideBySig
+    GetContentEdge(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetContentEdge(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPaddingEdge(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPaddingEdge(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetBorderEdge(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetBorderEdge(Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetInsets(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ScrollInDirection(ENCompassDirection, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ScrollToTime(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAppointmentPreview(NAppointmentBase): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateAppointmentPreview(NList`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ZoomIn(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ZoomOut(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ZoomToFactor(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LogicalToSchedule(Double): PrivateScope, Public, HideBySig
+    LogicalToSchedule(NPoint): PrivateScope, Public, HideBySig
+    ScheduleToLogical(Double): PrivateScope, Public, HideBySig
+    ScheduleToLogical(NPoint): PrivateScope, Public, HideBySig
+    HitTest(NPoint): PrivateScope, Public, HideBySig
+    СОр(ENScheduleViewMode): PrivateScope, Assembly, HideBySig
+    бПр(): PrivateScope, Assembly, HideBySig
+    вПр(): PrivateScope, Assembly, HideBySig
+    гПр(): PrivateScope, Assembly, HideBySig
+    дПр(): PrivateScope, Assembly, HideBySig
+    еПр(): PrivateScope, Assembly, HideBySig
+    жПр(NMargins, Double, Double): PrivateScope, Assembly, HideBySig
+    кПр(NDateTimeSpan, Double): PrivateScope, Assembly, HideBySig
+    нПр(NDateTimeSpan, Double): PrivateScope, Assembly, HideBySig
+    рПр(NList`1): PrivateScope, Assembly, HideBySig
+    тПр(NList`1, Function`1, Function`1): PrivateScope, Assembly, HideBySig
+    цПр(NAppointmentBase): PrivateScope, Assembly, HideBySig
+    шПр(NAppointmentBase): PrivateScope, Assembly, HideBySig
+    ъПр(NValueChangeData): PrivateScope, Assembly, HideBySig
+    add_ViewModeChanged(Function`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ViewModeChanged(Function`1): PrivateScope, Public, HideBySig, SpecialName
+    get_Appointments(): PrivateScope, Public, HideBySig, SpecialName
+    set_Appointments(NAppointmentCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Grid(): PrivateScope, Public, HideBySig, SpecialName
+    set_Grid(NScheduleGrid): PrivateScope, Public, HideBySig, SpecialName
+    get_Header(): PrivateScope, Public, HideBySig, SpecialName
+    set_Header(NScheduleHeader): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeRuler(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeRuler(NScheduleTimeRuler): PrivateScope, Public, HideBySig, SpecialName
+    get_Groups(): PrivateScope, Public, HideBySig, SpecialName
+    set_Groups(NScheduleGroupCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Categories(): PrivateScope, Public, HideBySig, SpecialName
+    set_Categories(NCategoryCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeMarkers(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeMarkers(NTimeMarkerCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_PrintLayout(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrintLayout(NSchedulePrintLayout): PrivateScope, Public, HideBySig, SpecialName
+    get_Previews(): PrivateScope, Public, HideBySig, SpecialName
+    set_Previews(NAppointmentPreviewCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_DayViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_DayViewMode(NDayViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_WeekViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_WeekViewMode(NWeekViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_MonthViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_MonthViewMode(NMonthViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_TimelineViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimelineViewMode(NTimelineViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeZone(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeZone(NTimeZone): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewMode(ENScheduleViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewportOriginX(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewportOriginX(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewportOriginY(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewportOriginY(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewportOrigin(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewportOrigin(NPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_WindowOriginX(): PrivateScope, Public, HideBySig, SpecialName
+    set_WindowOriginX(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_WindowOriginY(): PrivateScope, Public, HideBySig, SpecialName
+    set_WindowOriginY(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_WindowOrigin(): PrivateScope, Public, HideBySig, SpecialName
+    set_WindowOrigin(NPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomMode(ENZoomMode): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomFactor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomFactor(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_MinZoomFactor(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinZoomFactor(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxZoomFactor(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxZoomFactor(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomStep(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_BackgroundFill(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackgroundFill(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_Border(): PrivateScope, Public, HideBySig, SpecialName
+    set_Border(NBorder): PrivateScope, Public, HideBySig, SpecialName
+    get_Margins(): PrivateScope, Public, HideBySig, SpecialName
+    set_Margins(NMargins): PrivateScope, Public, HideBySig, SpecialName
+    get_Padding(): PrivateScope, Public, HideBySig, SpecialName
+    set_Padding(NMargins): PrivateScope, Public, HideBySig, SpecialName
+    get_BorderThickness(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderThickness(NMargins): PrivateScope, Public, HideBySig, SpecialName
+    get_AppointmentHorizontalSpacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_AppointmentHorizontalSpacing(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_AppointmentVerticalSpacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_AppointmentVerticalSpacing(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_GroupSpacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_GroupSpacing(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_HScrollMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_HScrollMode(ENScrollMode): PrivateScope, Public, HideBySig, SpecialName
+    get_VScrollMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_VScrollMode(ENScrollMode): PrivateScope, Public, HideBySig, SpecialName
+    get_NoScrollHAlign(): PrivateScope, Public, HideBySig, SpecialName
+    set_NoScrollHAlign(ENNoScrollHAlign): PrivateScope, Public, HideBySig, SpecialName
+    get_NoScrollVAlign(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleDocument: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Dom.NGenericDocument`1[Nevron.Nov.Schedule.NSchedule]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleDocumentSchema : Public, Static, InitOnly
+  Methods:
+    ApplyTheme(NScheduleTheme): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Schedule.NScheduleModule: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.NModule
+  Properties:
+    Nevron.Nov.Schedule.NScheduleModule Instance 'get ' : 
+  Methods:
+    Install(): PrivateScope, Public, Virtual, HideBySig
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleUIThemePlugin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NUIThemePlugin
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateStyles(NUITheme): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NResources: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.NEmbeddedResourceContainer
+  Fields:
+    Nevron.Nov.NEmbeddedResource RIMG_Edit_AddAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Edit_DeleteAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Edit_EditAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Edit_ImportAppointments_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Other_Calendar_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Other_NevronCalendarLogo_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Other_NevronCalendar_16x16_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Other_NevronCalendar_32x32_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_AddAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_DeleteAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_EditAppointment_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_GoogleCalendar_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_GoToNextRange_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_GoToPreviousRange_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_GoToToday_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_Groupings_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_Groups_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_ImportAppointments_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_OrientationHorizontal_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_OrientationVertical_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_ViewModeDay_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_ViewModeMonth_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_ViewModeTimeline_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_ViewModeWeek_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_AppMenu_Formats_ICS_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_AppMenu_Formats_NCB_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_AppMenu_Formats_NCX_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Ribbon_32x32_AppMenu_Formats_PDF_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_CloudSync_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_GoogleCalendar_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_Grid_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_Groupings_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_Groups_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_Header_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_TimeRuler_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_Tools_ToolSettings_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_GoToNextRange_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_GoToPreviousRange_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_OrientationHorizontal_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_OrientationVertical_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_Today_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_ViewModeDay_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_ViewModeMonth_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_ViewModeTimeline_png : Public, Static, InitOnly
+    Nevron.Nov.NEmbeddedResource RIMG_View_ViewModeWeek_png : Public, Static, InitOnly
+    Nevron.Nov.Schedule.NResources Instance : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NImage Image_Edit_AddAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Edit_DeleteAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Edit_EditAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Edit_ImportAppointments_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Other_Calendar_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Other_NevronCalendarLogo_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Other_NevronCalendar_16x16_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Other_NevronCalendar_32x32_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_AddAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_DeleteAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_EditAppointment_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_GoogleCalendar_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_GoToNextRange_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_GoToPreviousRange_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_GoToToday_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_Groupings_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_Groups_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_ImportAppointments_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_OrientationHorizontal_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_OrientationVertical_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_ViewModeDay_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_ViewModeMonth_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_ViewModeTimeline_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_ViewModeWeek_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_AppMenu_Formats_ICS_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_AppMenu_Formats_NCB_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_AppMenu_Formats_NCX_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Ribbon_32x32_AppMenu_Formats_PDF_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_CloudSync_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_GoogleCalendar_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_Grid_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_Groupings_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_Groups_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_Header_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_TimeRuler_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_Tools_ToolSettings_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_GoToNextRange_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_GoToPreviousRange_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_OrientationHorizontal_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_OrientationVertical_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_Today_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_ViewModeDay_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_ViewModeMonth_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_ViewModeTimeline_png 'get ' : 
+    Nevron.Nov.Graphics.NImage Image_View_ViewModeWeek_png 'get ' : 
+  Methods:
+    get_Image_Edit_AddAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Edit_DeleteAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Edit_EditAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Edit_ImportAppointments_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Other_Calendar_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Other_NevronCalendarLogo_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Other_NevronCalendar_16x16_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Other_NevronCalendar_32x32_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_AddAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_DeleteAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_EditAppointment_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_GoogleCalendar_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_GoToNextRange_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_GoToPreviousRange_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_GoToToday_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_Groupings_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_Groups_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_ImportAppointments_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_OrientationHorizontal_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_OrientationVertical_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_ViewModeDay_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_ViewModeMonth_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_ViewModeTimeline_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_ViewModeWeek_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_AppMenu_Formats_ICS_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_AppMenu_Formats_NCB_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_AppMenu_Formats_NCX_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Ribbon_32x32_AppMenu_Formats_PDF_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_CloudSync_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_GoogleCalendar_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_Grid_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_Groupings_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_Groups_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_Header_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_TimeRuler_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_Tools_ToolSettings_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_GoToNextRange_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_GoToPreviousRange_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_OrientationHorizontal_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_OrientationVertical_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_Today_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_ViewModeDay_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_ViewModeMonth_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_ViewModeTimeline_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Image_View_ViewModeWeek_png(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleView: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NDocumentView`6[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.NSchedule,Nevron.Nov.Schedule.Formats.NScheduleFormat,Nevron.Nov.Schedule.Formats.NScheduleFormatRegistry,Nevron.Nov.Schedule.Formats.NScheduleLoadSettings,Nevron.Nov.Schedule.Formats.NScheduleSaveSettings]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleViewSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild NavigatorChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild HScrollBarChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild VScrollBarChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ContextMenuProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty NotificationCheckIntervalProperty : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand NewCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand OpenCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand SaveCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand SaveAsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand DocumentInfoCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand PrintCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ExportToPdfCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ExportToRasterImageCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ExportToVectorImageCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GoToPreviousRangeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GoToTodayCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GoToNextRangeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleDayViewModeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleWeekViewModeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleMonthViewModeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleTimelineViewModeCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleHorizontalOrientationCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ToggleVerticalOrientationCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ZoomToPercentCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand AddAppointmentCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand EditAppointmentCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand DeleteAppointmentsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ImportAppointmentsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand CategoryCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand TimeMarkerCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ScheduleInteractivityCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand TimeRulerSettingsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand HeaderSettingsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GridSettingsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ViewModeSettingsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ScheduleGroupsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GroupingsCommand : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NScheduleViewNavigator Navigator 'get set' : 
+    Nevron.Nov.UI.NHScrollBar HScrollBar 'get set' : 
+    Nevron.Nov.UI.NVScrollBar VScrollBar 'get set' : 
+    Nevron.Nov.Schedule.NScheduleContextMenu ContextMenu 'get set' : 
+    Int32 NotificationCheckInterval 'get set' : 
+  Methods:
+    get_Navigator(): PrivateScope, Public, HideBySig, SpecialName
+    set_Navigator(NScheduleViewNavigator): PrivateScope, Public, HideBySig, SpecialName
+    get_HScrollBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_HScrollBar(NHScrollBar): PrivateScope, Public, HideBySig, SpecialName
+    get_VScrollBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_VScrollBar(NVScrollBar): PrivateScope, Public, HideBySig, SpecialName
+    get_ContextMenu(): PrivateScope, Public, HideBySig, SpecialName
+    set_ContextMenu(NScheduleContextMenu): PrivateScope, Public, HideBySig, SpecialName
+    get_NotificationCheckInterval(): PrivateScope, Public, HideBySig, SpecialName
+    set_NotificationCheckInterval(Int32): PrivateScope, Public, HideBySig, SpecialName
+    VisitChildDisplaySubtree(NDisplayVisitor, NVisual): PrivateScope, Public, Virtual, HideBySig
+    ScrollInDirection(ENCompassDirection, Double): PrivateScope, Public, Virtual, HideBySig
+    ShowPreviousViewRange(): PrivateScope, Public, HideBySig
+    ShowNextViewRange(): PrivateScope, Public, HideBySig
+    ImportAppointments(): PrivateScope, Public, HideBySig
+    ImportAppointmentsFromFile(String): PrivateScope, Public, HideBySig
+    ImportAppointmentsFromStream(Stream): PrivateScope, Public, HideBySig
+    ImportAppointmentsFromDocument(NScheduleDocument): PrivateScope, Public, HideBySig
+    Оте(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.NScheduleHeader: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NWidget
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleHeaderSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StrokeProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty LabelPaddingProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DateFormatProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DateRangeFormatProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NStroke Stroke 'get set' : 
+    Nevron.Nov.Graphics.NMargins LabelPadding 'get set' : 
+    System.String DateFormat 'get set' : 
+    System.String DateRangeFormat 'get set' : 
+  Methods:
+    get_Stroke(): PrivateScope, Public, HideBySig, SpecialName
+    set_Stroke(NStroke): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelPadding(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelPadding(NMargins): PrivateScope, Public, HideBySig, SpecialName
+    get_DateFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_DateFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DateRangeFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_DateRangeFormat(String): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.NScheduleViewNavigator: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.UI.NDockPanel
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleViewNavigatorSchema : Public, Static, InitOnly
+  Methods:
+    ЮРр(): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NScheduleTimeRuler: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleGridRulersBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleTimeRulerSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty DateFormatProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty TimeFormatProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty HorizontalMinorTickLengthProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty VerticalMinorTickLengthProperty : Public, Static, InitOnly
+    System.String щЦр = H:mm : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.String DateFormat 'get set' : 
+    System.String TimeFormat 'get set' : 
+    Double HorizontalMinorTickLength 'get set' : 
+    Double VerticalMinorTickLength 'get set' : 
+  Methods:
+    get_DateFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_DateFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalMinorTickLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalMinorTickLength(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalMinorTickLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalMinorTickLength(Double): PrivateScope, Public, HideBySig, SpecialName
+    нФр(NRectangle&(Out), Double&(Out), Double&(Out), NPoint&(Out), NPoint&(Out)): PrivateScope, Assembly, HideBySig
+    уФр(NDateTimeSpan, Double&(Out), Double&(Out), NPoint&(Out), NPoint&(Out)): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Schedule.NScheduleClickSelectTool: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleClickTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleClickSelectToolSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.NScheduleTool: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NTool
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleToolSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.NScheduleView OwnerScheduleView 'get ' : 
+    Nevron.Nov.Schedule.NSchedule Schedule 'get ' : 
+  Methods:
+    get_OwnerScheduleView(): PrivateScope, Public, HideBySig, SpecialName
+    get_Schedule(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Schedule.Editors.NRangeCategoryEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Editors.NStackCategoryEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRangeCategoryEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NAppointmentGroupCollectionEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Editors.NGeneralEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentGroupCollectionEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NGroupingCollectionEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Editors.NGeneralEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGroupingCollectionEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NNotificationPropertyEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Editors.NTimeSpanPropertyEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NNotificationPropertyEditorSchema : Public, Static, InitOnly
+    Int32 пЙр = 30 : Assembly, Static, Literal, HasDefault
+Class Nevron.Nov.Schedule.Editors.NEndDatePropertyEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Editors.NDateTimePropertyEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NEndDatePropertyEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NMonthlyPatternCategoryEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Editors.NRecurrencePatternCategoryEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NMonthlyPatternCategoryEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NRecurrencePatternCategoryEditor: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.Editors.NCategoryEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NRecurrencePatternCategoryEditorSchema : Public, Static, InitOnly
+  Methods:
+    рЙр(NList`1, NProperty): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.Editors.NCategoryPropertyEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Editors.NAppointmentTagPropertyEditor`1[Nevron.Nov.Schedule.NCategory]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCategoryPropertyEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NAppointmentTagPropertyEditor`1[T]: AutoLayout, AnsiClass, Class, Public, Abstract
+  Type parameter: T, Nevron.Nov.Schedule.NAppointmentTag
+  :Nevron.Nov.Editors.NPairBoxPropertyEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAppointmentTagPropertyEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NTimeMarkerPropertyEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Editors.NAppointmentTagPropertyEditor`1[Nevron.Nov.Schedule.NTimeMarker]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTimeMarkerPropertyEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Editors.NYearlyPatternCategoryEditor: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Editors.NMonthlyPatternCategoryEditor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NYearlyPatternCategoryEditorSchema : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.UI.NEditMenuBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NMenuDropDownBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NFileMenuBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NMenuDropDownBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NToolsMenuBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NMenuDropDownBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NViewMenuBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NMenuDropDownBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NScheduleStatusBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NStatusBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Create(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.UI.NAppointmentsToolBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NToolBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ЧЗр(NCommand): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.UI.NInteractivityToolBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NToolBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NStandardToolBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NToolBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NToolsToolBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NToolBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NViewToolBarBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NToolBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NAppointmentAppointmentsGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NAppointmentTabPageBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonTabPageBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String GroupAppointmentsName : Public, Static, InitOnly
+    System.String GroupTagsName : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.UI.NAppointmentTagsGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NHomeEditingGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NHomeGoToGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NSettingsGroupingsGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NSettingsInteractivityGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NHomeOrientationGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NSettingsWidgetsGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NHomeTabPageBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonTabPageBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String GroupEditingName : Public, Static, InitOnly
+    System.String GroupGoToName : Public, Static, InitOnly
+    System.String GroupOrientationName : Public, Static, InitOnly
+    System.String GroupViewName : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.UI.NHomeViewGroupBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.UI.NSettingsTabPageBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonTabPageBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String GroupGroupingsName : Public, Static, InitOnly
+    System.String GroupInteractivityName : Public, Static, InitOnly
+    System.String GroupWidgetsName : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Formats.NNevronBinaryCalendarFormat: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.Schedule.Formats.NScheduleFormat
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    System.String[] Extensions 'get ' : 
+    Byte[] FileSignature 'get ' : 
+    System.String Mime 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Extensions(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_FileSignature(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Mime(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    съа(Stream, NScheduleLoadSettings, Function`2): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    хъа(Stream, NScheduleLoadSettings): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    шъа(Stream, NScheduleSaveSettings, NScheduleDocument): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.Formats.NNevronXmlCalendarFormat: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.Schedule.Formats.NScheduleFormat
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String дэр : Assembly, Static, InitOnly
+  Properties:
+    System.String Name 'get ' : 
+    System.String[] Extensions 'get ' : 
+    Byte[] FileSignature 'get ' : 
+    System.String Mime 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Extensions(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_FileSignature(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Mime(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    мъа(Byte[]): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    съа(Stream, NScheduleLoadSettings, Function`2): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    хъа(Stream, NScheduleLoadSettings): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    шъа(Stream, NScheduleSaveSettings, NScheduleDocument): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.Formats.NIcalFormat: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Formats.NScheduleFormat
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String[] Extensions 'get ' : 
+    System.String Mime 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Extensions(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Mime(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    SerializeAppointment(NAppointmentBase, Boolean): PrivateScope, Public, HideBySig
+    съа(Stream, NScheduleLoadSettings, Function`2): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    хъа(Stream, NScheduleLoadSettings): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    шъа(Stream, NScheduleSaveSettings, NScheduleDocument): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    мъа(Byte[]): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.Formats.NScheduleFormat: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Nevron.Nov.Dom.NDocumentFormat`3[Nevron.Nov.Schedule.NScheduleDocument,Nevron.Nov.Schedule.Formats.NScheduleLoadSettings,Nevron.Nov.Schedule.Formats.NScheduleSaveSettings]
+  Methods:
+    ьъа(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    эъа(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Schedule.Formats.NScheduleFormatRegistry: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Nevron.Nov.Dom.NDocumentFormatRegistry`1[Nevron.Nov.Schedule.Formats.NScheduleFormat]
+  Fields:
+    Nevron.Nov.Schedule.Formats.NScheduleFormatRegistry Instance : Public, Static, InitOnly
+Class Nevron.Nov.Schedule.Formats.NScheduleLoadSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.Dom.NDocumentLoadSettings
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.Formats.NScheduleSaveSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Nevron.Nov.Dom.NDocumentSaveSettings
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.Commands.NAddAppointmentCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NAddAppointmentCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NCategoryCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NTagCommandAction`1[Nevron.Nov.Schedule.NCategory]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCategoryCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NDeleteAppointmentsCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDeleteAppointmentsCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NEditAppointmentCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NEditAppointmentCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NImportAppointmentsCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NImportAppointmentsCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NTagCommandAction`1[TTag]: AutoLayout, AnsiClass, Class, Public, Abstract
+  Type parameter: TTag, Nevron.Nov.Schedule.NAppointmentTag
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTagCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+    OnUpdateCommandSource(NNode, NUpdateCommandSourceEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NTimeMarkerCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NTagCommandAction`1[Nevron.Nov.Schedule.NTimeMarker]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NTimeMarkerCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NDocumentInfoCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NDocumentInfoCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NExportToRasterImageCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NExportToImageCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NExportToPdfCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NExportToPdfCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NExportToVectorImageCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NExportToVectorImageCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NNewCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NNewCommandActionSchema : Public, Static, InitOnly
+  Properties:
+    Boolean ьчр 'get ' : 
+  Methods:
+    get_ьчр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NOpenCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NOpenCommandActionSchema : Public, Static, InitOnly
+  Properties:
+    Boolean ьчр 'get ' : 
+  Methods:
+    get_ьчр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NPrintCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NPrintCommandActionSchema : Public, Static, InitOnly
+  Properties:
+    Boolean ьчр 'get ' : 
+  Methods:
+    get_ьчр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NSaveAsCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NSaveAsCommandActionSchema : Public, Static, InitOnly
+  Properties:
+    Boolean ьчр 'get ' : 
+  Methods:
+    get_ьчр(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NSaveCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NSaveAsCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NSaveCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NGoToNextRangeCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGoToNextRangeCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NGoToPreviousRangeCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGoToPreviousRangeCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NGoToTodayCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGoToTodayCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NScheduleCommandAction: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleCommandActionSchema : Public, Static, InitOnly
+  Properties:
+    Boolean ьчр 'get ' : 
+  Methods:
+    get_ьчр(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, SpecialName
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NScheduleToggleCommandAction: AutoLayout, AnsiClass, Class, Public, Abstract
+  :Nevron.Nov.UI.NToggleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleToggleCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NGroupingsCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NGroupingsCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NScheduleInteractivityCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleInteractivityCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    OnUpdateCommandSource(NNode, NUpdateCommandSourceEventArgs): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NScheduleWidgetSettingsCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Internal.эНр): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NScheduleWidgetSettingsCommandActionSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty CommandProperty : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NToggleOrientationCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleToggleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Layout.ENHVOrientation): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NToggleOrientationCommandActionSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty OrientationProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Layout.ENHVOrientation Orientation 'get set' : 
+  Methods:
+    get_Orientation(): PrivateScope, Public, HideBySig, SpecialName
+    set_Orientation(ENHVOrientation): PrivateScope, Public, HideBySig, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsChecked(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NToggleViewModeCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleToggleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Schedule.ENScheduleViewMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NToggleViewModeCommandActionSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ViewModeProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Schedule.ENScheduleViewMode ViewMode 'get set' : 
+  Methods:
+    get_ViewMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewMode(ENScheduleViewMode): PrivateScope, Public, HideBySig, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsChecked(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.Commands.NZoomToPercentCommandAction: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NZoomToPercentCommandActionSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+    OnUpdateCommandSource(NNode, NUpdateCommandSourceEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.фчр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String щчр : Public
+    System.String ъчр : Public
+    Nevron.Nov.Internal.дшр ычр : Assembly
+  Properties:
+    Nevron.Nov.Internal.дшр шчр 'get ' : 
+  Methods:
+    get_шчр(): PrivateScope, Public, HideBySig, SpecialName
+    ччр(): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.эчр: NotPublic
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema эчрSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Бчр: NotPublic
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema БчрSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Дчр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Nevron.Nov.Internal.ЙЭв): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Жчр(): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.Очр: NotPublic
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ОчрSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Фчр: NotPublic
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ФчрSchema : Public, Static, InitOnly
+  Methods:
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Учр: NotPublic
+  :Nevron.Nov.UI.NMenuSplitButtonCommandSource
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.UI.NCommand): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema УчрSchema : Public, Static, InitOnly
+Struct Nevron.Nov.Internal.вшр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.вшр гшр = 0 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Internal.дшр: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Internal.вшр Эшр 'get ' : 
+    System.String Ьшр 'get ' : 
+    Nevron.Nov.Internal.фчр Ышр 'get set' : 
+    Int32 Ъшр  'get ' : 
+    Int32 Хшр  'get ' : 
+  Methods:
+    get_Эшр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Ьшр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Ышр(): PrivateScope, Public, HideBySig, SpecialName
+    set_Ышр(фчр): PrivateScope, Public, HideBySig, SpecialName
+    get_Ъшр(): PrivateScope, Public, HideBySig, SpecialName
+    get_Хшр(): PrivateScope, Public, HideBySig, SpecialName
+    ешр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    жшр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    зшр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ишр(NSchedule): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    кшр(NSchedule): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    мшр(фчр): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ошр(фчр): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ршр(NAppointmentBase): PrivateScope, Public, HideBySig
+    тшр(NAppointmentBase): PrivateScope, Public, HideBySig
+    фшр(NAppointmentBase): PrivateScope, Public, HideBySig
+    цшр(String): PrivateScope, Public, HideBySig
+    шшр(Int32): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.ещр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.Вэг
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.ещр ищр : Assembly, Static, InitOnly
+  Methods:
+    Гэг(Boolean): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    Ьэг(String&(Out)): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Internal.йщр: NotPublic
+  :Nevron.Nov.Internal.ШЭв`1[Nevron.Nov.Office.Calendar.NCalendarScheduleView]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema йщрSchema : Public, Static, InitOnly
+  Properties:
+    System.String ЖЬв 'get ' : 
+    Nevron.Nov.ENProductGroup ЗЬв 'get ' : 
+  Methods:
+    get_ЖЬв(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ЗЬв(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    кщр(): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.Ощр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.кЫв`1[Nevron.Nov.Office.Calendar.NCalendarScheduleView]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.Рщр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Schedule.NScheduleCommandBarBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.Цщр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Schedule.UI.NFileMenuBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Create(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Ыщр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.UI.NMenuDropDownBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.Хщр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Schedule.UI.NToolsMenuBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.Сщр: NotPublic
+  :Nevron.Nov.Internal.БЪв
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema СщрSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Graphics.NImage ыЪв 'get ' : 
+    System.String ьЪв 'get ' : 
+  Methods:
+    get_ыЪв(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ьЪв(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Internal.аър: NotPublic
+  :Nevron.Nov.UI.NTopLevelWindow
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema аърSchema : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Internal.дшр нър 'get ' : 
+    Nevron.Nov.Internal.фчр оър 'get ' : 
+  Methods:
+    get_нър(): PrivateScope, Public, HideBySig, SpecialName
+    get_оър(): PrivateScope, Public, HideBySig, SpecialName
+    бър(дшр): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.уър: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Schedule.NScheduleRibbonBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.чЫв юър : Assembly
+  Properties:
+    Nevron.Nov.UI.NCommand HelpButtonCommand 'get ' : 
+  Methods:
+    get_HelpButtonCommand(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Internal.Гър: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.уХв
+    Void .ctor(Nevron.Nov.Internal.ЙЭв, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.Йър: NotPublic
+  :Nevron.Nov.Schedule.Commands.NScheduleCommandAction
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.Internal.вшр): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ЙърSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЪърProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Internal.вшр Ъър 'get ' : 
+  Methods:
+    get_Ъър(): PrivateScope, Public, HideBySig, SpecialName
+    GetCommand(): PrivateScope, Public, Virtual, HideBySig
+    IsEnabled(NNode): PrivateScope, Public, Virtual, HideBySig
+    Execute(NNode, Object): PrivateScope, Public, Virtual, HideBySig
+    OnUpdateCommandSource(NNode, NUpdateCommandSourceEventArgs): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.ныр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    оыр(Char): PrivateScope, Public, HideBySig
+    рыр(String): PrivateScope, Public, HideBySig
+    тыр(): PrivateScope, Public, HideBySig
+    уыр(String): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.Уыр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema УырSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ШырProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЮырProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЩырProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЭырProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    Nevron.Nov.Internal.ВДр Шыр 'get set' : 
+    System.String Юыр 'get set' : 
+    Nevron.Nov.Internal.Сыр Щыр 'get set' : 
+    Boolean Эыр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Шыр(): PrivateScope, Public, HideBySig, SpecialName
+    set_Шыр(ВДр): PrivateScope, Public, HideBySig, SpecialName
+    get_Юыр(): PrivateScope, Public, HideBySig, SpecialName
+    set_Юыр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Щыр(): PrivateScope, Public, HideBySig, SpecialName
+    set_Щыр(Сыр): PrivateScope, Public, HideBySig, SpecialName
+    get_Эыр(): PrivateScope, Public, HideBySig, SpecialName
+    set_Эыр(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.Тыр: NotPublic
+  :Nevron.Nov.Dom.NElementCollection`1[Nevron.Nov.Internal.Уыр]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ТырSchema : Public, Static, InitOnly
+Struct Nevron.Nov.Internal.Сыр: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.TimeSpan): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.DateTime гьр : Public
+    System.TimeSpan дьр : Public
+  Properties:
+    Nevron.Nov.Internal.ЗДр вьр 'get ' : 
+  Methods:
+    get_вьр(): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.Аьр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.Аьр Дьр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Еьр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.Еьр Йьр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.Кьр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.Кьр Оьр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.жэр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.Вэг
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.жэр иэр : Public, Static, InitOnly
+  Methods:
+    Гэг(Boolean): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class Nevron.Nov.Internal.цюр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    чюр(NAppointmentBase): PrivateScope, Public, HideBySig
+    щюр(NAppointmentBase): PrivateScope, Public, HideBySig
+    ыюр(DateTime, DateTime): PrivateScope, Public, HideBySig
+    ююр(): PrivateScope, Assembly, HideBySig
+    Зюр(DateTime, DateTime): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.Ьюр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Ыюр(Int32, Int32, Int32, DateTime): PrivateScope, Public, Static, HideBySig
+    аАр(DateTime): PrivateScope, Public, Static, HideBySig
+    вАр(ENDayOfWeek, ENDayOfWeek[]): PrivateScope, Public, Static, HideBySig
+    еАр(ENDayOfWeek, ENDayOfWeek[]): PrivateScope, Public, Static, HideBySig
+    иАр(ENDayOfWeek, ENDayOfWeek): PrivateScope, Public, Static, HideBySig
+    лАр(DateTime, Int32, DateTime&(Out)): PrivateScope, Public, Static, HideBySig
+    пАр(DateTime, ENDayOrdinal, ENDayOfWeek[], ЙНр, DateTime&(Out)): PrivateScope, Public, Static, HideBySig
+    хАр(Int32): PrivateScope, Public, Static, HideBySig
+    чАр(ENMonth): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.тВр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    уВр(NSchedule): PrivateScope, Public, HideBySig
+    АВр(NAppointmentBase): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.ДВр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ЕВр(NRecurrenceRule): PrivateScope, Public, Static, HideBySig
+    ЗВр(ENRecurrenceFrequency): PrivateScope, Public, Static, HideBySig
+    ЙВр(ENDayOrdinal): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.ЛВр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    МВр(мГр, Stream): PrivateScope, Public, HideBySig
+    ПВр(ъыр, ныр): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.вГр: NotPublic
+  :Nevron.Nov.Internal.ЭВр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema вГрSchema : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Internal.ЭВр: AutoLayout, AnsiClass, Class, Abstract
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ЭВрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЬВрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЫВрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЪВрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ХВрProperty : Public, Static, InitOnly
+  Properties:
+    System.String ЬВр 'get set' : 
+    Nevron.Nov.Graphics.NFill ЫВр 'get set' : 
+    Nevron.Nov.Graphics.NFill ЪВр 'get set' : 
+    Nevron.Nov.Graphics.NFill ХВр 'get set' : 
+  Methods:
+    get_ЬВр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЬВр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ЫВр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЫВр(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_ЪВр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЪВр(NFill): PrivateScope, Public, HideBySig, SpecialName
+    get_ХВр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ХВр(NFill): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.гГр: NotPublic
+  :Nevron.Nov.Internal.ЭВр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema гГрSchema : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Nevron.Nov.Internal.дГр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema дГрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty еГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty жГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty зГрProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    Nevron.Nov.Schedule.ENScheduleViewMode еГр 'get set' : 
+    Nevron.Nov.Layout.ENHVOrientation жГр 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] зГр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_еГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_еГр(ENScheduleViewMode): PrivateScope, Public, HideBySig, SpecialName
+    get_жГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_жГр(ENHVOrientation): PrivateScope, Public, HideBySig, SpecialName
+    get_зГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_зГр(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.лГр: NotPublic
+  :Nevron.Nov.Dom.NGenericDocument`1[Nevron.Nov.Internal.мГр]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema лГрSchema : Public, Static, InitOnly
+Class Nevron.Nov.Internal.ъыр: AutoLayout, AnsiClass, Class, Abstract
+  :Nevron.Nov.Dom.NElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema ъырSchema : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ыыр(String, ъыр): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    юыр(String): PrivateScope, Public, HideBySig
+    Быр(String): PrivateScope, Public, HideBySig
+    Гыр(): PrivateScope, Public, HideBySig
+    Дыр(NSchema, String, String, Type): PrivateScope, Public, Static, HideBySig
+    Йыр(NSchema, String, String, Type, Object): PrivateScope, Public, Static, HideBySig
+    Пыр(String): PrivateScope, Public, Static, HideBySig
+    Фыр(): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Internal.мГр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema мГрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty нГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty оГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty пГрProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    System.String нГр 'get set' : 
+    System.String оГр 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] пГр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_нГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_нГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_оГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_оГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_пГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_пГр(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.уГр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema уГрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild цГрChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty чГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty шГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty щГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ъГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ыГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ьГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty эГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty юГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty АГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty БГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ВГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ГГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ДГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЕГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЖГрProperty : Public, Static, InitOnly
+    System.DateTime ЗГр : Assembly, Static, InitOnly
+    System.String ИГр =  : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.String Цыр 'get ' : 
+    Nevron.Nov.Internal.Тыр цГр 'get set' : 
+    System.String чГр 'get set' : 
+    System.String шГр 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] щГр 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] ъГр 'get set' : 
+    System.DateTime ыГр 'get set' : 
+    System.DateTime ьГр 'get set' : 
+    System.String эГр 'get set' : 
+    System.String юГр 'get set' : 
+    System.DateTime АГр 'get set' : 
+    System.String БГр 'get set' : 
+    Nevron.Nov.Internal.ЪГр ВГр 'get set' : 
+    System.String ГГр 'get set' : 
+    System.String ДГр 'get set' : 
+    System.DateTime ЕГр 'get set' : 
+    System.DateTime ЖГр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_цГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_цГр(Тыр): PrivateScope, Public, HideBySig, SpecialName
+    get_чГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_чГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_шГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_шГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_щГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_щГр(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+    get_ъГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ъГр(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+    get_ыГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ыГр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_ьГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ьГр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_эГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_эГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_юГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_юГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_АГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_АГр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_БГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_БГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ВГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ВГр(ЪГр): PrivateScope, Public, HideBySig, SpecialName
+    get_ГГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ГГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ДГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ДГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ЕГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЕГр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_ЖГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЖГр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    ыыр(String, ъыр): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.УГр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Nevron.Nov.Dom.NDomArray`1[System.String]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema УГрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЩГрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ЭГрProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    System.String ЩГр 'get set' : 
+    Nevron.Nov.Dom.NDomArray`1[System.String] ЭГр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ЩГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЩГр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ЭГр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ЭГр(NDomArray`1): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.ЪГр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.щДр ХГр : Public
+    System.DateTime ТГр : Public
+    Int32 СГр : Public
+    Int32 аДр : Public
+    Int32[] бДр : Public
+    Int32[] вДр : Public
+    Int32[] гДр : Public
+    Nevron.Nov.Schedule.ENDayOfWeek[] дДр : Public
+    Int32[] еДр : Public
+    Int32[] жДр : Public
+    Int32[] зДр : Public
+    Int32[] иДр : Public
+    Int32[] йДр : Public
+    Nevron.Nov.Schedule.ENDayOfWeek кДр : Public
+Class Nevron.Nov.Internal.лДр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema лДрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty мДрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty нДрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty оДрProperty : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty пДрProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    System.String мДр 'get set' : 
+    System.DateTime нДр 'get set' : 
+    System.TimeSpan оДр 'get set' : 
+    System.TimeSpan пДр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_мДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_мДр(String): PrivateScope, Public, HideBySig, SpecialName
+    get_нДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_нДр(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_оДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_оДр(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+    get_пДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_пДр(TimeSpan): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Internal.фДр: NotPublic
+  :Nevron.Nov.Internal.ъыр
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema фДрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild хДрChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NChild цДрChild : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty чДрProperty : Public, Static, InitOnly
+  Properties:
+    System.String Цыр 'get ' : 
+    Nevron.Nov.Internal.лДр хДр 'get set' : 
+    Nevron.Nov.Internal.лДр цДр 'get set' : 
+    System.String чДр 'get set' : 
+  Methods:
+    get_Цыр(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_хДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_хДр(лДр): PrivateScope, Public, HideBySig, SpecialName
+    get_цДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_цДр(лДр): PrivateScope, Public, HideBySig, SpecialName
+    get_чДр(): PrivateScope, Public, HideBySig, SpecialName
+    set_чДр(String): PrivateScope, Public, HideBySig, SpecialName
+Struct Nevron.Nov.Internal.щДр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.щДр ъДр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр ыДр = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр ьДр = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр эДр = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр юДр = 4 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр АДр = 5 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.щДр БДр = 6 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Internal.ВДр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.ВДр ГДр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ВДр ДДр = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ВДр ЕДр = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ВДр ЖДр = 3 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Internal.ЗДр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.ЗДр ИДр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ЗДр ЙДр = 1 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Internal.КДр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ЛДр(лГр): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.еЕр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    жЕр(фДр): PrivateScope, Public, Static, HideBySig
+    иЕр(лДр): PrivateScope, Public, Static, HideBySig
+    кЕр(ЭВр): PrivateScope, Public, Static, HideBySig
+    мЕр(NDomArray`1): PrivateScope, Public, Static, HideBySig
+    оЕр(ENDayOfWeek[]): PrivateScope, Public, Static, HideBySig
+    рЕр(Int32[], DateTime): PrivateScope, Public, Static, HideBySig
+    уЕр(Int32[]): PrivateScope, Public, Static, HideBySig
+    хЕр(ЪГр, DateTime): PrivateScope, Public, Static, HideBySig
+    шЕр(щДр): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.ДЕр: AutoLayout, AnsiClass, Class, Abstract, Sealed
+  Methods:
+    ЕЕр(ЖЕр): PrivateScope, Public, Static, HideBySig
+    ИЕр(String, ЙЕр&(Out)): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.бЖр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.NStringParser
+    Void .ctor(Nevron.Nov.Internal.ИЖр): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Parse(Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.лЖр`1[мЖр]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: мЖр
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.лЖр`1[мЖр] рЖр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.сЖр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.сЖр хЖр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.цЖр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.NStringParser
+    Void .ctor(Nevron.Nov.Internal.ИЖр): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ГЖр = BEGIN : Assembly, Static, Literal, HasDefault
+    System.String ДЖр = END : Assembly, Static, Literal, HasDefault
+    System.String ЕЖр = X-NEVRON-BEGIN : Assembly, Static, Literal, HasDefault
+    System.String ЖЖр = X-NEVRON-END : Assembly, Static, Literal, HasDefault
+  Methods:
+    Parse(Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    ыЖр(Stream): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.ИЖр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Nevron.Nov.Internal.лГр ЫЖр 'get ' : 
+  Methods:
+    get_ЫЖр(): PrivateScope, Public, HideBySig, SpecialName
+    ЙЖр(String): PrivateScope, Public, HideBySig
+    ЛЖр(String, String): PrivateScope, Public, HideBySig
+    ОЖр(String): PrivateScope, Public, HideBySig
+    РЖр(): PrivateScope, Public, HideBySig
+Class Nevron.Nov.Internal.СЖр`1[аЗр]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: аЗр, System.ValueType,  NotNullableValueType DefaultConstructor
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.СЖр`1[аЗр] дЗр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.еЗр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.еЗр йЗр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.еьр: AutoLayout, AnsiClass, Class, Abstract
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    льр(Type): PrivateScope, Public, Static, HideBySig
+    ньр(String, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+    рьр(String, Double&(Out)): PrivateScope, Public, Static, HideBySig
+    уьр(String, фьр&(Out)): PrivateScope, Public, Static, HideBySig
+    чьр(Int32): PrivateScope, Public, Static, HideBySig
+    щьр(Double): PrivateScope, Public, Static, HideBySig
+    ыьр(ььр): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.кЗр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.кЗр ДЗр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.ЗЗр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.ЗЗр ЛЗр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.МЗр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Internal.еьр
+  Fields:
+    Nevron.Nov.Internal.МЗр РЗр : Public, Static, InitOnly
+  Methods:
+    жьр(String, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    йьр(Object): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.ФЗр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Byte[] ЦЗр : Public, Static
+Class Nevron.Nov.Internal.ШЗр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ЮЗр(NOccurrence, String, String, String): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.вИр: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    гИр(NSchedule, NAppointmentBase): PrivateScope, Public, Static, HideBySig
+Class Nevron.Nov.Internal.ИЙр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.UI.NRibbonGroupBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Internal.хНр: NotPublic
+  :Nevron.Nov.Layout.NStackLayout
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema хНрSchema : Public, Static, InitOnly
+Struct Nevron.Nov.Internal.эНр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.эНр юНр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.эНр АНр = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.эНр БНр = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.эНр ВНр = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.эНр ГНр = 4 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Internal.ДНр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.ДНр ЕНр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ДНр ЖНр = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ДНр ЗНр = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ДНр ИНр = 3 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Internal.ЙНр: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Internal.ЙНр КНр = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ЙНр ЛНр = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ЙНр МНр = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Internal.ЙНр ННр = 3 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Internal.ОНр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ЮНр  'get ' : 
+    Nevron.Nov.Internal.ЬНр Item [Int32] 'get ' : 
+  Methods:
+    get_ЮНр(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    РНр(ЬНр): PrivateScope, Public, HideBySig
+    ЦНр(): PrivateScope, Public, HideBySig
+    ЧНр(Int32, ЬНр): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.ЬНр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Layout.NBoxBody
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable`1[Nevron.Nov.Internal.ЬНр]
+    System.IComparable
+  Fields:
+    Int32 СНр : Public
+    Int32 аОр : Public
+    Int32 бОр : Public
+    Int32 вОр : Public
+  Properties:
+    Nevron.Nov.Schedule.NAppointmentBase ХНр 'get ' : 
+    Boolean ТНр 'get ' : 
+  Methods:
+    get_ХНр(): PrivateScope, Public, HideBySig, SpecialName
+    get_ТНр(): PrivateScope, Public, HideBySig, SpecialName
+    CompareTo(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(ЬНр): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.гОр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Nevron.Nov.Layout.NBodyAdapter
+    Void .ctor(Nevron.Nov.Graphics.NFont): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateBody2DFromObject(Object, NBody2D): PrivateScope, Public, Virtual, HideBySig
+    TryGetBody2DProperty(Object, Int32, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    UpdateObjectFromBody2D(Object, NBody2D): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Internal.пОр: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Nevron.Nov.NDateTimeRange): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ГОр  'get ' : 
+    Int32 ДОр  'get ' : 
+    Nevron.Nov.DataStructures.NList`1[Nevron.Nov.Internal.ОНр] ЕОр 'get ' : 
+    Nevron.Nov.Internal.ЬНр Item [Int32, Int32] 'get set' : 
+  Methods:
+    get_ГОр(): PrivateScope, Public, HideBySig, SpecialName
+    get_ДОр(): PrivateScope, Public, HideBySig, SpecialName
+    get_ЕОр(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, Int32, ЬНр): PrivateScope, Public, HideBySig, SpecialName
+    сОр(ЬНр): PrivateScope, Public, HideBySig
+    уОр(ЬНр, Double&(Out), Double&(Out)): PrivateScope, Assembly, HideBySig
+    чОр(Double): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Internal.КОр: NotPublic
+  :Nevron.Nov.Layout.NDirectedBoxLayout
+    Void .ctor(System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Nevron.Nov.NDateTimeRange): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema КОрSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty ХОрProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.NDateTimeRange ХОр 'get set' : 
+  Methods:
+    get_ХОр(): PrivateScope, Public, HideBySig, SpecialName
+    set_ХОр(NDateTimeRange): PrivateScope, Public, HideBySig, SpecialName
+Struct Nevron.Nov.Office.Calendar.ENCalendarToolBar: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Office.Calendar.ENCalendarToolBar Appointments = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENCalendarToolBar Interactivity = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENCalendarToolBar Standard = 2 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENCalendarToolBar Tools = 3 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENCalendarToolBar View = 4 : Public, Static, Literal, HasDefault
+Struct Nevron.Nov.Office.Calendar.ENStartupAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Nevron.Nov.Office.Calendar.ENStartupAction CreateNewDocument = 0 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENStartupAction LoadLastOpenedDocument = 1 : Public, Static, Literal, HasDefault
+    Nevron.Nov.Office.Calendar.ENStartupAction ShowRecentDocumentsList = 2 : Public, Static, Literal, HasDefault
+Class Nevron.Nov.Office.Calendar.NCalendarScheduleView: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Schedule.NScheduleView
+    Void .ctor(Nevron.Nov.Internal.ЙЭв): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Internal.ЙЭв Йщр : Assembly
+    Nevron.Nov.Dom.NSchema NCalendarScheduleViewSchema : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand AboutCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand OptionsCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand HelpCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand ExitCommand : Public, Static, InitOnly
+    Nevron.Nov.UI.NCommand GoogleCalendarSyncCommand : Public, Static, InitOnly
+  Properties:
+    Boolean Ищр 'get ' : 
+  Methods:
+    get_Ищр(): PrivateScope, Assembly, HideBySig, SpecialName
+    ьщр(дшр): PrivateScope, Assembly, HideBySig
+    ющр(вшр, дшр&(Out)): PrivateScope, Assembly, HideBySig
+Class Nevron.Nov.Office.Calendar.NCalendarOptions: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Office.NApplicationOptions
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCalendarOptionsSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartupActionProperty : Public, Static, InitOnly
+    Nevron.Nov.Office.Calendar.ENStartupAction Лщр = 1 : Assembly, Static, Literal, HasDefault
+  Properties:
+    Nevron.Nov.Office.Calendar.ENStartupAction StartupAction 'get set' : 
+  Methods:
+    get_StartupAction(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartupAction(ENStartupAction): PrivateScope, Public, HideBySig, SpecialName
+Class Nevron.Nov.Office.Calendar.NCalendarViewStateWorkspaceItem: AutoLayout, AnsiClass, Class, Public
+  :Nevron.Nov.Office.NWorkspaceItem
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Nevron.Nov.Dom.NSchema NCalendarViewStateWorkspaceItemSchema : Public, Static, InitOnly
+    Nevron.Nov.Dom.NProperty StartupActionProperty : Public, Static, InitOnly
+  Properties:
+    Nevron.Nov.Office.Calendar.ENStartupAction StartupAction 'get set' : 
+  Methods:
+    get_StartupAction(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartupAction(ENStartupAction): PrivateScope, Public, HideBySig, SpecialName
+    ВЪб(мХв): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    ДЪб(мХв): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+Class <PrivateImplementationDetails>: AutoLayout, AnsiClass, Class, Sealed
+  Fields:
+    __StaticArrayInitTypeSize=20 1036C5F8EF306104BD582D73E555F4DAE8EECB24 : Assembly, Static, InitOnly, HasFieldRVA
+    __StaticArrayInitTypeSize=24 9F236E86775FEE4802600A2C5EF3489168594B6D : Assembly, Static, InitOnly, HasFieldRVA
+    __StaticArrayInitTypeSize=20710 A6C1A2F3BFF09A099B9C7C7CB302694BA0E20461 : Assembly, Static, InitOnly, HasFieldRVA
+  Methods:
+    ComputeStringHash(String): PrivateScope, Assembly, Static, HideBySig
+Class Nevron.Nov.Schedule.NAppointment+NAppointmentDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NAppointmentBase+NAppointmentBaseDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NOccurrence+NOccurrenceDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NAppointmentBase+NAppointmentBaseDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NRecurrenceDailyRule+NRecurrenceDailyRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NRecurrenceRule+NRecurrenceRuleDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NRecurrenceHourlyRule+NRecurrenceHourlyRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NRecurrenceRule+NRecurrenceRuleDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NRecurrenceMonthlyRule+NRecurrenceMonthlyRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NRecurrenceWeeklyRule+NRecurrenceWeeklyRuleDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateInstanceForSurrogateEditing(NNodeSurrogate): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NRecurrenceRule+NRecurrenceRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCompatibleTypes(): PrivateScope, Public, Virtual, HideBySig
+    CreateInstanceEditor(NNode, NEditorContext): PrivateScope, Public, Virtual, HideBySig
+    CreateInstanceForSurrogateEditing(NNodeSurrogate): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NRecurrenceWeeklyRule+NRecurrenceWeeklyRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NRecurrenceRule+NRecurrenceRuleDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateInstanceForSurrogateEditing(NNodeSurrogate): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NRecurrenceYearlyRule+NRecurrenceYearlyRuleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NRecurrenceMonthlyRule+NRecurrenceMonthlyRuleDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateInstanceForSurrogateEditing(NNodeSurrogate): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentBase+NAppointmentBaseDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetChildrenBrowsable(NNode): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NAppointmentGroupCollection+NAppointmentGroupCollectionDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleGroup+NScheduleGroupDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NGroupingCollection+NGroupingCollectionDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleGrid+NScheduleGridDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NScheduleGridRulersBase+NScheduleGridRulersBaseDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NTimelineViewMode+NTimelineViewModeDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NViewMode+NViewModeDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NViewMode+NViewModeDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetChildrenBrowsable(NNode): PrivateScope, Public, Virtual, HideBySig
+Class Nevron.Nov.Schedule.NScheduleGridRulersBase+NScheduleGridRulersBaseDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.UI.NWidget+NWidgetDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleGroupCollection+NScheduleGroupCollectionDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NSchedule+NScheduleDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Editors.NDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleHeader+NScheduleHeaderDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NScheduleGridRulersBase+NScheduleGridRulersBaseDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Schedule.NScheduleTimeRuler+NScheduleTimeRulerDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Schedule.NScheduleGridRulersBase+NScheduleGridRulersBaseDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Nevron.Nov.Office.Calendar.NCalendarOptions+NCalendarOptionsDesigner: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :Nevron.Nov.Office.NApplicationOptions+NApplicationOptionsDesigner
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
