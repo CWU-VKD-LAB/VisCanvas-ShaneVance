@@ -1,2 +1,5 @@
-
 src/VisCanvas.sdf
+src/Debug
+src/ipch
+src/VisCanvas/Debug
+src/VisCanvas/Interop

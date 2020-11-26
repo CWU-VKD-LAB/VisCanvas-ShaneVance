@@ -1,4 +1,4 @@
- # VisCanvas
+# VisCanvas
 
 High-dimensional data visualization tool using General Line Coordinates (GLC). GLC is a parallel coordinate representation of data.
 
@@ -9,4 +9,4 @@ to do so manually, via click-and-drag.
 This was a capstone project at Central Washington University. There are hopes of many new features and enhancements to come in the
 near future, as this project becomes more mature — stay tuned!
 
-![optional text](image/viscanvas_tn.jpg)
+![optional text](docs/image/viscanvas.jpg)
