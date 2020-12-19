@@ -6,7 +6,7 @@ This tool allows a user to sort each set of data and change the color of associa
 ability to change the view to hypercube clusters. They can also sort the data in `asc.` or `desc.` order. Also, there's the option
 to do so manually, via click-and-drag.
 
-This was a capstone project at Central Washington University. There are hopes of many new features and enhancements to come in the
-near future, as this project becomes more mature — stay tuned!
+VisCanvas started as a group (capstone) project at Central Washington University. There are hope of many new features & enhancements to come in the
+near future, as the project becomes more mature — stay tuned!
 
 ![optional text](image/viscanvas_tn.jpg)
