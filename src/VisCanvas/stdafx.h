@@ -3,10 +3,9 @@
 // are changed infrequently
 #pragma once
 
-// TODO: reference additional headers your program requires here
-#include "DataInterface.h"
-
-#include <string>
-#include <iostream>
-#include <fstream>
 #include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <string>
+
+#include "DataInterface.h"

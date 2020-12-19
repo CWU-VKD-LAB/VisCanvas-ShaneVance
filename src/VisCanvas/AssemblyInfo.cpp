@@ -14,7 +14,8 @@ using namespace System::Security::Permissions;
 [assembly:AssemblyTitleAttribute("VisCanvas")];
 [assembly:AssemblyDescriptionAttribute("")];
 [assembly:AssemblyConfigurationAttribute("")];
-[assembly:AssemblyCompanyAttribute("A-Team")]; // Shane Vance, Daniel Ortyn, Nico Espitia, Brennan Barni
+[assembly:AssemblyCompanyAttribute("A-Team")];  // Shane Vance, Daniel Ortyn,
+                                                // Nico Espitia, Brennan Barni
 [assembly:AssemblyProductAttribute("VisCanvas")];
 [assembly:AssemblyCopyrightAttribute("Copyright (c) A-Team 2018")];
 [assembly:AssemblyTrademarkAttribute("")];
@@ -28,8 +29,8 @@ using namespace System::Security::Permissions;
 //      Build Number
 //      Revision
 //
-// You can specify all the value or you can default the Revision and Build Numbers
-// by using the '*' as shown below:
+// You can specify all the value or you can default the Revision and Build
+// Numbers by using the '*' as shown below:
 
 [assembly:AssemblyVersionAttribute("1.0.*")];
 
@@ -37,4 +38,5 @@ using namespace System::Security::Permissions;
 
 [assembly:CLSCompliantAttribute(true)];
 
-[assembly:SecurityPermission(SecurityAction::RequestMinimum, UnmanagedCode = true)];
+[assembly:SecurityPermission(SecurityAction::RequestMinimum,
+                             UnmanagedCode = true)];

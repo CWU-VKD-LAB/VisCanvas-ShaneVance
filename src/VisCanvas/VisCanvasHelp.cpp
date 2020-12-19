@@ -1,3 +1,2 @@
-#include "stdafx.h"
 #include "VisCanvasHelp.h"
-
+#include "stdafx.h"

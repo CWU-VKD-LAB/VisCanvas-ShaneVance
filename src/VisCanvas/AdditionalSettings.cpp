@@ -1,3 +1,2 @@
-#include "stdafx.h"
 #include "AdditionalSettings.h"
-
+#include "stdafx.h"
