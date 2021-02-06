@@ -10,8 +10,4 @@ to do so manually, via click-and-drag.
 
 ---
 
-There are hopes of many new features and enhancements to come in the near future, as this project becomes more mature — stay tuned!
-
----
-
 Capstone project at Central Washington University (2018).
